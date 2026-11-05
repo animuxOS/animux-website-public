@@ -236,7 +236,7 @@ a.chip:hover { border-color: var(--brand); color: var(--link); }
 .matrix td:first-child strong { color: var(--accent, #3163A7); font-size: 17px; }
 .matrix tbody tr:nth-child(even) td { background: var(--surface-2); }
 
-/* animux.org: link back to the website (added by website/build.py) */
+/* animux.org: link back to the website (added by the website build) */
 .site-home { color: inherit; text-decoration: none; font-size: 14px; font-weight: 600; opacity: .9; white-space: nowrap; margin-left: 8px; }
 .site-home:hover { opacity: 1; text-decoration: underline; }
 @media (max-width: 860px) { .site-home { display: none; } }

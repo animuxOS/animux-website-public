@@ -1,6 +1,6 @@
 # Animux Guide 1.0.34 — all pages
 
-Release r16.3 (animux-genesis64-deb_28.iso), built 2026-11-04.
+Release r16.3 (animux-genesis64-deb_28.iso), built 2026-11-05.
 
 ---
 <!-- page: index (md/index.md) -->
