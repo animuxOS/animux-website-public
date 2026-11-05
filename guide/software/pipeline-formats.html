@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline formats and tools — Animux Guide</title>
+<meta name="description" content="OpenUSD, Alembic, OpenEXR, OpenColorIO, OpenVDB, OSL and MaterialX, what each studio format is for and the tools Animux has for it.">
+<link rel="icon" href="../assets/animux.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="text/markdown" href="../md/software/pipeline-formats.md" title="This page as Markdown">
+<script>try{var t=localStorage.getItem('animux-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="menu-btn" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><img src="../assets/animux.png" alt="" width="28" height="28"><span>Animux <b>Guide</b></span></a>
+  <a class="site-home" href="../../index.html">← animux.org</a><div class="search"><input id="q" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search the guide"><div id="results" role="listbox"></div></div>
+  <button class="theme-btn" aria-label="Switch light or dark" onclick="animuxTheme()">◐</button>
+</header>
+<div class="wrap">
+<nav class="side" aria-label="Guide sections"><details><summary>Getting Started</summary><ul><li><a href="../start/what-is-animux.html">What is Animux?</a></li><li><a href="../start/at-a-glance.html">Animux at a glance</a></li><li><a href="../start/in-production.html">Used in film production</a></li><li><a href="../start/requirements.html">Computer requirements</a></li><li><a href="../start/get-the-iso.html">Get the ISO file</a></li><li><a href="../start/virtualbox.html">Try Animux in VirtualBox</a></li><li><a href="../start/other-vms.html">Other virtual machines</a></li><li><a href="../start/usb-stick.html">Make a bootable USB stick</a></li><li><a href="../start/boot-menu.html">The boot menu</a></li><li><a href="../start/live-session.html">The live session</a></li><li><a href="../start/install.html">Install Animux on a disk</a></li><li><a href="../start/first-steps.html">First steps after installing</a></li></ul></details><details><summary>Using the Desktop</summary><ul><li><a href="../desktop/tour.html">Desktop tour</a></li><li><a href="../desktop/menu.html">The Animux menu</a></li><li><a href="../desktop/files.html">Files, folders and drives</a></li><li><a href="../desktop/terminal.html">The terminal, gently</a></li><li><a href="../desktop/settings.html">Settings</a></li><li><a href="../desktop/add-software.html">Updates and adding software</a></li><li><a href="../desktop/shortcuts.html">Keyboard shortcuts</a></li></ul></details><details open><summary>Software</summary><ul><li><a href="index.html">All software</a></li><li><a href="blender.html">Blender</a></li><li><a href="makehuman.html">MakeHuman II and MPFB</a></li><li><a href="other-3d.html">FreeCAD, Wings 3D, MeshLab and OpenSCAD</a></li><li><a href="renderers.html">Renderers</a></li><li><a href="renderer-comparison.html">Renderer comparison</a></li><li><a href="flamenco.html">Flamenco render farm</a></li><li><a href="gaffer.html">Gaffer</a></li><li><a href="pipeline-formats.html" aria-current=page>Pipeline formats and tools</a></li><li><a href="studio-formats.html">Studio formats</a></li><li><a href="synfig.html">Synfig Studio</a></li><li><a href="opentoonz.html">OpenToonz</a></li><li><a href="pencil2d.html">Pencil2D and TupiTube</a></li><li><a href="krita.html">Krita</a></li><li><a href="stopmotion.html">Stopmotion</a></li><li><a href="gimp-inkscape.html">GIMP, Inkscape and other image tools</a></li><li><a href="kdenlive.html">Kdenlive</a></li><li><a href="video-tools.html">More video tools</a></li><li><a href="audio.html">Sound and music</a></li><li><a href="upscayl.html">Upscayl</a></li><li><a href="ai-tools.html">AI tools</a></li><li><a href="ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP)</a></li><li><a href="storyboard-publishing.html">Storyboards, print and PDF</a></li><li><a href="system-tools.html">System tools</a></li></ul></details><details><summary>Tutorials</summary><ul><li><a href="../tutorials/first-3d-render.html">Your first 3D render</a></li><li><a href="../tutorials/turntable-animation.html">A turntable animation</a></li><li><a href="../tutorials/character-makehuman.html">A character with MakeHuman</a></li><li><a href="../tutorials/bouncing-ball-synfig.html">A bouncing ball in Synfig</a></li><li><a href="../tutorials/hand-drawn-pencil2d.html">Hand-drawn animation in Pencil2D</a></li><li><a href="../tutorials/krita-animation.html">Paint an animation in Krita</a></li><li><a href="../tutorials/stop-motion-webcam.html">Stop motion with a webcam</a></li><li><a href="../tutorials/edit-video-kdenlive.html">Edit your film in Kdenlive</a></li><li><a href="../tutorials/command-line-rendering.html">Command-line rendering and batch jobs</a></li><li><a href="../tutorials/short-film-workflow.html">From idea to finished short film</a></li></ul></details><details><summary>Help</summary><ul><li><a href="../help/self-test.html">The self-test and sample scenes</a></li><li><a href="../help/troubleshooting.html">Troubleshooting</a></li><li><a href="../help/faq.html">Questions and answers</a></li><li><a href="../help/glossary.html">Glossary</a></li><li><a href="../help/getting-help.html">Getting help</a></li></ul></details><details><summary>For AI Agents</summary><ul><li><a href="../agents/overview.html">The guide for AI agents and programs</a></li><li><a href="../agents/command-reference.html">Command reference</a></li><li><a href="../agents/system-facts.html">System facts</a></li></ul></details><details><summary>News</summary><ul><li><a href="../news/2026-10-30-r16-3-release.html">Animux Genesis64 r16.3</a></li><li><a href="../news/2026-10-29-r16-2-release.html">Animux Genesis64 r16.2</a></li><li><a href="../news/2026-10-27-animux-guide.html">Introducing the Animux Guide</a></li><li><a href="../news/2026-10-26-r16-release.html">Animux Genesis64 r16 is here</a></li></ul></details><details><summary>About</summary><ul><li><a href="../about/versions.html">Versions</a></li><li><a href="../about/licenses.html">Licences and credits</a></li><li><a href="../about/guide-updates.html">Guide updates</a></li></ul></details></nav>
+<main id="main">
+<header class="pagehead"><p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Software</a></p><h1>Pipeline formats and tools</h1><p class="lede">OpenUSD, Alembic, OpenEXR, OpenColorIO, OpenVDB, OSL and MaterialX, what each studio format is for and the tools Animux has for it.</p><p class="meta"><span class="tag">pipeline</span><span class="tag">USD</span><span class="tag">Alembic</span><span class="tag">EXR</span><span class="tag">OpenColorIO</span><span class="tag">OpenVDB</span><span class="tag">OSL</span><span class="tag">MaterialX</span><span class="tag">Python</span></p></header>
+<article class="content">
+<p>Studios pass work between many programs. These open formats, most of them from the <em>Academy Software Foundation</em>, make that possible. Blender reads and writes most of them; Animux adds the command-line tools to check and convert them. Who made each format and why, in one card each: <a href="studio-formats.html">Studio formats</a>.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Holds</th>
+<th>File</th>
+<th>Blender</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OpenUSD</strong></td>
+<td>whole scenes: objects, materials, lights, cameras, layers</td>
+<td><code>.usd .usda .usdc .usdz</code></td>
+<td>File → Import/Export → USD</td>
+</tr>
+<tr>
+<td><strong>Alembic</strong></td>
+<td>baked moving geometry (animation caches)</td>
+<td><code>.abc</code></td>
+<td>File → Import/Export → Alembic</td>
+</tr>
+<tr>
+<td><strong>OpenEXR</strong></td>
+<td>high-quality images, many layers (passes)</td>
+<td><code>.exr</code></td>
+<td>Output file format OpenEXR</td>
+</tr>
+<tr>
+<td><strong>OpenColorIO</strong></td>
+<td>colour spaces and looks</td>
+<td><code>config.ocio</code></td>
+<td>Blender uses OCIO internally</td>
+</tr>
+<tr>
+<td><strong>OpenVDB</strong></td>
+<td>volumes: smoke, fire, clouds</td>
+<td><code>.vdb</code></td>
+<td>Add → Volume → Import OpenVDB</td>
+</tr>
+<tr>
+<td><strong>OSL</strong></td>
+<td>custom materials as code</td>
+<td><code>.osl</code></td>
+<td>Cycles → Script node (CPU)</td>
+</tr>
+<tr>
+<td><strong>MaterialX</strong></td>
+<td>materials shared between programs</td>
+<td><code>.mtlx</code></td>
+<td>via USD export</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="openusd">OpenUSD<a class="headerlink" href="#openusd" title="Permanent link">#</a></h2>
+<p>Universal Scene Description, made by Pixar, is the scene format of modern pipelines (Blender, Houdini, Maya, Omniverse, Unreal).</p>
+<pre><code>usdview /usr/share/animux/samples/usd/animux-scene.usda   # look at a scene
+usdcat scene.usda -o scene.usdc                          # text → binary
+usdcat scene.usdc                                        # print a binary file as text
+usdtree scene.usda                                       # list what is inside
+usdchecker scene.usda                                    # check for errors
+usdzip -a scene.usdz scene.usda                          # package for AR (iPhone)
+</code></pre>
+<figure><a href="../images/usdview.webp"><img src="../images/usdview.webp" alt="usdview showing the Animux sample scene." loading="lazy"></a><figcaption>usdview showing the Animux sample scene.</figcaption></figure>
+<p>Python: <code>animux-vfx-python -c "from pxr import Usd; print(Usd.Stage.Open('scene.usda').GetRootLayer().ExportToString())"</code>.</p>
+<h2 id="alembic">Alembic<a class="headerlink" href="#alembic" title="Permanent link">#</a></h2>
+<pre><code>abcls -r /usr/share/animux/samples/alembic/animux-cube.abc   # list objects
+abctree file.abc                                           # show the hierarchy
+abcecho file.abc                                           # print details
+</code></pre>
+<p>The sample is a cube spinning over 24 frames. Import it in Blender with <strong>File → Import → Alembic</strong>.</p>
+<h2 id="openexr-and-openimageio">OpenEXR and OpenImageIO<a class="headerlink" href="#openexr-and-openimageio" title="Permanent link">#</a></h2>
+<p>EXR keeps real light values (brighter than white) and several <strong>passes</strong> in one file: diffuse, specular, depth, object IDs. Render to EXR, then grade and comp.</p>
+<pre><code>exrheader render.exr                       # what is inside (channels, compression)
+oiiotool render.exr -o render.png          # convert
+oiiotool render.exr --resize 50% -o half.exr
+oiiotool a.exr b.exr --over -o comp.exr    # put a over b
+iinfo -v render.exr
+</code></pre>
+<p>View EXR files with <a href="video-tools.html#djv-review-renders-and-image-sequences">DJV</a>.</p>
+<h2 id="opencolorio">OpenColorIO<a class="headerlink" href="#opencolorio" title="Permanent link">#</a></h2>
+<p>OCIO describes colour spaces (sRGB, ACEScg, Filmic/AgX…) so every program shows the same colours.</p>
+<pre><code>ociocheck --iconfig /usr/share/animux/samples/ocio/config.ocio
+</code></pre>
+<p>Point programs to a config with the <code>OCIO</code> environment variable: <code>OCIO=/path/config.ocio krita</code>.</p>
+<h2 id="openvdb">OpenVDB<a class="headerlink" href="#openvdb" title="Permanent link">#</a></h2>
+<pre><code>vdb_print -l smoke.vdb
+</code></pre>
+<p>Blender writes VDB files from smoke simulations (<em>Physics → Fluid → Cache → Format: OpenVDB</em>).</p>
+<h2 id="osl-open-shading-language">OSL (Open Shading Language)<a class="headerlink" href="#osl-open-shading-language" title="Permanent link">#</a></h2>
+<pre><code>oslc stripes.osl          # compile to stripes.oso
+oslinfo stripes.oso       # list its parameters
+</code></pre>
+<p>In Blender: Cycles, <strong>Device: CPU</strong>, tick <strong>Open Shading Language</strong> in Render properties, then add a <strong>Script</strong> node in the shader editor.</p>
+<h2 id="animux-vfx-python">Animux VFX Python<a class="headerlink" href="#animux-vfx-python" title="Permanent link">#</a></h2>
+<p><code>animux-vfx-python</code> is a Python 3.11 with all these libraries installed together, so scripts work without setup:</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Import as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OpenUSD (usd-core 26.11)</td>
+<td><code>from pxr import Usd, UsdGeom</code></td>
+</tr>
+<tr>
+<td>OpenImageIO 3.2</td>
+<td><code>import OpenImageIO as oiio</code></td>
+</tr>
+<tr>
+<td>OpenEXR 3.5</td>
+<td><code>import OpenEXR</code></td>
+</tr>
+<tr>
+<td>OpenColorIO 2.6</td>
+<td><code>import PyOpenColorIO as ocio</code></td>
+</tr>
+<tr>
+<td>MaterialX 1.39</td>
+<td><code>import MaterialX</code></td>
+</tr>
+<tr>
+<td>Mitsuba 3.9</td>
+<td><code>import mitsuba as mi</code></td>
+</tr>
+<tr>
+<td>LuxCoreRender 2.11</td>
+<td><code>import pyluxcore</code></td>
+</tr>
+<tr>
+<td>NumPy 2.4</td>
+<td><code>import numpy</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>It lives in <code>/opt/animux/vfx-env</code> and is managed by the <code>animux-vfx-python</code> package; do not install into it. For extra libraries make your own environment on top of it: <code>/opt/animux/vfx-env/bin/python -m venv --system-site-packages ~/myenv</code>, then <code>~/myenv/bin/pip install name</code>.</p>
+</article>
+<nav class="prevnext"><a class="prev" href="gaffer.html">← Gaffer</a><a class="next" href="studio-formats.html">Studio formats →</a></nav>
+<footer class="foot"><a href="../md/software/pipeline-formats.md">View this page as Markdown</a> · <a href="../llms.txt">llms.txt</a> · <a href="../api/pages.json">JSON index</a> · Animux Guide 1.0.34 for Genesis64 r16.3, updated 2026-11-04 · <a href="../about/guide-updates.html">What changed</a></footer>
+</main>
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li class="l2"><a href="#openusd">OpenUSD</a></li><li class="l2"><a href="#alembic">Alembic</a></li><li class="l2"><a href="#openexr-and-openimageio">OpenEXR and OpenImageIO</a></li><li class="l2"><a href="#opencolorio">OpenColorIO</a></li><li class="l2"><a href="#openvdb">OpenVDB</a></li><li class="l2"><a href="#osl-open-shading-language">OSL (Open Shading Language)</a></li><li class="l2"><a href="#animux-vfx-python">Animux VFX Python</a></li></ul></nav>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

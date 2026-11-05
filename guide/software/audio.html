@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sound and music — Animux Guide</title>
+<meta name="description" content="Record voices with Audacity, mix the soundtrack in Ardour, compose with LMMS, Hydrogen and MuseScore, and understand how audio works on Animux.">
+<link rel="icon" href="../assets/animux.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="text/markdown" href="../md/software/audio.md" title="This page as Markdown">
+<script>try{var t=localStorage.getItem('animux-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="menu-btn" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><img src="../assets/animux.png" alt="" width="28" height="28"><span>Animux <b>Guide</b></span></a>
+  <a class="site-home" href="../../index.html">← animux.org</a><div class="search"><input id="q" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search the guide"><div id="results" role="listbox"></div></div>
+  <button class="theme-btn" aria-label="Switch light or dark" onclick="animuxTheme()">◐</button>
+</header>
+<div class="wrap">
+<nav class="side" aria-label="Guide sections"><details><summary>Getting Started</summary><ul><li><a href="../start/what-is-animux.html">What is Animux?</a></li><li><a href="../start/at-a-glance.html">Animux at a glance</a></li><li><a href="../start/in-production.html">Used in film production</a></li><li><a href="../start/requirements.html">Computer requirements</a></li><li><a href="../start/get-the-iso.html">Get the ISO file</a></li><li><a href="../start/virtualbox.html">Try Animux in VirtualBox</a></li><li><a href="../start/other-vms.html">Other virtual machines</a></li><li><a href="../start/usb-stick.html">Make a bootable USB stick</a></li><li><a href="../start/boot-menu.html">The boot menu</a></li><li><a href="../start/live-session.html">The live session</a></li><li><a href="../start/install.html">Install Animux on a disk</a></li><li><a href="../start/first-steps.html">First steps after installing</a></li></ul></details><details><summary>Using the Desktop</summary><ul><li><a href="../desktop/tour.html">Desktop tour</a></li><li><a href="../desktop/menu.html">The Animux menu</a></li><li><a href="../desktop/files.html">Files, folders and drives</a></li><li><a href="../desktop/terminal.html">The terminal, gently</a></li><li><a href="../desktop/settings.html">Settings</a></li><li><a href="../desktop/add-software.html">Updates and adding software</a></li><li><a href="../desktop/shortcuts.html">Keyboard shortcuts</a></li></ul></details><details open><summary>Software</summary><ul><li><a href="index.html">All software</a></li><li><a href="blender.html">Blender</a></li><li><a href="makehuman.html">MakeHuman II and MPFB</a></li><li><a href="other-3d.html">FreeCAD, Wings 3D, MeshLab and OpenSCAD</a></li><li><a href="renderers.html">Renderers</a></li><li><a href="renderer-comparison.html">Renderer comparison</a></li><li><a href="flamenco.html">Flamenco render farm</a></li><li><a href="gaffer.html">Gaffer</a></li><li><a href="pipeline-formats.html">Pipeline formats and tools</a></li><li><a href="studio-formats.html">Studio formats</a></li><li><a href="synfig.html">Synfig Studio</a></li><li><a href="opentoonz.html">OpenToonz</a></li><li><a href="pencil2d.html">Pencil2D and TupiTube</a></li><li><a href="krita.html">Krita</a></li><li><a href="stopmotion.html">Stopmotion</a></li><li><a href="gimp-inkscape.html">GIMP, Inkscape and other image tools</a></li><li><a href="kdenlive.html">Kdenlive</a></li><li><a href="video-tools.html">More video tools</a></li><li><a href="audio.html" aria-current=page>Sound and music</a></li><li><a href="upscayl.html">Upscayl</a></li><li><a href="ai-tools.html">AI tools</a></li><li><a href="ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP)</a></li><li><a href="storyboard-publishing.html">Storyboards, print and PDF</a></li><li><a href="system-tools.html">System tools</a></li></ul></details><details><summary>Tutorials</summary><ul><li><a href="../tutorials/first-3d-render.html">Your first 3D render</a></li><li><a href="../tutorials/turntable-animation.html">A turntable animation</a></li><li><a href="../tutorials/character-makehuman.html">A character with MakeHuman</a></li><li><a href="../tutorials/bouncing-ball-synfig.html">A bouncing ball in Synfig</a></li><li><a href="../tutorials/hand-drawn-pencil2d.html">Hand-drawn animation in Pencil2D</a></li><li><a href="../tutorials/krita-animation.html">Paint an animation in Krita</a></li><li><a href="../tutorials/stop-motion-webcam.html">Stop motion with a webcam</a></li><li><a href="../tutorials/edit-video-kdenlive.html">Edit your film in Kdenlive</a></li><li><a href="../tutorials/command-line-rendering.html">Command-line rendering and batch jobs</a></li><li><a href="../tutorials/short-film-workflow.html">From idea to finished short film</a></li></ul></details><details><summary>Help</summary><ul><li><a href="../help/self-test.html">The self-test and sample scenes</a></li><li><a href="../help/troubleshooting.html">Troubleshooting</a></li><li><a href="../help/faq.html">Questions and answers</a></li><li><a href="../help/glossary.html">Glossary</a></li><li><a href="../help/getting-help.html">Getting help</a></li></ul></details><details><summary>For AI Agents</summary><ul><li><a href="../agents/overview.html">The guide for AI agents and programs</a></li><li><a href="../agents/command-reference.html">Command reference</a></li><li><a href="../agents/system-facts.html">System facts</a></li></ul></details><details><summary>News</summary><ul><li><a href="../news/2026-10-30-r16-3-release.html">Animux Genesis64 r16.3</a></li><li><a href="../news/2026-10-29-r16-2-release.html">Animux Genesis64 r16.2</a></li><li><a href="../news/2026-10-27-animux-guide.html">Introducing the Animux Guide</a></li><li><a href="../news/2026-10-26-r16-release.html">Animux Genesis64 r16 is here</a></li></ul></details><details><summary>About</summary><ul><li><a href="../about/versions.html">Versions</a></li><li><a href="../about/licenses.html">Licences and credits</a></li><li><a href="../about/guide-updates.html">Guide updates</a></li></ul></details></nav>
+<main id="main">
+<header class="pagehead"><p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Software</a></p><h1>Sound and music</h1><p class="lede">Record voices with Audacity, mix the soundtrack in Ardour, compose with LMMS, Hydrogen and MuseScore, and understand how audio works on Animux.</p><p class="meta"><span class="tag">audio</span><span class="tag">sound</span><span class="tag">music</span><span class="tag">Audacity</span><span class="tag">Ardour</span><span class="tag">LMMS</span><span class="tag">JACK</span><span class="tag">PipeWire</span></p></header>
+<article class="content">
+<div class="table"><table>
+<thead>
+<tr>
+<th>Program</th>
+<th>Use it to</th>
+<th>Start</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Audacity</strong> 3.2</td>
+<td>record and clean up dialogue and sound effects (easiest)</td>
+<td><code>audacity</code></td>
+</tr>
+<tr>
+<td><strong>Ardour</strong> 7.3</td>
+<td>record and mix many tracks, the full soundtrack of a film, with effects and automation</td>
+<td><code>ardour</code></td>
+</tr>
+<tr>
+<td><strong>LMMS</strong> 1.2</td>
+<td>compose music with built-in synthesizers, beats and samples</td>
+<td><code>lmms</code></td>
+</tr>
+<tr>
+<td><strong>Hydrogen</strong> 1.2</td>
+<td>program drum rhythms</td>
+<td><code>hydrogen</code></td>
+</tr>
+<tr>
+<td><strong>MuseScore 3</strong></td>
+<td>write sheet music and play it back</td>
+<td><code>mscore3</code></td>
+</tr>
+<tr>
+<td><strong>Rosegarden</strong></td>
+<td>MIDI sequencing and scoring</td>
+<td><code>rosegarden</code></td>
+</tr>
+<tr>
+<td><strong>ZynAddSubFX, Yoshimi, Qsynth, Guitarix, VMPK</strong></td>
+<td>software instruments, guitar amp, on-screen keyboard</td>
+<td>menu</td>
+</tr>
+<tr>
+<td><strong>Sonic Visualiser, Praat</strong></td>
+<td>look at sound; Praat analyses speech (useful for lip sync timing)</td>
+<td>menu</td>
+</tr>
+<tr>
+<td><strong>SoundConverter, SoX</strong></td>
+<td>convert sound files</td>
+<td><code>soundconverter</code>, <code>sox</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>All are in <strong>Sound Engineering</strong>.</p>
+<h2 id="audacity-record-a-voice-over">Audacity: record a voice-over<a class="headerlink" href="#audacity-record-a-voice-over" title="Permanent link">#</a></h2>
+<figure><a href="../images/audacity.webp"><img src="../images/audacity.webp" alt="Audacity. The first time it shows a welcome window with links to help; click OK." loading="lazy"></a><figcaption>Audacity. The first time it shows a welcome window with links to help; click OK.</figcaption></figure>
+<ol>
+<li>Plug in a microphone (a USB microphone or headset is easiest). Choose it in the <strong>microphone</strong> list on the toolbar.</li>
+<li>Click the red <strong>Record</strong> button, speak, click <strong>Stop</strong>.</li>
+<li>Clean it: select a quiet part → <strong>Effect → Noise Removal and Repair → Noise Reduction → Get Noise Profile</strong>; select everything (Ctrl+A) → Noise Reduction → <strong>OK</strong>. Then <strong>Effect → Volume and Compression → Normalize</strong>.</li>
+<li><strong>File → Export → Export as WAV</strong> (best for editing) or MP3.</li>
+</ol>
+<h2 id="ardour-mix-the-soundtrack">Ardour: mix the soundtrack<a class="headerlink" href="#ardour-mix-the-soundtrack" title="Permanent link">#</a></h2>
+<figure><a href="../images/ardour-first.webp"><img src="../images/ardour-first.webp" alt="The first time, Ardour runs a short setup assistant: click Forward through it (the defaults are fine)." loading="lazy"></a><figcaption>The first time, Ardour runs a short setup assistant: click Forward through it (the defaults are fine).</figcaption></figure>
+<p>When Ardour starts it asks for a <strong>session</strong> (project) and the <strong>audio system</strong>: choose <strong>JACK/PipeWire</strong> or <strong>ALSA</strong> (see below). Add tracks with <strong>Track → Add Track, Bus or VCA</strong>, import the dialogue, music and effects with <strong>Session → Import</strong>, and set levels in the <strong>Mixer</strong> window (Alt+M). <strong>Session → Export → Export to Audio File(s)</strong> writes the final mix.</p>
+<p>To line up sound with picture inside Ardour, <strong>Session → Open Video</strong> needs the extra programs <em>harvid</em> and <em>xjadeo</em>, which are not included. The easier way: edit the final mix against the picture in <a href="kdenlive.html">Kdenlive</a>.</p>
+<h2 id="lmms-and-hydrogen-make-music">LMMS and Hydrogen: make music<a class="headerlink" href="#lmms-and-hydrogen-make-music" title="Permanent link">#</a></h2>
+<figure><a href="../images/lmms-first.webp"><img src="../images/lmms-first.webp" alt="The first time, LMMS asks to create its working folder in Documents: click Yes." loading="lazy"></a><figcaption>The first time, LMMS asks to create its working folder in Documents: click Yes.</figcaption></figure>
+<p>In <strong>LMMS</strong>, drag an instrument (for example <em>TripleOscillator</em>) from the left into the <strong>Song Editor</strong>, double-click its pattern to open the <strong>Piano Roll</strong> and draw notes. The <strong>Beat+Bassline Editor</strong> is for drum patterns. <strong>File → Export</strong> writes WAV or OGG.</p>
+<p>In <strong>Hydrogen</strong>, click squares in the pattern grid to place drum hits; chain patterns in the song editor.</p>
+<h2 id="how-audio-works-on-animux">How audio works on Animux<a class="headerlink" href="#how-audio-works-on-animux" title="Permanent link">#</a></h2>
+<p>Animux uses <strong>PipeWire</strong>, which plays the roles of PulseAudio (normal desktop sound) and JACK (professional low-latency audio) at once. Normally you do nothing.</p>
+<ul>
+<li><strong>Volume and devices</strong>: the speaker icon on the panel, and <strong>PulseAudio Volume Control</strong> (<em>Sound Engineering → Sound Server Configuration</em>): choose the output (speakers, HDMI, headphones) and input (microphone) on the <em>Output Devices</em>, <em>Input Devices</em> and <em>Configuration</em> tabs.</li>
+<li><strong>JACK programs</strong> (Ardour, Hydrogen, Qsynth…) connect to PipeWire's JACK service automatically. If a program cannot find JACK, start it with <code>pw-jack</code>, for example <code>pw-jack hydrogen</code>.</li>
+<li><strong>QjackCtl</strong> shows and changes connections between audio programs (the <strong>Graph</strong> button).</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Crackling sound while recording</p>
+<p>Close other programs. In Ardour choose a larger buffer size (512 or 1024 samples). In a virtual machine audio is often unreliable; record on a real computer if you can.</p>
+</div>
+<h2 id="sound-for-animation-tips">Sound for animation: tips<a class="headerlink" href="#sound-for-animation-tips" title="Permanent link">#</a></h2>
+<ul>
+<li>Record dialogue <strong>before</strong> animating, then animate to it (lip sync). Import the WAV in Blender's timeline (<em>Add → Sound</em> in the Video Sequencer) or in Pencil2D's sound layer.</li>
+<li>Use <strong>48 kHz WAV</strong> files throughout; it is the film and video standard.</li>
+<li>Free sound effects and music: <a href="https://freesound.org/">https://freesound.org/</a>, <a href="https://opengameart.org/">https://opengameart.org/</a>, <a href="https://freemusicarchive.org/">https://freemusicarchive.org/</a>. Check each licence.</li>
+</ul>
+</article>
+<nav class="prevnext"><a class="prev" href="video-tools.html">← More video tools</a><a class="next" href="upscayl.html">Upscayl →</a></nav>
+<footer class="foot"><a href="../md/software/audio.md">View this page as Markdown</a> · <a href="../llms.txt">llms.txt</a> · <a href="../api/pages.json">JSON index</a> · Animux Guide 1.0.34 for Genesis64 r16.3, updated 2026-11-04 · <a href="../about/guide-updates.html">What changed</a></footer>
+</main>
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li class="l2"><a href="#audacity-record-a-voice-over">Audacity: record a voice-over</a></li><li class="l2"><a href="#ardour-mix-the-soundtrack">Ardour: mix the soundtrack</a></li><li class="l2"><a href="#lmms-and-hydrogen-make-music">LMMS and Hydrogen: make music</a></li><li class="l2"><a href="#how-audio-works-on-animux">How audio works on Animux</a></li><li class="l2"><a href="#sound-for-animation-tips">Sound for animation: tips</a></li></ul></nav>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

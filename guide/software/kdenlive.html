@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kdenlive — Animux Guide</title>
+<meta name="description" content="The recommended video editor on Animux. Put shots and sound on a timeline, add titles and transitions, and export an MP4 for YouTube or a festival.">
+<link rel="icon" href="../assets/animux.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="text/markdown" href="../md/software/kdenlive.md" title="This page as Markdown">
+<script>try{var t=localStorage.getItem('animux-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="menu-btn" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><img src="../assets/animux.png" alt="" width="28" height="28"><span>Animux <b>Guide</b></span></a>
+  <a class="site-home" href="../../index.html">← animux.org</a><div class="search"><input id="q" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search the guide"><div id="results" role="listbox"></div></div>
+  <button class="theme-btn" aria-label="Switch light or dark" onclick="animuxTheme()">◐</button>
+</header>
+<div class="wrap">
+<nav class="side" aria-label="Guide sections"><details><summary>Getting Started</summary><ul><li><a href="../start/what-is-animux.html">What is Animux?</a></li><li><a href="../start/at-a-glance.html">Animux at a glance</a></li><li><a href="../start/in-production.html">Used in film production</a></li><li><a href="../start/requirements.html">Computer requirements</a></li><li><a href="../start/get-the-iso.html">Get the ISO file</a></li><li><a href="../start/virtualbox.html">Try Animux in VirtualBox</a></li><li><a href="../start/other-vms.html">Other virtual machines</a></li><li><a href="../start/usb-stick.html">Make a bootable USB stick</a></li><li><a href="../start/boot-menu.html">The boot menu</a></li><li><a href="../start/live-session.html">The live session</a></li><li><a href="../start/install.html">Install Animux on a disk</a></li><li><a href="../start/first-steps.html">First steps after installing</a></li></ul></details><details><summary>Using the Desktop</summary><ul><li><a href="../desktop/tour.html">Desktop tour</a></li><li><a href="../desktop/menu.html">The Animux menu</a></li><li><a href="../desktop/files.html">Files, folders and drives</a></li><li><a href="../desktop/terminal.html">The terminal, gently</a></li><li><a href="../desktop/settings.html">Settings</a></li><li><a href="../desktop/add-software.html">Updates and adding software</a></li><li><a href="../desktop/shortcuts.html">Keyboard shortcuts</a></li></ul></details><details open><summary>Software</summary><ul><li><a href="index.html">All software</a></li><li><a href="blender.html">Blender</a></li><li><a href="makehuman.html">MakeHuman II and MPFB</a></li><li><a href="other-3d.html">FreeCAD, Wings 3D, MeshLab and OpenSCAD</a></li><li><a href="renderers.html">Renderers</a></li><li><a href="renderer-comparison.html">Renderer comparison</a></li><li><a href="flamenco.html">Flamenco render farm</a></li><li><a href="gaffer.html">Gaffer</a></li><li><a href="pipeline-formats.html">Pipeline formats and tools</a></li><li><a href="studio-formats.html">Studio formats</a></li><li><a href="synfig.html">Synfig Studio</a></li><li><a href="opentoonz.html">OpenToonz</a></li><li><a href="pencil2d.html">Pencil2D and TupiTube</a></li><li><a href="krita.html">Krita</a></li><li><a href="stopmotion.html">Stopmotion</a></li><li><a href="gimp-inkscape.html">GIMP, Inkscape and other image tools</a></li><li><a href="kdenlive.html" aria-current=page>Kdenlive</a></li><li><a href="video-tools.html">More video tools</a></li><li><a href="audio.html">Sound and music</a></li><li><a href="upscayl.html">Upscayl</a></li><li><a href="ai-tools.html">AI tools</a></li><li><a href="ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP)</a></li><li><a href="storyboard-publishing.html">Storyboards, print and PDF</a></li><li><a href="system-tools.html">System tools</a></li></ul></details><details><summary>Tutorials</summary><ul><li><a href="../tutorials/first-3d-render.html">Your first 3D render</a></li><li><a href="../tutorials/turntable-animation.html">A turntable animation</a></li><li><a href="../tutorials/character-makehuman.html">A character with MakeHuman</a></li><li><a href="../tutorials/bouncing-ball-synfig.html">A bouncing ball in Synfig</a></li><li><a href="../tutorials/hand-drawn-pencil2d.html">Hand-drawn animation in Pencil2D</a></li><li><a href="../tutorials/krita-animation.html">Paint an animation in Krita</a></li><li><a href="../tutorials/stop-motion-webcam.html">Stop motion with a webcam</a></li><li><a href="../tutorials/edit-video-kdenlive.html">Edit your film in Kdenlive</a></li><li><a href="../tutorials/command-line-rendering.html">Command-line rendering and batch jobs</a></li><li><a href="../tutorials/short-film-workflow.html">From idea to finished short film</a></li></ul></details><details><summary>Help</summary><ul><li><a href="../help/self-test.html">The self-test and sample scenes</a></li><li><a href="../help/troubleshooting.html">Troubleshooting</a></li><li><a href="../help/faq.html">Questions and answers</a></li><li><a href="../help/glossary.html">Glossary</a></li><li><a href="../help/getting-help.html">Getting help</a></li></ul></details><details><summary>For AI Agents</summary><ul><li><a href="../agents/overview.html">The guide for AI agents and programs</a></li><li><a href="../agents/command-reference.html">Command reference</a></li><li><a href="../agents/system-facts.html">System facts</a></li></ul></details><details><summary>News</summary><ul><li><a href="../news/2026-10-30-r16-3-release.html">Animux Genesis64 r16.3</a></li><li><a href="../news/2026-10-29-r16-2-release.html">Animux Genesis64 r16.2</a></li><li><a href="../news/2026-10-27-animux-guide.html">Introducing the Animux Guide</a></li><li><a href="../news/2026-10-26-r16-release.html">Animux Genesis64 r16 is here</a></li></ul></details><details><summary>About</summary><ul><li><a href="../about/versions.html">Versions</a></li><li><a href="../about/licenses.html">Licences and credits</a></li><li><a href="../about/guide-updates.html">Guide updates</a></li></ul></details></nav>
+<main id="main">
+<header class="pagehead"><p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Software</a></p><h1>Kdenlive</h1><p class="lede">The recommended video editor on Animux. Put shots and sound on a timeline, add titles and transitions, and export an MP4 for YouTube or a festival.</p><p class="meta"><span class="tag">video</span><span class="tag">editing</span><span class="tag">timeline</span><span class="tag">export</span><span class="tag">MP4</span></p></header>
+<article class="content">
+<div class="factbox">
+<div class="table"><table>
+<thead>
+<tr>
+<th>Kdenlive</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Menu</td>
+<td>NLV Editors → Kdenlive</td>
+</tr>
+<tr>
+<td>Version</td>
+<td>22.12.3</td>
+</tr>
+<tr>
+<td>Command</td>
+<td><code>kdenlive</code></td>
+</tr>
+<tr>
+<td>Good for</td>
+<td>Beginner</td>
+</tr>
+<tr>
+<td>Files</td>
+<td>.kdenlive projects; almost every video, audio and image format</td>
+</tr>
+<tr>
+<td>Licence</td>
+<td>GPL-3.0</td>
+</tr>
+<tr>
+<td>Website</td>
+<td><a href="https://kdenlive.org/">kdenlive.org</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>When your shots are rendered, a <strong>video editor</strong> puts them together with dialogue, music and titles. <strong>Kdenlive</strong> is powerful and still easy to start with.</p>
+<figure><a href="../images/kdenlive.webp"><img src="../images/kdenlive.webp" alt="Kdenlive with the turntable animation in the project bin and on the timeline." loading="lazy"></a><figcaption>Kdenlive with the turntable animation in the project bin and on the timeline.</figcaption></figure>
+<h2 id="the-window">The window<a class="headerlink" href="#the-window" title="Permanent link">#</a></h2>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Project Bin</strong> (top left)</td>
+<td>all your clips: videos, image sequences, sound, titles</td>
+</tr>
+<tr>
+<td><strong>Clip Monitor / Project Monitor</strong> (top right)</td>
+<td>play the selected clip / the whole edit</td>
+</tr>
+<tr>
+<td><strong>Effects, Transitions</strong> (tabs)</td>
+<td>drag them onto clips</td>
+</tr>
+<tr>
+<td><strong>Timeline</strong> (bottom)</td>
+<td>video tracks (V1, V2…) and audio tracks (A1, A2…)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="edit-a-film-in-six-steps">Edit a film in six steps<a class="headerlink" href="#edit-a-film-in-six-steps" title="Permanent link">#</a></h2>
+<ol>
+<li><strong>Project → Project Settings</strong>: choose the format of your film, for example <em>HD 1080p 24 fps</em>. Do this first.</li>
+<li><strong>Add clips</strong>: right-click in the Project Bin → <strong>Add Clip or Folder</strong> (or drag files from the file manager). For a numbered <strong>image sequence</strong> (<code>0001.png</code>, <code>0002.png</code>…), tick <strong>Import image sequence</strong> in the file dialog.</li>
+<li><strong>Drag clips to the timeline</strong> in order. Trim a clip by dragging its ends; cut at the playhead with <strong>Shift+R</strong>.</li>
+<li><strong>Sound</strong>: drag music and dialogue onto the audio tracks. Change volume with the <em>Volume</em> effect or the clip's line.</li>
+<li><strong>Titles</strong>: right-click the Bin → <strong>Add Title Clip</strong>. <strong>Transitions</strong>: overlap two clips on different tracks and add a <em>Dissolve</em> (<em>Wipe</em>, …).</li>
+<li><strong>Export</strong>: <strong>Project → Render</strong> (Ctrl+Enter) → preset <strong>MP4-H264/AAC</strong> → choose the file name → <strong>Render to File</strong>.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Big projects run slowly?</p>
+<p>Turn on <strong>proxy clips</strong> (<em>Project Settings → Proxy</em>). Kdenlive edits small copies and uses the originals only for the final render.</p>
+</div>
+<h2 id="good-export-settings">Good export settings<a class="headerlink" href="#good-export-settings" title="Permanent link">#</a></h2>
+<div class="table"><table>
+<thead>
+<tr>
+<th>For</th>
+<th>Settings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>YouTube / Vimeo</td>
+<td>MP4-H264/AAC, same resolution and frame rate as the project, quality 18–23</td>
+</tr>
+<tr>
+<td>Festival / archive</td>
+<td>ProRes or DNxHR (in the render presets) or a PNG image sequence + WAV</td>
+</tr>
+<tr>
+<td>Phone / messaging</td>
+<td>MP4-H264, 1280×720</td>
+</tr>
+</tbody>
+</table></div>
+<p>Kdenlive also renders from the command line using the <code>melt</code> program it is built on.</p>
+<p>Learn more: <a href="https://docs.kdenlive.org/">https://docs.kdenlive.org/</a> · Tutorial: <a href="../tutorials/edit-video-kdenlive.html">Edit your film in Kdenlive</a>.</p>
+</article>
+<nav class="prevnext"><a class="prev" href="gimp-inkscape.html">← GIMP, Inkscape and other image tools</a><a class="next" href="video-tools.html">More video tools →</a></nav>
+<footer class="foot"><a href="../md/software/kdenlive.md">View this page as Markdown</a> · <a href="../llms.txt">llms.txt</a> · <a href="../api/pages.json">JSON index</a> · Animux Guide 1.0.34 for Genesis64 r16.3, updated 2026-11-04 · <a href="../about/guide-updates.html">What changed</a></footer>
+</main>
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li class="l2"><a href="#the-window">The window</a></li><li class="l2"><a href="#edit-a-film-in-six-steps">Edit a film in six steps</a></li><li class="l2"><a href="#good-export-settings">Good export settings</a></li></ul></nav>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

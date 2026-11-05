@@ -1,0 +1,1094 @@
+{
+ "site": "Animux Guide",
+ "version": "1.0.34",
+ "release": "r16.3 (animux-genesis64-deb_28.iso)",
+ "built": "2026-11-04",
+ "sections": [
+  {
+   "id": "start",
+   "title": "Getting Started",
+   "description": "Try Animux in a virtual machine or from a USB stick, then install it."
+  },
+  {
+   "id": "desktop",
+   "title": "Using the Desktop",
+   "description": "Menus, files, settings and adding software."
+  },
+  {
+   "id": "software",
+   "title": "Software",
+   "description": "Every program on Animux: what it is for and how to start it."
+  },
+  {
+   "id": "tutorials",
+   "title": "Tutorials",
+   "description": "Step-by-step projects, from a first render to a finished short film."
+  },
+  {
+   "id": "help",
+   "title": "Help",
+   "description": "Self-test, troubleshooting, questions and answers, glossary."
+  },
+  {
+   "id": "agents",
+   "title": "For AI Agents",
+   "description": "How programs and AI agents can read this guide and drive Animux."
+  },
+  {
+   "id": "news",
+   "title": "News",
+   "description": "Release notes and announcements."
+  },
+  {
+   "id": "about",
+   "title": "About",
+   "description": "Versions, licences and credits."
+  }
+ ],
+ "pages": [
+  {
+   "id": "index",
+   "title": "Animux Guide",
+   "summary": "Everything you need to make animation on Animux, from your first boot to a finished film.",
+   "section": "",
+   "tags": [],
+   "html": "index.html",
+   "markdown": "md/index.md"
+  },
+  {
+   "id": "start/what-is-animux",
+   "title": "What is Animux?",
+   "summary": "A free, complete studio for animators on one disc image. What is inside, what you need and how you can use it.",
+   "section": "start",
+   "tags": [
+    "beginner",
+    "overview"
+   ],
+   "html": "start/what-is-animux.html",
+   "markdown": "md/start/what-is-animux.md"
+  },
+  {
+   "id": "start/at-a-glance",
+   "title": "Animux at a glance",
+   "summary": "All programs on one screen, in the order of an animation production, on the Debian 12 base.",
+   "section": "start",
+   "tags": [
+    "overview",
+    "software",
+    "pipeline"
+   ],
+   "html": "start/at-a-glance.html",
+   "markdown": "md/start/at-a-glance.md"
+  },
+  {
+   "id": "start/in-production",
+   "title": "Used in film production",
+   "summary": "Films and studios whose storyboards, textures, frame fixes, colour and 3D were made with programs that Animux ships, with the sources.",
+   "section": "start",
+   "tags": [
+    "overview",
+    "film",
+    "production",
+    "krita",
+    "gimp",
+    "opentoonz",
+    "ghibli",
+    "blender",
+    "flow",
+    "ubisoft",
+    "history"
+   ],
+   "html": "start/in-production.html",
+   "markdown": "md/start/in-production.md"
+  },
+  {
+   "id": "start/requirements",
+   "title": "Computer requirements",
+   "summary": "Check your processor, memory, disk and graphics card before you start, and learn what each one affects.",
+   "section": "start",
+   "tags": [
+    "beginner",
+    "hardware"
+   ],
+   "html": "start/requirements.html",
+   "markdown": "md/start/requirements.md"
+  },
+  {
+   "id": "start/get-the-iso",
+   "title": "Get the ISO file",
+   "summary": "Download Animux, check that the download is complete and undamaged, and know which file is the newest.",
+   "section": "start",
+   "tags": [
+    "beginner",
+    "download"
+   ],
+   "html": "start/get-the-iso.html",
+   "markdown": "md/start/get-the-iso.md"
+  },
+  {
+   "id": "start/virtualbox",
+   "title": "Try Animux in VirtualBox",
+   "summary": "Create a virtual machine with its own 80 GB virtual disk, start Animux from the ISO file and, if you like, install it, all without touching your real computer.",
+   "section": "start",
+   "tags": [
+    "beginner",
+    "virtual machine",
+    "VirtualBox",
+    "Windows",
+    "macOS"
+   ],
+   "html": "start/virtualbox.html",
+   "markdown": "md/start/virtualbox.md"
+  },
+  {
+   "id": "start/other-vms",
+   "title": "Other virtual machines",
+   "summary": "Settings for QEMU and virt-manager, VMware, Hyper-V and Parallels, and the one setting that matters most for 3D programs.",
+   "section": "start",
+   "tags": [
+    "virtual machine",
+    "QEMU",
+    "VMware",
+    "Hyper-V"
+   ],
+   "html": "start/other-vms.html",
+   "markdown": "md/start/other-vms.md"
+  },
+  {
+   "id": "start/usb-stick",
+   "title": "Make a bootable USB stick",
+   "summary": "Step by step - write the Animux ISO to a USB stick with Rufus, balenaEtcher or Ventoy, start a computer from it, and fix the usual problems.",
+   "section": "start",
+   "tags": [
+    "beginner",
+    "USB",
+    "boot",
+    "live",
+    "Rufus",
+    "Etcher",
+    "Ventoy"
+   ],
+   "html": "start/usb-stick.html",
+   "markdown": "md/start/usb-stick.md"
+  },
+  {
+   "id": "start/boot-menu",
+   "title": "The boot menu",
+   "summary": "What each entry in the Animux start menu does, and which one to choose when the screen stays black.",
+   "section": "start",
+   "tags": [
+    "beginner",
+    "boot",
+    "GRUB",
+    "render farm"
+   ],
+   "html": "start/boot-menu.html",
+   "markdown": "md/start/boot-menu.md"
+  },
+  {
+   "id": "start/live-session",
+   "title": "The live session",
+   "summary": "Animux running straight from the USB stick or ISO. The user name and password, what is kept, what is lost, and how to save work.",
+   "section": "start",
+   "tags": [
+    "beginner",
+    "live",
+    "USB"
+   ],
+   "html": "start/live-session.html",
+   "markdown": "md/start/live-session.md"
+  },
+  {
+   "id": "start/install",
+   "title": "Install Animux on a disk",
+   "summary": "Step-by-step through the installer, with screenshots, for a whole disk, a virtual disk or next to Windows.",
+   "section": "start",
+   "tags": [
+    "beginner",
+    "install",
+    "Calamares",
+    "dual boot"
+   ],
+   "html": "start/install.html",
+   "markdown": "md/start/install.md"
+  },
+  {
+   "id": "start/first-steps",
+   "title": "First steps after installing",
+   "summary": "A ten-minute checklist for a freshly installed Animux, covering updates, the screen, the self-test, a project folder and backups.",
+   "section": "start",
+   "tags": [
+    "beginner",
+    "install",
+    "checklist"
+   ],
+   "html": "start/first-steps.html",
+   "markdown": "md/start/first-steps.md"
+  },
+  {
+   "id": "desktop/tour",
+   "title": "Desktop tour",
+   "summary": "The top panel, the Animux menu, the dock and the desktop icons, explained one by one.",
+   "section": "desktop",
+   "tags": [
+    "beginner",
+    "desktop",
+    "Xfce"
+   ],
+   "html": "desktop/tour.html",
+   "markdown": "md/desktop/tour.md"
+  },
+  {
+   "id": "desktop/menu",
+   "title": "The Animux menu",
+   "summary": "A map of every menu category, so you know where to find the program for each job in an animation production.",
+   "section": "desktop",
+   "tags": [
+    "beginner",
+    "menu",
+    "programs"
+   ],
+   "html": "desktop/menu.html",
+   "markdown": "md/desktop/menu.md"
+  },
+  {
+   "id": "desktop/files",
+   "title": "Files, folders and drives",
+   "summary": "Where your work is stored, how to use the file manager, USB drives and network shares, and a sensible folder layout for animation projects.",
+   "section": "desktop",
+   "tags": [
+    "beginner",
+    "files",
+    "Thunar",
+    "USB",
+    "backup"
+   ],
+   "html": "desktop/files.html",
+   "markdown": "md/desktop/files.md"
+  },
+  {
+   "id": "desktop/terminal",
+   "title": "The terminal, gently",
+   "summary": "The twelve commands an animator actually needs, how to copy and paste them, and how sudo works.",
+   "section": "desktop",
+   "tags": [
+    "beginner",
+    "terminal",
+    "command line"
+   ],
+   "html": "desktop/terminal.html",
+   "markdown": "md/desktop/terminal.md"
+  },
+  {
+   "id": "desktop/settings",
+   "title": "Settings",
+   "summary": "Screen resolution, several monitors, keyboard layout, mouse and tablet, sound, language, Wi-Fi, printers and power.",
+   "section": "desktop",
+   "tags": [
+    "beginner",
+    "settings",
+    "display",
+    "keyboard",
+    "sound"
+   ],
+   "html": "desktop/settings.html",
+   "markdown": "md/desktop/settings.md"
+  },
+  {
+   "id": "desktop/add-software",
+   "title": "Updates and adding software",
+   "summary": "Keep Animux up to date and install more programs with Synaptic, apt or Flatpak, including DaVinci Resolve and the NVIDIA driver.",
+   "section": "desktop",
+   "tags": [
+    "updates",
+    "apt",
+    "Synaptic",
+    "Flatpak",
+    "NVIDIA"
+   ],
+   "html": "desktop/add-software.html",
+   "markdown": "md/desktop/add-software.md"
+  },
+  {
+   "id": "desktop/shortcuts",
+   "title": "Keyboard shortcuts",
+   "summary": "A cheat sheet for the desktop and for the shortcuts animators use most in Blender, Krita, Pencil2D and Kdenlive.",
+   "section": "desktop",
+   "tags": [
+    "beginner",
+    "shortcuts",
+    "cheat sheet"
+   ],
+   "html": "desktop/shortcuts.html",
+   "markdown": "md/desktop/shortcuts.md"
+  },
+  {
+   "id": "software/index",
+   "title": "All software",
+   "summary": "Every program on Animux by job, with what it does and the command that starts it.",
+   "section": "software",
+   "tags": [
+    "software",
+    "list",
+    "catalogue"
+   ],
+   "html": "software/index.html",
+   "markdown": "md/software/index.md"
+  },
+  {
+   "id": "software/blender",
+   "title": "Blender",
+   "summary": "The 3D studio at the heart of Animux. Blender 5.2 LTS with Cycles, EEVEE, Grease Pencil and the MPFB character add-on, and how to find your way around it.",
+   "section": "software",
+   "tags": [
+    "3D",
+    "animation",
+    "rendering",
+    "Cycles",
+    "EEVEE",
+    "Grease Pencil"
+   ],
+   "html": "software/blender.html",
+   "markdown": "md/software/blender.md",
+   "software": "blender"
+  },
+  {
+   "id": "software/makehuman",
+   "title": "MakeHuman II and MPFB",
+   "summary": "Make realistic human characters with sliders, either in the stand-alone MakeHuman II or with the MPFB add-on directly inside Blender.",
+   "section": "software",
+   "tags": [
+    "3D",
+    "character",
+    "MakeHuman",
+    "MPFB",
+    "Blender"
+   ],
+   "html": "software/makehuman.html",
+   "markdown": "md/software/makehuman.md",
+   "software": "makehuman2"
+  },
+  {
+   "id": "software/other-3d",
+   "title": "FreeCAD, Wings 3D, MeshLab and OpenSCAD",
+   "summary": "The other 3D modellers on Animux and when each one is the right tool next to Blender.",
+   "section": "software",
+   "tags": [
+    "3D",
+    "CAD",
+    "modelling",
+    "meshes"
+   ],
+   "html": "software/other-3d.html",
+   "markdown": "md/software/other-3d.md"
+  },
+  {
+   "id": "software/renderers",
+   "title": "Renderers",
+   "summary": "Cycles, EEVEE, POV-Ray, LuxCoreRender, Mitsuba 3, appleseed and pbrt-v4. What each one is good at, how to run its sample scene, and which one to choose.",
+   "section": "software",
+   "tags": [
+    "rendering",
+    "Cycles",
+    "POV-Ray",
+    "LuxCore",
+    "Mitsuba",
+    "appleseed",
+    "pbrt"
+   ],
+   "html": "software/renderers.html",
+   "markdown": "md/software/renderers.md"
+  },
+  {
+   "id": "software/renderer-comparison",
+   "title": "Renderer comparison",
+   "summary": "The seven renderers in Animux side by side: full name, who makes it, how it calculates light, what it runs on, what it does best and when to use it.",
+   "section": "software",
+   "tags": [
+    "rendering",
+    "renderers",
+    "comparison",
+    "Cycles",
+    "EEVEE",
+    "POV-Ray",
+    "LuxCore",
+    "Mitsuba",
+    "appleseed",
+    "pbrt",
+    "OSL",
+    "matrix"
+   ],
+   "html": "software/renderer-comparison.html",
+   "markdown": "md/software/renderer-comparison.md"
+  },
+  {
+   "id": "software/flamenco",
+   "title": "Flamenco render farm",
+   "summary": "Let several computers render one Blender animation together, using Flamenco Manager, Workers and shared storage, and the Animux render farm boot roles.",
+   "section": "software",
+   "tags": [
+    "render farm",
+    "Flamenco",
+    "Blender",
+    "network"
+   ],
+   "html": "software/flamenco.html",
+   "markdown": "md/software/flamenco.md",
+   "software": "flamenco"
+  },
+  {
+   "id": "software/gaffer",
+   "title": "Gaffer",
+   "summary": "The node-based lighting and look-development tool used by film studios, included with Cortex, OSL, OpenUSD and Alembic, and rendering with Cycles.",
+   "section": "software",
+   "tags": [
+    "pipeline",
+    "lighting",
+    "look development",
+    "nodes",
+    "USD",
+    "studio"
+   ],
+   "html": "software/gaffer.html",
+   "markdown": "md/software/gaffer.md",
+   "software": "gaffer"
+  },
+  {
+   "id": "software/pipeline-formats",
+   "title": "Pipeline formats and tools",
+   "summary": "OpenUSD, Alembic, OpenEXR, OpenColorIO, OpenVDB, OSL and MaterialX, what each studio format is for and the tools Animux has for it.",
+   "section": "software",
+   "tags": [
+    "pipeline",
+    "USD",
+    "Alembic",
+    "EXR",
+    "OpenColorIO",
+    "OpenVDB",
+    "OSL",
+    "MaterialX",
+    "Python"
+   ],
+   "html": "software/pipeline-formats.html",
+   "markdown": "md/software/pipeline-formats.md"
+  },
+  {
+   "id": "software/studio-formats",
+   "title": "Studio formats",
+   "summary": "OpenUSD, Alembic, OpenEXR, OpenColorIO and OpenVDB, one card each: which studio made it, what problem it solves, and what it looks like in Animux.",
+   "section": "software",
+   "tags": [
+    "pipeline",
+    "formats",
+    "USD",
+    "Pixar",
+    "Alembic",
+    "OpenEXR",
+    "OpenColorIO",
+    "ACES",
+    "OpenVDB",
+    "ASWF",
+    "studio"
+   ],
+   "html": "software/studio-formats.html",
+   "markdown": "md/software/studio-formats.md"
+  },
+  {
+   "id": "software/synfig",
+   "title": "Synfig Studio",
+   "summary": "2D vector animation with automatic in-between frames and bone rigs. Ideal for cut-out characters, motion graphics and explainer films.",
+   "section": "software",
+   "tags": [
+    "2D",
+    "animation",
+    "vector",
+    "tweening",
+    "bones"
+   ],
+   "html": "software/synfig.html",
+   "markdown": "md/software/synfig.md",
+   "software": "synfig"
+  },
+  {
+   "id": "software/opentoonz",
+   "title": "OpenToonz",
+   "summary": "The studio 2D animation program: hand-drawn and cut-out animation with the Xsheet, scan cleanup, ink and paint, and node-based effects. New in r16.3.",
+   "section": "software",
+   "tags": [
+    "2D",
+    "animation",
+    "xsheet",
+    "toonz",
+    "ink and paint",
+    "cleanup",
+    "cut-out",
+    "professional"
+   ],
+   "html": "software/opentoonz.html",
+   "markdown": "md/software/opentoonz.md",
+   "software": "opentoonz"
+  },
+  {
+   "id": "software/pencil2d",
+   "title": "Pencil2D and TupiTube",
+   "summary": "Hand-drawn, frame-by-frame animation the traditional way, with onion skin, a timeline and export to video or GIF.",
+   "section": "software",
+   "tags": [
+    "2D",
+    "animation",
+    "frame by frame",
+    "beginner",
+    "school"
+   ],
+   "html": "software/pencil2d.html",
+   "markdown": "md/software/pencil2d.md",
+   "software": "pencil2d"
+  },
+  {
+   "id": "software/krita",
+   "title": "Krita",
+   "summary": "Professional digital painting with hundreds of brushes, layers, a drawing-tablet-friendly interface and a full frame-by-frame animation timeline.",
+   "section": "software",
+   "tags": [
+    "2D",
+    "painting",
+    "concept art",
+    "animation",
+    "tablet",
+    "storyboard"
+   ],
+   "html": "software/krita.html",
+   "markdown": "md/software/krita.md",
+   "software": "krita"
+  },
+  {
+   "id": "software/stopmotion",
+   "title": "Stopmotion",
+   "summary": "Capture stop-motion animation with a webcam or import photos from a camera, check each pose with onion skin, and export a film.",
+   "section": "software",
+   "tags": [
+    "stop motion",
+    "webcam",
+    "camera",
+    "clay",
+    "LEGO"
+   ],
+   "html": "software/stopmotion.html",
+   "markdown": "md/software/stopmotion.md",
+   "software": "stopmotion"
+  },
+  {
+   "id": "software/gimp-inkscape",
+   "title": "GIMP, Inkscape and other image tools",
+   "summary": "Photo editing with GIMP, vector drawing with Inkscape, sketching with MyPaint, pixel art with GrafX2 and mtPaint, and batch work with ImageMagick.",
+   "section": "software",
+   "tags": [
+    "2D",
+    "images",
+    "GIMP",
+    "Inkscape",
+    "MyPaint",
+    "pixel art",
+    "ImageMagick"
+   ],
+   "html": "software/gimp-inkscape.html",
+   "markdown": "md/software/gimp-inkscape.md"
+  },
+  {
+   "id": "software/kdenlive",
+   "title": "Kdenlive",
+   "summary": "The recommended video editor on Animux. Put shots and sound on a timeline, add titles and transitions, and export an MP4 for YouTube or a festival.",
+   "section": "software",
+   "tags": [
+    "video",
+    "editing",
+    "timeline",
+    "export",
+    "MP4"
+   ],
+   "html": "software/kdenlive.html",
+   "markdown": "md/software/kdenlive.md",
+   "software": "kdenlive"
+  },
+  {
+   "id": "software/video-tools",
+   "title": "More video tools",
+   "summary": "OpenShot, Cinelerra-GG and Avidemux for editing, HandBrake and FFmpeg for converting, DJV for reviewing renders, VLC for playing, and screen recording.",
+   "section": "software",
+   "tags": [
+    "video",
+    "OpenShot",
+    "Cinelerra",
+    "Avidemux",
+    "HandBrake",
+    "FFmpeg",
+    "DJV",
+    "VLC"
+   ],
+   "html": "software/video-tools.html",
+   "markdown": "md/software/video-tools.md"
+  },
+  {
+   "id": "software/audio",
+   "title": "Sound and music",
+   "summary": "Record voices with Audacity, mix the soundtrack in Ardour, compose with LMMS, Hydrogen and MuseScore, and understand how audio works on Animux.",
+   "section": "software",
+   "tags": [
+    "audio",
+    "sound",
+    "music",
+    "Audacity",
+    "Ardour",
+    "LMMS",
+    "JACK",
+    "PipeWire"
+   ],
+   "html": "software/audio.html",
+   "markdown": "md/software/audio.md"
+  },
+  {
+   "id": "software/upscayl",
+   "title": "Upscayl",
+   "summary": "Enlarge images 2× to 4× and make them sharper with AI models that run on your own computer, offline.",
+   "section": "software",
+   "tags": [
+    "AI",
+    "images",
+    "upscaling",
+    "textures"
+   ],
+   "html": "software/upscayl.html",
+   "markdown": "md/software/upscayl.md",
+   "software": "upscayl"
+  },
+  {
+   "id": "software/ai-tools",
+   "title": "AI tools",
+   "summary": "Speech to text and subtitles (Whisper), background removal (rembg), local chat models (Ollama) and Stable Diffusion (ComfyUI), all running on your own computer.",
+   "section": "software",
+   "tags": [
+    "AI",
+    "Whisper",
+    "subtitles",
+    "rembg",
+    "Ollama",
+    "ComfyUI",
+    "Stable Diffusion"
+   ],
+   "html": "software/ai-tools.html",
+   "markdown": "md/software/ai-tools.md"
+  },
+  {
+   "id": "software/ai-agents",
+   "title": "AI agents in Blender, GIMP, Krita and Inkscape (MCP)",
+   "summary": "Let an AI assistant work in Blender, GIMP, Krita and Inkscape through MCP, offline with a local model or with Claude Code; plus Higgsfield and LTX cloud generation.",
+   "section": "software",
+   "tags": [
+    "AI",
+    "MCP",
+    "Blender",
+    "GIMP",
+    "Krita",
+    "Inkscape",
+    "agent",
+    "Ollama",
+    "Claude",
+    "Higgsfield"
+   ],
+   "html": "software/ai-agents.html",
+   "markdown": "md/software/ai-agents.md"
+  },
+  {
+   "id": "software/storyboard-publishing",
+   "title": "Storyboards, print and PDF",
+   "summary": "Plan your film with storyboards in Krita, Blender or Scribus, make an animatic, and lay out posters, scripts and portfolios as PDF.",
+   "section": "software",
+   "tags": [
+    "storyboard",
+    "animatic",
+    "Scribus",
+    "PDF",
+    "planning"
+   ],
+   "html": "software/storyboard-publishing.html",
+   "markdown": "md/software/storyboard-publishing.md"
+  },
+  {
+   "id": "software/system-tools",
+   "title": "System tools",
+   "summary": "Backups with Timeshift, disks with Disks and GParted, burning with K3b, system monitors, virtual machines, containers and remote access.",
+   "section": "software",
+   "tags": [
+    "system",
+    "backup",
+    "Timeshift",
+    "GParted",
+    "K3b",
+    "Docker",
+    "SSH"
+   ],
+   "html": "software/system-tools.html",
+   "markdown": "md/software/system-tools.md"
+  },
+  {
+   "id": "tutorials/first-3d-render",
+   "title": "Your first 3D render",
+   "summary": "In Blender, replace the default cube with a monkey head, give it shiny red paint, add a floor, light it and render a picture. About 30 minutes, no experience needed.",
+   "section": "tutorials",
+   "tags": [
+    "beginner",
+    "Blender",
+    "3D",
+    "rendering",
+    "Cycles"
+   ],
+   "html": "tutorials/first-3d-render.html",
+   "markdown": "md/tutorials/first-3d-render.md"
+  },
+  {
+   "id": "tutorials/turntable-animation",
+   "title": "A turntable animation",
+   "summary": "Make Suzanne spin once around in four seconds with two keyframes, then render the animation straight to an MP4 video. About 20 minutes.",
+   "section": "tutorials",
+   "tags": [
+    "beginner",
+    "Blender",
+    "animation",
+    "keyframes",
+    "video"
+   ],
+   "html": "tutorials/turntable-animation.html",
+   "markdown": "md/tutorials/turntable-animation.md"
+  },
+  {
+   "id": "tutorials/character-makehuman",
+   "title": "A character with MakeHuman",
+   "summary": "Create a human character with MPFB inside Blender, give it a skeleton, pose it and set a keyframe, or design it in MakeHuman II and bring it over. About 30 minutes.",
+   "section": "tutorials",
+   "tags": [
+    "beginner",
+    "character",
+    "MPFB",
+    "MakeHuman",
+    "Blender",
+    "rigging"
+   ],
+   "html": "tutorials/character-makehuman.html",
+   "markdown": "md/tutorials/character-makehuman.md"
+  },
+  {
+   "id": "tutorials/bouncing-ball-synfig",
+   "title": "A bouncing ball in Synfig",
+   "summary": "The classic first animation exercise. Make a ball fall, squash and bounce with waypoints and ease in and out, then export a GIF. About 30 minutes.",
+   "section": "tutorials",
+   "tags": [
+    "beginner",
+    "2D",
+    "Synfig",
+    "animation principles"
+   ],
+   "html": "tutorials/bouncing-ball-synfig.html",
+   "markdown": "md/tutorials/bouncing-ball-synfig.md"
+  },
+  {
+   "id": "tutorials/hand-drawn-pencil2d",
+   "title": "Hand-drawn animation in Pencil2D",
+   "summary": "Draw a short flip-book animation frame by frame with onion skin, play it back and export it as GIF or MP4. About 30 minutes, perfect for beginners and children.",
+   "section": "tutorials",
+   "tags": [
+    "beginner",
+    "2D",
+    "Pencil2D",
+    "frame by frame",
+    "school"
+   ],
+   "html": "tutorials/hand-drawn-pencil2d.html",
+   "markdown": "md/tutorials/hand-drawn-pencil2d.md"
+  },
+  {
+   "id": "tutorials/krita-animation",
+   "title": "Paint an animation in Krita",
+   "summary": "Use Krita's animation workspace to paint a short loop, such as a flickering candle flame, with onion skins, then render it to a video. About 40 minutes.",
+   "section": "tutorials",
+   "tags": [
+    "2D",
+    "Krita",
+    "painting",
+    "animation",
+    "loop"
+   ],
+   "html": "tutorials/krita-animation.html",
+   "markdown": "md/tutorials/krita-animation.md"
+  },
+  {
+   "id": "tutorials/stop-motion-webcam",
+   "title": "Stop motion with a webcam",
+   "summary": "Set up a tiny studio, capture a clay or LEGO animation with Stopmotion's onion skin, and turn it into a video with sound.",
+   "section": "tutorials",
+   "tags": [
+    "beginner",
+    "stop motion",
+    "webcam",
+    "school"
+   ],
+   "html": "tutorials/stop-motion-webcam.html",
+   "markdown": "md/tutorials/stop-motion-webcam.md"
+  },
+  {
+   "id": "tutorials/edit-video-kdenlive",
+   "title": "Edit your film in Kdenlive",
+   "summary": "Put rendered shots, a title and music together on a timeline and export an MP4 ready for YouTube. Uses the turntable video from the earlier tutorial. About 30 minutes.",
+   "section": "tutorials",
+   "tags": [
+    "beginner",
+    "Kdenlive",
+    "video",
+    "editing",
+    "export"
+   ],
+   "html": "tutorials/edit-video-kdenlive.html",
+   "markdown": "md/tutorials/edit-video-kdenlive.md"
+  },
+  {
+   "id": "tutorials/command-line-rendering",
+   "title": "Command-line rendering and batch jobs",
+   "summary": "Render Blender, Synfig and POV-Ray without opening them, keep renders running after you log out, render overnight, join frames into a video and convert hundreds of images at once.",
+   "section": "tutorials",
+   "tags": [
+    "rendering",
+    "terminal",
+    "batch",
+    "Blender",
+    "FFmpeg",
+    "automation"
+   ],
+   "html": "tutorials/command-line-rendering.html",
+   "markdown": "md/tutorials/command-line-rendering.md"
+  },
+  {
+   "id": "tutorials/short-film-workflow",
+   "title": "From idea to finished short film",
+   "summary": "The stages of an animated film production and which Animux program to use at each one, with a realistic plan for a first 30-second film.",
+   "section": "tutorials",
+   "tags": [
+    "workflow",
+    "production",
+    "pipeline",
+    "planning",
+    "beginner"
+   ],
+   "html": "tutorials/short-film-workflow.html",
+   "markdown": "md/tutorials/short-film-workflow.md"
+  },
+  {
+   "id": "help/self-test",
+   "title": "The self-test and sample scenes",
+   "summary": "Check in a few minutes that every renderer and the main programs work on your computer, read the results, and use the sample scenes to learn.",
+   "section": "help",
+   "tags": [
+    "beginner",
+    "self-test",
+    "samples",
+    "troubleshooting"
+   ],
+   "html": "help/self-test.html",
+   "markdown": "md/help/self-test.md"
+  },
+  {
+   "id": "help/troubleshooting",
+   "title": "Troubleshooting",
+   "summary": "Solutions for black screens, slow virtual machines, programs that do not start, no sound, no Wi-Fi, full memory and lost files.",
+   "section": "help",
+   "tags": [
+    "troubleshooting",
+    "problems",
+    "black screen",
+    "sound",
+    "Wi-Fi"
+   ],
+   "html": "help/troubleshooting.html",
+   "markdown": "md/help/troubleshooting.md"
+  },
+  {
+   "id": "help/faq",
+   "title": "Questions and answers",
+   "summary": "Short answers to the questions new Animux users ask most often.",
+   "section": "help",
+   "tags": [
+    "FAQ",
+    "beginner"
+   ],
+   "html": "help/faq.html",
+   "markdown": "md/help/faq.md"
+  },
+  {
+   "id": "help/glossary",
+   "title": "Glossary",
+   "summary": "Plain-language explanations of the computer and animation words used in this guide.",
+   "section": "help",
+   "tags": [
+    "glossary",
+    "beginner",
+    "words"
+   ],
+   "html": "help/glossary.html",
+   "markdown": "md/help/glossary.md"
+  },
+  {
+   "id": "help/getting-help",
+   "title": "Getting help",
+   "summary": "Where to ask questions about Animux and its programs, and what information to include so others can help you quickly.",
+   "section": "help",
+   "tags": [
+    "help",
+    "support",
+    "community",
+    "bug report"
+   ],
+   "html": "help/getting-help.html",
+   "markdown": "md/help/getting-help.md"
+  },
+  {
+   "id": "agents/overview",
+   "title": "The guide for AI agents and programs",
+   "summary": "Where an agent finds this guide on an Animux system (files, a local web server, llms.txt, JSON indexes, a command-line tool and an MCP server) and a recommended way to use it.",
+   "section": "agents",
+   "tags": [
+    "AI",
+    "agents",
+    "MCP",
+    "llms.txt",
+    "API",
+    "automation"
+   ],
+   "html": "agents/overview.html",
+   "markdown": "md/agents/overview.md"
+  },
+  {
+   "id": "agents/command-reference",
+   "title": "Command reference",
+   "summary": "Headless and command-line use of every Animux program, with conventions for output paths, exit codes, logs, displays and time limits.",
+   "section": "agents",
+   "tags": [
+    "AI",
+    "agents",
+    "command line",
+    "headless",
+    "automation",
+    "reference"
+   ],
+   "html": "agents/command-reference.html",
+   "markdown": "md/agents/command-reference.md"
+  },
+  {
+   "id": "agents/system-facts",
+   "title": "System facts",
+   "summary": "The layout of an Animux system in one page. Release, base, users, important paths, Animux packages, services, ports, boot roles and how to tell a live session from an installed one.",
+   "section": "agents",
+   "tags": [
+    "AI",
+    "agents",
+    "reference",
+    "paths",
+    "services",
+    "system"
+   ],
+   "html": "agents/system-facts.html",
+   "markdown": "md/agents/system-facts.md"
+  },
+  {
+   "id": "news/2026-10-30-r16-3-release",
+   "title": "Animux Genesis64 r16.3",
+   "summary": "OpenToonz 1.8, the studio 2D animation program, and the Maya Workflow Kit for Blender.",
+   "section": "news",
+   "tags": [
+    "release",
+    "r16.3",
+    "OpenToonz",
+    "Maya"
+   ],
+   "html": "news/2026-10-30-r16-3-release.html",
+   "markdown": "md/news/2026-10-30-r16-3-release.md",
+   "date": "2026-10-30"
+  },
+  {
+   "id": "news/2026-10-29-r16-2-release",
+   "title": "Animux Genesis64 r16.2",
+   "summary": "Claude Code in one step from the menu, and a boot menu without syntax errors.",
+   "section": "news",
+   "tags": [
+    "release",
+    "r16.2"
+   ],
+   "html": "news/2026-10-29-r16-2-release.html",
+   "markdown": "md/news/2026-10-29-r16-2-release.md",
+   "date": "2026-10-29"
+  },
+  {
+   "id": "news/2026-10-27-animux-guide",
+   "title": "Introducing the Animux Guide",
+   "summary": "A complete, illustrated guide for animators who have never used Linux, installed on every Animux system and readable by AI agents.",
+   "section": "news",
+   "tags": [
+    "guide",
+    "documentation",
+    "AI"
+   ],
+   "html": "news/2026-10-27-animux-guide.html",
+   "markdown": "md/news/2026-10-27-animux-guide.md",
+   "date": "2026-10-27"
+  },
+  {
+   "id": "news/2026-10-26-r16-release",
+   "title": "Animux Genesis64 r16 is here",
+   "summary": "Blender 5.2 LTS, Gaffer, five new renderers, MakeHuman II, a signed Animux package repository and a self-test that checks it all.",
+   "section": "news",
+   "tags": [
+    "release",
+    "r16"
+   ],
+   "html": "news/2026-10-26-r16-release.html",
+   "markdown": "md/news/2026-10-26-r16-release.md",
+   "date": "2026-10-26"
+  },
+  {
+   "id": "about/versions",
+   "title": "Versions",
+   "summary": "The version of every program in Animux Genesis64 r16.3, and the package it comes from.",
+   "section": "about",
+   "tags": [
+    "versions",
+    "reference"
+   ],
+   "html": "about/versions.html",
+   "markdown": "md/about/versions.md"
+  },
+  {
+   "id": "about/licenses",
+   "title": "Licences and credits",
+   "summary": "What free software licences mean for your work, the licence of this guide, and the people and projects behind Animux.",
+   "section": "about",
+   "tags": [
+    "licence",
+    "credits",
+    "open source"
+   ],
+   "html": "about/licenses.html",
+   "markdown": "md/about/licenses.md"
+  },
+  {
+   "id": "about/guide-updates",
+   "title": "Guide updates",
+   "summary": "What changed in each version of this guide, which version you have, and how to install a newer one without a new ISO.",
+   "section": "about",
+   "tags": [
+    "guide",
+    "updates",
+    "changelog",
+    "versions"
+   ],
+   "html": "about/guide-updates.html",
+   "markdown": "md/about/guide-updates.md"
+  }
+ ]
+}

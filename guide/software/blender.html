@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blender — Animux Guide</title>
+<meta name="description" content="The 3D studio at the heart of Animux. Blender 5.2 LTS with Cycles, EEVEE, Grease Pencil and the MPFB character add-on, and how to find your way around it.">
+<link rel="icon" href="../assets/animux.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="text/markdown" href="../md/software/blender.md" title="This page as Markdown">
+<script>try{var t=localStorage.getItem('animux-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="menu-btn" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><img src="../assets/animux.png" alt="" width="28" height="28"><span>Animux <b>Guide</b></span></a>
+  <a class="site-home" href="../../index.html">← animux.org</a><div class="search"><input id="q" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search the guide"><div id="results" role="listbox"></div></div>
+  <button class="theme-btn" aria-label="Switch light or dark" onclick="animuxTheme()">◐</button>
+</header>
+<div class="wrap">
+<nav class="side" aria-label="Guide sections"><details><summary>Getting Started</summary><ul><li><a href="../start/what-is-animux.html">What is Animux?</a></li><li><a href="../start/at-a-glance.html">Animux at a glance</a></li><li><a href="../start/in-production.html">Used in film production</a></li><li><a href="../start/requirements.html">Computer requirements</a></li><li><a href="../start/get-the-iso.html">Get the ISO file</a></li><li><a href="../start/virtualbox.html">Try Animux in VirtualBox</a></li><li><a href="../start/other-vms.html">Other virtual machines</a></li><li><a href="../start/usb-stick.html">Make a bootable USB stick</a></li><li><a href="../start/boot-menu.html">The boot menu</a></li><li><a href="../start/live-session.html">The live session</a></li><li><a href="../start/install.html">Install Animux on a disk</a></li><li><a href="../start/first-steps.html">First steps after installing</a></li></ul></details><details><summary>Using the Desktop</summary><ul><li><a href="../desktop/tour.html">Desktop tour</a></li><li><a href="../desktop/menu.html">The Animux menu</a></li><li><a href="../desktop/files.html">Files, folders and drives</a></li><li><a href="../desktop/terminal.html">The terminal, gently</a></li><li><a href="../desktop/settings.html">Settings</a></li><li><a href="../desktop/add-software.html">Updates and adding software</a></li><li><a href="../desktop/shortcuts.html">Keyboard shortcuts</a></li></ul></details><details open><summary>Software</summary><ul><li><a href="index.html">All software</a></li><li><a href="blender.html" aria-current=page>Blender</a></li><li><a href="makehuman.html">MakeHuman II and MPFB</a></li><li><a href="other-3d.html">FreeCAD, Wings 3D, MeshLab and OpenSCAD</a></li><li><a href="renderers.html">Renderers</a></li><li><a href="renderer-comparison.html">Renderer comparison</a></li><li><a href="flamenco.html">Flamenco render farm</a></li><li><a href="gaffer.html">Gaffer</a></li><li><a href="pipeline-formats.html">Pipeline formats and tools</a></li><li><a href="studio-formats.html">Studio formats</a></li><li><a href="synfig.html">Synfig Studio</a></li><li><a href="opentoonz.html">OpenToonz</a></li><li><a href="pencil2d.html">Pencil2D and TupiTube</a></li><li><a href="krita.html">Krita</a></li><li><a href="stopmotion.html">Stopmotion</a></li><li><a href="gimp-inkscape.html">GIMP, Inkscape and other image tools</a></li><li><a href="kdenlive.html">Kdenlive</a></li><li><a href="video-tools.html">More video tools</a></li><li><a href="audio.html">Sound and music</a></li><li><a href="upscayl.html">Upscayl</a></li><li><a href="ai-tools.html">AI tools</a></li><li><a href="ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP)</a></li><li><a href="storyboard-publishing.html">Storyboards, print and PDF</a></li><li><a href="system-tools.html">System tools</a></li></ul></details><details><summary>Tutorials</summary><ul><li><a href="../tutorials/first-3d-render.html">Your first 3D render</a></li><li><a href="../tutorials/turntable-animation.html">A turntable animation</a></li><li><a href="../tutorials/character-makehuman.html">A character with MakeHuman</a></li><li><a href="../tutorials/bouncing-ball-synfig.html">A bouncing ball in Synfig</a></li><li><a href="../tutorials/hand-drawn-pencil2d.html">Hand-drawn animation in Pencil2D</a></li><li><a href="../tutorials/krita-animation.html">Paint an animation in Krita</a></li><li><a href="../tutorials/stop-motion-webcam.html">Stop motion with a webcam</a></li><li><a href="../tutorials/edit-video-kdenlive.html">Edit your film in Kdenlive</a></li><li><a href="../tutorials/command-line-rendering.html">Command-line rendering and batch jobs</a></li><li><a href="../tutorials/short-film-workflow.html">From idea to finished short film</a></li></ul></details><details><summary>Help</summary><ul><li><a href="../help/self-test.html">The self-test and sample scenes</a></li><li><a href="../help/troubleshooting.html">Troubleshooting</a></li><li><a href="../help/faq.html">Questions and answers</a></li><li><a href="../help/glossary.html">Glossary</a></li><li><a href="../help/getting-help.html">Getting help</a></li></ul></details><details><summary>For AI Agents</summary><ul><li><a href="../agents/overview.html">The guide for AI agents and programs</a></li><li><a href="../agents/command-reference.html">Command reference</a></li><li><a href="../agents/system-facts.html">System facts</a></li></ul></details><details><summary>News</summary><ul><li><a href="../news/2026-10-30-r16-3-release.html">Animux Genesis64 r16.3</a></li><li><a href="../news/2026-10-29-r16-2-release.html">Animux Genesis64 r16.2</a></li><li><a href="../news/2026-10-27-animux-guide.html">Introducing the Animux Guide</a></li><li><a href="../news/2026-10-26-r16-release.html">Animux Genesis64 r16 is here</a></li></ul></details><details><summary>About</summary><ul><li><a href="../about/versions.html">Versions</a></li><li><a href="../about/licenses.html">Licences and credits</a></li><li><a href="../about/guide-updates.html">Guide updates</a></li></ul></details></nav>
+<main id="main">
+<header class="pagehead"><p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Software</a></p><h1>Blender</h1><p class="lede">The 3D studio at the heart of Animux. Blender 5.2 LTS with Cycles, EEVEE, Grease Pencil and the MPFB character add-on, and how to find your way around it.</p><p class="meta"><span class="tag">3D</span><span class="tag">animation</span><span class="tag">rendering</span><span class="tag">Cycles</span><span class="tag">EEVEE</span><span class="tag">Grease Pencil</span></p></header>
+<article class="content">
+<div class="factbox">
+<div class="table"><table>
+<thead>
+<tr>
+<th>Blender</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Menu</td>
+<td>3D Animation → Modellers → Blender</td>
+</tr>
+<tr>
+<td>Version</td>
+<td>5.2.3 LTS</td>
+</tr>
+<tr>
+<td>Command</td>
+<td><code>blender</code></td>
+</tr>
+<tr>
+<td>Good for</td>
+<td>Beginner to professional</td>
+</tr>
+<tr>
+<td>Files</td>
+<td>.blend; imports/exports FBX, OBJ, glTF, USD, Alembic, STL, PLY, SVG</td>
+</tr>
+<tr>
+<td>Licence</td>
+<td>GPL-3.0-or-later</td>
+</tr>
+<tr>
+<td>Website</td>
+<td><a href="https://www.blender.org/">blender.org</a></td>
+</tr>
+<tr>
+<td>Self-test</td>
+<td><code>animux-selftest blender</code></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Blender does almost everything in a 3D film: <strong>modelling, sculpting, texturing, rigging, animation, physics (cloth, smoke, fluids), rendering, compositing and even video editing</strong>. It is used for feature films, TV series, games and advertising. Animux includes the official <strong>Blender 5.2.3 LTS</strong> from blender.org ("LTS" = long-term support, with bug fixes until 2028), not the old Blender 3.4 that Debian 12 ships.</p>
+<h2 id="start-blender">Start Blender<a class="headerlink" href="#start-blender" title="Permanent link">#</a></h2>
+<p><strong>Animux → 3D Animation → Modellers → Blender</strong>, or type <code>blender</code>. The first time, a welcome screen (the <em>splash</em>) appears; click anywhere outside it to close it.</p>
+<figure><a href="../images/blender-00-splash.webp"><img src="../images/blender-00-splash.webp" alt="Blender's splash screen. &quot;General&quot; starts an empty 3D scene, &quot;2D Animation&quot; a Grease Pencil drawing, &quot;Video Editing&quot; the video editor." loading="lazy"></a><figcaption>Blender's splash screen. &quot;General&quot; starts an empty 3D scene, &quot;2D Animation&quot; a Grease Pencil drawing, &quot;Video Editing&quot; the video editor.</figcaption></figure>
+<h2 id="the-screen">The screen<a class="headerlink" href="#the-screen" title="Permanent link">#</a></h2>
+<figure><a href="../images/blender-01-start.webp"><img src="../images/blender-01-start.webp" alt="The Blender window: the 3D viewport in the middle, the outliner (list of objects) at the top right, the properties editor below it and the timeline at the bottom." loading="lazy"></a><figcaption>The Blender window: the 3D viewport in the middle, the outliner (list of objects) at the top right, the properties editor below it and the timeline at the bottom.</figcaption></figure>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Where</th>
+<th>What for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Top bar</strong></td>
+<td>top</td>
+<td>menus (<em>File</em>, <em>Render</em>…) and <strong>workspaces</strong> (<em>Layout</em>, <em>Modeling</em>, <em>Animation</em>, <em>Shading</em>…): ready-made screen layouts for each job</td>
+</tr>
+<tr>
+<td><strong>3D Viewport</strong></td>
+<td>middle</td>
+<td>your scene. Middle mouse button to orbit, wheel to zoom</td>
+</tr>
+<tr>
+<td><strong>Toolbar</strong></td>
+<td>left of the viewport</td>
+<td>select, move, rotate, scale…</td>
+</tr>
+<tr>
+<td><strong>Outliner</strong></td>
+<td>top right</td>
+<td>every object in the scene (camera, light, cube)</td>
+</tr>
+<tr>
+<td><strong>Properties</strong></td>
+<td>bottom right</td>
+<td>settings, in tabs: render, output, object, modifiers, materials…</td>
+</tr>
+<tr>
+<td><strong>Timeline</strong></td>
+<td>bottom</td>
+<td>frames, play button, keyframes</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="your-first-hour">Your first hour<a class="headerlink" href="#your-first-hour" title="Permanent link">#</a></h2>
+<p>Follow the tutorials in order:</p>
+<ol>
+<li><a href="../tutorials/first-3d-render.html">Your first 3D render</a>: object, material, light, camera, render, save.</li>
+<li><a href="../tutorials/turntable-animation.html">A turntable animation</a>: keyframes and a video file.</li>
+<li><a href="../tutorials/character-makehuman.html">A character with MakeHuman</a>: a human with a skeleton, in Blender.</li>
+<li><a href="../tutorials/short-film-workflow.html">From idea to finished film</a>: how the steps fit together.</li>
+</ol>
+<h2 id="render-engines">Render engines<a class="headerlink" href="#render-engines" title="Permanent link">#</a></h2>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Engine</th>
+<th>Use it for</th>
+<th>Speed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>EEVEE</strong></td>
+<td>previews, stylised and cartoon looks, motion graphics</td>
+<td>seconds per frame on a good graphics card</td>
+</tr>
+<tr>
+<td><strong>Cycles</strong></td>
+<td>realistic light, glass, reflections</td>
+<td>seconds to minutes per frame</td>
+</tr>
+<tr>
+<td><strong>Workbench</strong></td>
+<td>quick clay previews</td>
+<td>instant</td>
+</tr>
+</tbody>
+</table></div>
+<p>Choose in <strong>Properties → Render → Render Engine</strong>. On computers without a strong graphics card (and in virtual machines), <strong>Cycles on the CPU</strong> is the most reliable choice. EEVEE needs OpenGL 4.3; in a VM it runs through software emulation and is slow.</p>
+<p><strong>GPU rendering in Cycles</strong> needs NVIDIA's driver (CUDA/OptiX) or AMD's HIP. See <a href="../desktop/add-software.html#nvidia-driver">Adding software</a>, then <strong>Edit → Preferences → System</strong>.</p>
+<h2 id="grease-pencil-2d-inside-blender">Grease Pencil: 2D inside Blender<a class="headerlink" href="#grease-pencil-2d-inside-blender" title="Permanent link">#</a></h2>
+<p><strong>File → New → 2D Animation</strong> gives a drawing canvas with layers, onion skin and a timeline. Draw with a tablet, animate frame by frame, and combine with 3D objects.</p>
+<h2 id="add-ons-included">Add-ons included<a class="headerlink" href="#add-ons-included" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>MPFB 2.0.18</strong> (MakeHuman Plugin for Blender): the <strong>MPFB</strong> tab in the side panel (press <strong>N</strong> in the viewport) creates human characters. It is switched on automatically. See <a href="makehuman.html">MakeHuman and MPFB</a>.</li>
+<li><strong>Maya Workflow Kit 0.7.0</strong> (new in r16.3, <strong>off</strong> until you switch it on): see <a href="#coming-from-maya">Coming from Maya</a> below.</li>
+<li>Blender's own extensions (<em>Edit → Preferences → Get Extensions</em>) can be installed from extensions.blender.org when you are online.</li>
+</ul>
+<h2 id="coming-from-maya">Coming from Maya<a class="headerlink" href="#coming-from-maya" title="Permanent link">#</a></h2>
+<p>Trained on Autodesk Maya? The <strong>Maya Workflow Kit</strong> (by ohnsk, free, GPL-3.0) makes Blender work like Maya: Maya hotkeys and <strong>Alt+mouse</strong> navigation, <strong>QWER</strong> tools, the <strong>Space</strong> hotbox and marking menus, the <strong>shelf</strong>, the <strong>Channel Box</strong>, the <strong>Outliner</strong> with persp/top/front/side, the time slider and a Maya-style command line. It contains no Autodesk code.</p>
+<p>It is installed but <strong>off</strong>, because it changes Blender's keys and layout. To switch it on:</p>
+<ol>
+<li>Close Blender.</li>
+<li>Menu <strong>Animux Tools → Blender: Maya Workflow Kit on/off</strong>, answer <strong>y</strong> (or type <code>animux-blender-maya on</code> in a <a href="../desktop/terminal.html">terminal</a>).</li>
+<li>Start Blender. The kit's welcome window says that nothing has changed yet; click <strong>Make Blender feel like Maya</strong>.</li>
+</ol>
+<p>In Blender, the <strong>Maya | Blender</strong> switch at the top right (or <strong>Ctrl+Alt+Shift+M</strong>) changes between the Maya layout and Blender's own. To remove the kit from Blender completely, close Blender and run the menu entry again (or <code>animux-blender-maya off</code>). <code>animux-blender-maya status</code> says whether it is on.</p>
+<p>The kit's help is in <strong>Edit → Preferences → Add-ons → Maya Workflow Kit</strong>. Blender tutorials and this guide use Blender's own keys: switch back with the <strong>Maya | Blender</strong> switch when you follow them.</p>
+<h2 id="rendering-without-opening-blender">Rendering without opening Blender<a class="headerlink" href="#rendering-without-opening-blender" title="Permanent link">#</a></h2>
+<p>Great for long renders, render farms and scripts:</p>
+<pre><code>blender -b shot.blend -a                          # whole animation, settings from the file
+blender -b shot.blend -o //frames/f_#### -F PNG -s 1 -e 48 -a   # frames 1–48 as PNG
+blender -b shot.blend -f 10                       # just frame 10
+blender -b --python make_scene.py                 # run a Python script
+</code></pre>
+<p><code>-b</code> (background) must come first. <code>//</code> means "next to the .blend file". See <a href="../tutorials/command-line-rendering.html">Command-line rendering</a> and <a href="flamenco.html">Flamenco</a> for many computers.</p>
+<h2 id="files">Files<a class="headerlink" href="#files" title="Permanent link">#</a></h2>
+<ul>
+<li>Blender saves <strong>.blend</strong> files. <strong>File → Save</strong> (Ctrl+S). Blender keeps <code>.blend1</code> backups next to them.</li>
+<li><strong>File → Import / Export</strong>: FBX, OBJ, glTF (games and the web), USD and Alembic (studio pipelines), STL (3D printing), SVG.</li>
+<li>Rendered pictures are not saved automatically: in the render window use <strong>Image → Save As</strong>.</li>
+</ul>
+<h2 id="learn-more">Learn more<a class="headerlink" href="#learn-more" title="Permanent link">#</a></h2>
+<ul>
+<li>The official manual: <a href="https://docs.blender.org/manual/en/5.2/">https://docs.blender.org/manual/en/5.2/</a> (also <em>Help → Manual</em>).</li>
+<li>Blender Studio's free courses: <a href="https://studio.blender.org/training/">https://studio.blender.org/training/</a>.</li>
+<li>The sample file <code>/usr/share/animux/samples/blender/turntable.py</code> builds a small scene by script.</li>
+</ul>
+</article>
+<nav class="prevnext"><a class="prev" href="index.html">← All software</a><a class="next" href="makehuman.html">MakeHuman II and MPFB →</a></nav>
+<footer class="foot"><a href="../md/software/blender.md">View this page as Markdown</a> · <a href="../llms.txt">llms.txt</a> · <a href="../api/pages.json">JSON index</a> · Animux Guide 1.0.34 for Genesis64 r16.3, updated 2026-11-04 · <a href="../about/guide-updates.html">What changed</a></footer>
+</main>
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li class="l2"><a href="#start-blender">Start Blender</a></li><li class="l2"><a href="#the-screen">The screen</a></li><li class="l2"><a href="#your-first-hour">Your first hour</a></li><li class="l2"><a href="#render-engines">Render engines</a></li><li class="l2"><a href="#grease-pencil-2d-inside-blender">Grease Pencil: 2D inside Blender</a></li><li class="l2"><a href="#add-ons-included">Add-ons included</a></li><li class="l2"><a href="#coming-from-maya">Coming from Maya</a></li><li class="l2"><a href="#rendering-without-opening-blender">Rendering without opening Blender</a></li><li class="l2"><a href="#files">Files</a></li><li class="l2"><a href="#learn-more">Learn more</a></li></ul></nav>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

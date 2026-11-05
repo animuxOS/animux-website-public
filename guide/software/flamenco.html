@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flamenco render farm — Animux Guide</title>
+<meta name="description" content="Let several computers render one Blender animation together, using Flamenco Manager, Workers and shared storage, and the Animux render farm boot roles.">
+<link rel="icon" href="../assets/animux.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="text/markdown" href="../md/software/flamenco.md" title="This page as Markdown">
+<script>try{var t=localStorage.getItem('animux-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="menu-btn" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><img src="../assets/animux.png" alt="" width="28" height="28"><span>Animux <b>Guide</b></span></a>
+  <a class="site-home" href="../../index.html">← animux.org</a><div class="search"><input id="q" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search the guide"><div id="results" role="listbox"></div></div>
+  <button class="theme-btn" aria-label="Switch light or dark" onclick="animuxTheme()">◐</button>
+</header>
+<div class="wrap">
+<nav class="side" aria-label="Guide sections"><details><summary>Getting Started</summary><ul><li><a href="../start/what-is-animux.html">What is Animux?</a></li><li><a href="../start/at-a-glance.html">Animux at a glance</a></li><li><a href="../start/in-production.html">Used in film production</a></li><li><a href="../start/requirements.html">Computer requirements</a></li><li><a href="../start/get-the-iso.html">Get the ISO file</a></li><li><a href="../start/virtualbox.html">Try Animux in VirtualBox</a></li><li><a href="../start/other-vms.html">Other virtual machines</a></li><li><a href="../start/usb-stick.html">Make a bootable USB stick</a></li><li><a href="../start/boot-menu.html">The boot menu</a></li><li><a href="../start/live-session.html">The live session</a></li><li><a href="../start/install.html">Install Animux on a disk</a></li><li><a href="../start/first-steps.html">First steps after installing</a></li></ul></details><details><summary>Using the Desktop</summary><ul><li><a href="../desktop/tour.html">Desktop tour</a></li><li><a href="../desktop/menu.html">The Animux menu</a></li><li><a href="../desktop/files.html">Files, folders and drives</a></li><li><a href="../desktop/terminal.html">The terminal, gently</a></li><li><a href="../desktop/settings.html">Settings</a></li><li><a href="../desktop/add-software.html">Updates and adding software</a></li><li><a href="../desktop/shortcuts.html">Keyboard shortcuts</a></li></ul></details><details open><summary>Software</summary><ul><li><a href="index.html">All software</a></li><li><a href="blender.html">Blender</a></li><li><a href="makehuman.html">MakeHuman II and MPFB</a></li><li><a href="other-3d.html">FreeCAD, Wings 3D, MeshLab and OpenSCAD</a></li><li><a href="renderers.html">Renderers</a></li><li><a href="renderer-comparison.html">Renderer comparison</a></li><li><a href="flamenco.html" aria-current=page>Flamenco render farm</a></li><li><a href="gaffer.html">Gaffer</a></li><li><a href="pipeline-formats.html">Pipeline formats and tools</a></li><li><a href="studio-formats.html">Studio formats</a></li><li><a href="synfig.html">Synfig Studio</a></li><li><a href="opentoonz.html">OpenToonz</a></li><li><a href="pencil2d.html">Pencil2D and TupiTube</a></li><li><a href="krita.html">Krita</a></li><li><a href="stopmotion.html">Stopmotion</a></li><li><a href="gimp-inkscape.html">GIMP, Inkscape and other image tools</a></li><li><a href="kdenlive.html">Kdenlive</a></li><li><a href="video-tools.html">More video tools</a></li><li><a href="audio.html">Sound and music</a></li><li><a href="upscayl.html">Upscayl</a></li><li><a href="ai-tools.html">AI tools</a></li><li><a href="ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP)</a></li><li><a href="storyboard-publishing.html">Storyboards, print and PDF</a></li><li><a href="system-tools.html">System tools</a></li></ul></details><details><summary>Tutorials</summary><ul><li><a href="../tutorials/first-3d-render.html">Your first 3D render</a></li><li><a href="../tutorials/turntable-animation.html">A turntable animation</a></li><li><a href="../tutorials/character-makehuman.html">A character with MakeHuman</a></li><li><a href="../tutorials/bouncing-ball-synfig.html">A bouncing ball in Synfig</a></li><li><a href="../tutorials/hand-drawn-pencil2d.html">Hand-drawn animation in Pencil2D</a></li><li><a href="../tutorials/krita-animation.html">Paint an animation in Krita</a></li><li><a href="../tutorials/stop-motion-webcam.html">Stop motion with a webcam</a></li><li><a href="../tutorials/edit-video-kdenlive.html">Edit your film in Kdenlive</a></li><li><a href="../tutorials/command-line-rendering.html">Command-line rendering and batch jobs</a></li><li><a href="../tutorials/short-film-workflow.html">From idea to finished short film</a></li></ul></details><details><summary>Help</summary><ul><li><a href="../help/self-test.html">The self-test and sample scenes</a></li><li><a href="../help/troubleshooting.html">Troubleshooting</a></li><li><a href="../help/faq.html">Questions and answers</a></li><li><a href="../help/glossary.html">Glossary</a></li><li><a href="../help/getting-help.html">Getting help</a></li></ul></details><details><summary>For AI Agents</summary><ul><li><a href="../agents/overview.html">The guide for AI agents and programs</a></li><li><a href="../agents/command-reference.html">Command reference</a></li><li><a href="../agents/system-facts.html">System facts</a></li></ul></details><details><summary>News</summary><ul><li><a href="../news/2026-10-30-r16-3-release.html">Animux Genesis64 r16.3</a></li><li><a href="../news/2026-10-29-r16-2-release.html">Animux Genesis64 r16.2</a></li><li><a href="../news/2026-10-27-animux-guide.html">Introducing the Animux Guide</a></li><li><a href="../news/2026-10-26-r16-release.html">Animux Genesis64 r16 is here</a></li></ul></details><details><summary>About</summary><ul><li><a href="../about/versions.html">Versions</a></li><li><a href="../about/licenses.html">Licences and credits</a></li><li><a href="../about/guide-updates.html">Guide updates</a></li></ul></details></nav>
+<main id="main">
+<header class="pagehead"><p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Software</a></p><h1>Flamenco render farm</h1><p class="lede">Let several computers render one Blender animation together, using Flamenco Manager, Workers and shared storage, and the Animux render farm boot roles.</p><p class="meta"><span class="tag">render farm</span><span class="tag">Flamenco</span><span class="tag">Blender</span><span class="tag">network</span></p></header>
+<article class="content">
+<div class="factbox">
+<div class="table"><table>
+<thead>
+<tr>
+<th>Flamenco</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Menu</td>
+<td>3D Animation → Render Queue Managers → Flamenco Manager</td>
+</tr>
+<tr>
+<td>Version</td>
+<td>3.9.3</td>
+</tr>
+<tr>
+<td>Command</td>
+<td><code>animux-flamenco-manager</code></td>
+</tr>
+<tr>
+<td>Good for</td>
+<td>Intermediate</td>
+</tr>
+<tr>
+<td>Files</td>
+<td>Blender jobs</td>
+</tr>
+<tr>
+<td>Licence</td>
+<td>GPL-3.0</td>
+</tr>
+<tr>
+<td>Website</td>
+<td><a href="https://flamenco.blender.org/">flamenco.blender.org</a></td>
+</tr>
+<tr>
+<td>Self-test</td>
+<td><code>animux-selftest flamenco</code></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>A <strong>render farm</strong> is a group of computers that share the rendering of an animation: each computer renders different frames. <strong>Flamenco</strong> is Blender's official, free render farm software.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Runs on</th>
+<th>Job</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Manager</strong></td>
+<td>one computer (it can also render)</td>
+<td>keeps the list of jobs and hands out frames; has a web page to watch progress</td>
+</tr>
+<tr>
+<td><strong>Worker</strong></td>
+<td>every computer that renders</td>
+<td>asks the Manager for work, runs Blender, reports back</td>
+</tr>
+<tr>
+<td><strong>Blender add-on</strong></td>
+<td>the artist's computer</td>
+<td>sends a <code>.blend</code> file to the Manager as a job</td>
+</tr>
+<tr>
+<td><strong>Shared storage</strong></td>
+<td>a network folder</td>
+<td>all computers must see the project files and write the frames, at the same path</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="1-shared-storage">1. Shared storage<a class="headerlink" href="#1-shared-storage" title="Permanent link">#</a></h2>
+<p>Every computer must reach the project at the same place, for example <code>/mnt/farm</code>. The simplest way on an all-Animux farm is NFS from the Manager computer.</p>
+<p>On the Manager, first create the folder:</p>
+<pre><code>sudo mkdir -p /srv/farm
+</code></pre>
+<p><strong>Only if the Manager runs from the USB stick (live session):</strong> the live system disk lives in memory, and NFS cannot share folders on it. Put the folder on a real disk or USB drive (mount it on <code>/srv/farm</code>), or, for a test, on a RAM disk of 8 GB:</p>
+<pre><code>sudo mount -t tmpfs -o size=8G tmpfs /srv/farm
+</code></pre>
+<p>(A RAM disk uses memory and is emptied when the Manager switches off, so copy the finished frames away.)</p>
+<p>Then share it (change <code>192.168.1.0/24</code> to your own network):</p>
+<pre><code>sudo chown $USER /srv/farm
+echo '/srv/farm 192.168.1.0/24(rw,sync,no_subtree_check,fsid=0)' | sudo tee -a /etc/exports
+sudo systemctl unmask nfs-kernel-server &amp;&amp; sudo systemctl enable --now nfs-kernel-server
+sudo exportfs -ra &amp;&amp; sudo exportfs -v
+sudo ln -s /srv/farm /mnt/farm
+</code></pre>
+<p><code>sudo exportfs -v</code> must list <code>/srv/farm</code>. <code>fsid=0</code> makes <code>/srv/farm</code> the top of the share, so the Workers mount <code>manager-pc:/</code> (this also works in a live session, where the plain path does not).</p>
+<p>On each Worker (replace <code>manager-pc</code> with the Manager's name or IP address):</p>
+<pre><code>sudo mkdir -p /mnt/farm
+sudo mount -t nfs manager-pc:/ /mnt/farm
+</code></pre>
+<p>A Windows share or NAS works too, as long as every computer uses the same path.</p>
+<h2 id="2-start-the-manager">2. Start the Manager<a class="headerlink" href="#2-start-the-manager" title="Permanent link">#</a></h2>
+<p>On the Manager computer: <strong>3D Animation → Render Queue Managers → Flamenco Manager</strong>. A terminal window opens (keep it open; closing it stops the Manager) and the browser shows the setup page at <code>http://localhost:8080/</code>:</p>
+<figure><a href="../images/flamenco.webp"><img src="../images/flamenco.webp" alt="Flamenco Manager's first-time setup in the browser." loading="lazy"></a><figcaption>Flamenco Manager's first-time setup in the browser.</figcaption></figure>
+<p>The setup asks for:</p>
+<ol>
+<li><strong>Shared storage</strong>: <code>/mnt/farm</code>.</li>
+<li><strong>Blender</strong>: choose <em>Blender found on $PATH</em> (<code>/usr/bin/blender</code>, Blender 5.2.3).</li>
+</ol>
+<p>Settings and the job database are kept in <code>~/flamenco</code>. Without a desktop (text login), start the Manager with the same command the menu uses: <code>animux-flamenco-manager</code>, and open <code>http://manager-pc:8080/</code> from another computer.</p>
+<div class="admonition danger">
+<p class="admonition-title">Only Animux r16 (<code>_21</code>): Workers get no work</p>
+<p>Fixed in r16.1 (<code>_25</code>). On r16 the Manager accepts jobs, but no Worker ever starts them: the Manager tries to keep its task logs in <code>/opt/animux/flamenco/flamenco-manager-storage</code>, where it may not write (the web page shows the tasks as <em>queued</em> forever). Fix it once, <strong>after</strong> the setup page, in a terminal on the Manager:</p>
+<p><code>sed -i "s#^local_manager_storage_path:.*#local_manager_storage_path: $HOME/flamenco/flamenco-manager-storage#" ~/flamenco/flamenco-manager.yaml</code></p>
+<p>then close the Manager window and start it again. The package <code>animux-flamenco</code> 3.9.3-animux2 does this by itself.</p>
+</div>
+<h2 id="3-start-the-workers">3. Start the Workers<a class="headerlink" href="#3-start-the-workers" title="Permanent link">#</a></h2>
+<p>On every render computer (including the Manager, if it should render too), open a terminal:</p>
+<pre><code>flamenco-worker
+</code></pre>
+<p>Workers find the Manager on the local network by themselves. If not, tell them where it is:</p>
+<pre><code>flamenco-worker -manager http://manager-pc:8080/
+</code></pre>
+<p>The Manager's web page lists them under <strong>Workers</strong>.</p>
+<h2 id="4-send-a-job-from-blender">4. Send a job from Blender<a class="headerlink" href="#4-send-a-job-from-blender" title="Permanent link">#</a></h2>
+<ol>
+<li>On the artist's computer open <code>http://manager-pc:8080/</code> in Firefox and download the <strong>Blender add-on</strong> from the Manager's web page (the link on the start page).</li>
+<li>In Blender: <strong>Edit → Preferences → Add-ons → Install from Disk</strong> (in the menu at the top right of the add-ons list) → choose the downloaded <code>flamenco-addon.zip</code>, and tick it. Enter the Manager URL and click <strong>Check</strong>.</li>
+<li>Save your <code>.blend</code> file <strong>inside the shared storage</strong> (<code>/mnt/farm/my-short/sh010.blend</code>).</li>
+<li>In <strong>Properties → Output → Flamenco</strong>, choose the job type <strong>Simple Blender Render</strong>, then <strong>Submit to Flamenco</strong>.</li>
+</ol>
+<p>The frames appear in the shared storage as they are finished; watch progress on the web page.</p>
+<h2 id="animux-render-farm-roles">Animux render farm roles<a class="headerlink" href="#animux-render-farm-roles" title="Permanent link">#</a></h2>
+<p>The <a href="../start/boot-menu.html">boot menu</a> has two farm entries for computers started from the ISO:</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Entry</th>
+<th>What Animux does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Render Farm Master</strong></td>
+<td>unmasks the NFS and DHCP server services, so the steps above work</td>
+</tr>
+<tr>
+<td><strong>Render Farm Slave</strong></td>
+<td>a render node</td>
+</tr>
+</tbody>
+</table></div>
+<div class="admonition warning">
+<p class="admonition-title">Known problems in r16 (<code>_21</code>), fixed in r16.1 (<code>_25</code>)</p>
+<ul>
+<li>Both entries still <strong>start the desktop</strong> (with automatic login); they were meant to start to a text login. This does no harm: open a terminal and follow the steps above.</li>
+<li>Every computer started this way is called <strong>animux</strong>, so the Manager lists all Workers under the same name. Before starting <code>flamenco-worker</code> for the first time, give each computer its own name, for example <code>sudo hostnamectl set-hostname node1</code> (the Worker registers under the computer name).</li>
+</ul>
+<p>Both are fixed in r16.1 (<code>_25</code>, package <code>animux-roles</code> 1.0.19): text login and names like <code>animux-slave-3f2a</code>.</p>
+</div>
+<p>The DHCP server needs your own <code>/etc/dhcp/dhcpd.conf</code> before it is useful, and <strong>must not run on a network that already has a router handing out addresses</strong>.</p>
+<h2 id="farmerjoe">Farmerjoe<a class="headerlink" href="#farmerjoe" title="Permanent link">#</a></h2>
+<p><strong>Farmerjoe</strong> is the small render farm from the original Animux, kept for old projects (<code>/opt/farmerjoe</code>, its README opens from the menu). Use Flamenco for new work.</p>
+<h2 id="tips">Tips<a class="headerlink" href="#tips" title="Permanent link">#</a></h2>
+<ul>
+<li>All computers should run the <strong>same Blender version</strong> (all Animux r16 computers do).</li>
+<li>Use <strong>relative paths</strong> and <em>File → External Data → Pack Resources</em> or keep textures in the shared storage.</li>
+<li>Render to <strong>image sequences</strong> (PNG or EXR), never directly to a video file: a crashed frame can be re-rendered, and every Worker writes its own frames.</li>
+<li>Wired network (1 Gbit/s or faster) is much better than Wi-Fi.</li>
+<li>Documentation: <a href="https://flamenco.blender.org/usage/">https://flamenco.blender.org/usage/</a>.</li>
+</ul>
+<h2 id="coming-opencue">Coming: OpenCue<a class="headerlink" href="#coming-opencue" title="Permanent link">#</a></h2>
+<div class="films">
+
+<article class="film">
+<p class="kicker">Sony Pictures Imageworks and Google Cloud · open source since January 2019</p>
+<h2 class="film-title">OpenCue</h2>
+<p class="made">Render manager for large studios · planned for Animux r17</p>
+<p>OpenCue grew out of <b>Cue 3</b>, the queuing system Sony Pictures Imageworks developed in-house over 15 years and used on more than a hundred feature films and visual-effects projects. Google Cloud and Imageworks released it as open source (Apache 2.0) on 24 January 2019; it is now a project of the Academy Software Foundation.</p>
+<p>Recent Imageworks projects ran it on over 150,000 processor cores, split between their own data centre and Google Cloud. Flamenco is the simpler choice for a class or a small studio; OpenCue is made for studios with many render nodes and many shows at once.</p>
+<p class="source">Sources: Google Cloud blog, "Introducing OpenCue: an open source render manager for media and entertainment", 24 January 2019 · TechCrunch, "Google partners with Sony Pictures Imageworks to launch an open-source VFX render manager", 24 January 2019</p>
+</article>
+
+</div>
+</article>
+<nav class="prevnext"><a class="prev" href="renderer-comparison.html">← Renderer comparison</a><a class="next" href="gaffer.html">Gaffer →</a></nav>
+<footer class="foot"><a href="../md/software/flamenco.md">View this page as Markdown</a> · <a href="../llms.txt">llms.txt</a> · <a href="../api/pages.json">JSON index</a> · Animux Guide 1.0.34 for Genesis64 r16.3, updated 2026-11-04 · <a href="../about/guide-updates.html">What changed</a></footer>
+</main>
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li class="l2"><a href="#1-shared-storage">1. Shared storage</a></li><li class="l2"><a href="#2-start-the-manager">2. Start the Manager</a></li><li class="l2"><a href="#3-start-the-workers">3. Start the Workers</a></li><li class="l2"><a href="#4-send-a-job-from-blender">4. Send a job from Blender</a></li><li class="l2"><a href="#animux-render-farm-roles">Animux render farm roles</a></li><li class="l2"><a href="#farmerjoe">Farmerjoe</a></li><li class="l2"><a href="#tips">Tips</a></li><li class="l2"><a href="#coming-opencue">Coming: OpenCue</a></li></ul></nav>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

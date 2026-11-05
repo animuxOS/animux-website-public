@@ -1,0 +1,102 @@
+# Animux Guide
+
+> The user guide for Animux Genesis64 r16.3 (animux-genesis64-deb_28.iso), a Linux distribution for animators (Debian 12, Xfce). Every page exists as HTML and as Markdown. Machine-readable indexes: api/pages.json and api/software.json. On Animux this folder is /usr/share/animux/docs and is served at http://127.0.0.1:8765/ ; the command `animux-docs` searches it and `animux-docs mcp` is an MCP server.
+
+Start with: md/agents/overview.md (how to use this guide and drive Animux from a program).
+
+## Getting Started
+
+- [What is Animux?](md/start/what-is-animux.md): A free, complete studio for animators on one disc image. What is inside, what you need and how you can use it.
+- [Animux at a glance](md/start/at-a-glance.md): All programs on one screen, in the order of an animation production, on the Debian 12 base.
+- [Used in film production](md/start/in-production.md): Films and studios whose storyboards, textures, frame fixes, colour and 3D were made with programs that Animux ships, with the sources.
+- [Computer requirements](md/start/requirements.md): Check your processor, memory, disk and graphics card before you start, and learn what each one affects.
+- [Get the ISO file](md/start/get-the-iso.md): Download Animux, check that the download is complete and undamaged, and know which file is the newest.
+- [Try Animux in VirtualBox](md/start/virtualbox.md): Create a virtual machine with its own 80 GB virtual disk, start Animux from the ISO file and, if you like, install it, all without touching your real computer.
+- [Other virtual machines](md/start/other-vms.md): Settings for QEMU and virt-manager, VMware, Hyper-V and Parallels, and the one setting that matters most for 3D programs.
+- [Make a bootable USB stick](md/start/usb-stick.md): Step by step - write the Animux ISO to a USB stick with Rufus, balenaEtcher or Ventoy, start a computer from it, and fix the usual problems.
+- [The boot menu](md/start/boot-menu.md): What each entry in the Animux start menu does, and which one to choose when the screen stays black.
+- [The live session](md/start/live-session.md): Animux running straight from the USB stick or ISO. The user name and password, what is kept, what is lost, and how to save work.
+- [Install Animux on a disk](md/start/install.md): Step-by-step through the installer, with screenshots, for a whole disk, a virtual disk or next to Windows.
+- [First steps after installing](md/start/first-steps.md): A ten-minute checklist for a freshly installed Animux, covering updates, the screen, the self-test, a project folder and backups.
+
+## Using the Desktop
+
+- [Desktop tour](md/desktop/tour.md): The top panel, the Animux menu, the dock and the desktop icons, explained one by one.
+- [The Animux menu](md/desktop/menu.md): A map of every menu category, so you know where to find the program for each job in an animation production.
+- [Files, folders and drives](md/desktop/files.md): Where your work is stored, how to use the file manager, USB drives and network shares, and a sensible folder layout for animation projects.
+- [The terminal, gently](md/desktop/terminal.md): The twelve commands an animator actually needs, how to copy and paste them, and how sudo works.
+- [Settings](md/desktop/settings.md): Screen resolution, several monitors, keyboard layout, mouse and tablet, sound, language, Wi-Fi, printers and power.
+- [Updates and adding software](md/desktop/add-software.md): Keep Animux up to date and install more programs with Synaptic, apt or Flatpak, including DaVinci Resolve and the NVIDIA driver.
+- [Keyboard shortcuts](md/desktop/shortcuts.md): A cheat sheet for the desktop and for the shortcuts animators use most in Blender, Krita, Pencil2D and Kdenlive.
+
+## Software
+
+- [All software](md/software/index.md): Every program on Animux by job, with what it does and the command that starts it.
+- [Blender](md/software/blender.md): The 3D studio at the heart of Animux. Blender 5.2 LTS with Cycles, EEVEE, Grease Pencil and the MPFB character add-on, and how to find your way around it.
+- [MakeHuman II and MPFB](md/software/makehuman.md): Make realistic human characters with sliders, either in the stand-alone MakeHuman II or with the MPFB add-on directly inside Blender.
+- [FreeCAD, Wings 3D, MeshLab and OpenSCAD](md/software/other-3d.md): The other 3D modellers on Animux and when each one is the right tool next to Blender.
+- [Renderers](md/software/renderers.md): Cycles, EEVEE, POV-Ray, LuxCoreRender, Mitsuba 3, appleseed and pbrt-v4. What each one is good at, how to run its sample scene, and which one to choose.
+- [Renderer comparison](md/software/renderer-comparison.md): The seven renderers in Animux side by side: full name, who makes it, how it calculates light, what it runs on, what it does best and when to use it.
+- [Flamenco render farm](md/software/flamenco.md): Let several computers render one Blender animation together, using Flamenco Manager, Workers and shared storage, and the Animux render farm boot roles.
+- [Gaffer](md/software/gaffer.md): The node-based lighting and look-development tool used by film studios, included with Cortex, OSL, OpenUSD and Alembic, and rendering with Cycles.
+- [Pipeline formats and tools](md/software/pipeline-formats.md): OpenUSD, Alembic, OpenEXR, OpenColorIO, OpenVDB, OSL and MaterialX, what each studio format is for and the tools Animux has for it.
+- [Studio formats](md/software/studio-formats.md): OpenUSD, Alembic, OpenEXR, OpenColorIO and OpenVDB, one card each: which studio made it, what problem it solves, and what it looks like in Animux.
+- [Synfig Studio](md/software/synfig.md): 2D vector animation with automatic in-between frames and bone rigs. Ideal for cut-out characters, motion graphics and explainer films.
+- [OpenToonz](md/software/opentoonz.md): The studio 2D animation program: hand-drawn and cut-out animation with the Xsheet, scan cleanup, ink and paint, and node-based effects. New in r16.3.
+- [Pencil2D and TupiTube](md/software/pencil2d.md): Hand-drawn, frame-by-frame animation the traditional way, with onion skin, a timeline and export to video or GIF.
+- [Krita](md/software/krita.md): Professional digital painting with hundreds of brushes, layers, a drawing-tablet-friendly interface and a full frame-by-frame animation timeline.
+- [Stopmotion](md/software/stopmotion.md): Capture stop-motion animation with a webcam or import photos from a camera, check each pose with onion skin, and export a film.
+- [GIMP, Inkscape and other image tools](md/software/gimp-inkscape.md): Photo editing with GIMP, vector drawing with Inkscape, sketching with MyPaint, pixel art with GrafX2 and mtPaint, and batch work with ImageMagick.
+- [Kdenlive](md/software/kdenlive.md): The recommended video editor on Animux. Put shots and sound on a timeline, add titles and transitions, and export an MP4 for YouTube or a festival.
+- [More video tools](md/software/video-tools.md): OpenShot, Cinelerra-GG and Avidemux for editing, HandBrake and FFmpeg for converting, DJV for reviewing renders, VLC for playing, and screen recording.
+- [Sound and music](md/software/audio.md): Record voices with Audacity, mix the soundtrack in Ardour, compose with LMMS, Hydrogen and MuseScore, and understand how audio works on Animux.
+- [Upscayl](md/software/upscayl.md): Enlarge images 2× to 4× and make them sharper with AI models that run on your own computer, offline.
+- [AI tools](md/software/ai-tools.md): Speech to text and subtitles (Whisper), background removal (rembg), local chat models (Ollama) and Stable Diffusion (ComfyUI), all running on your own computer.
+- [AI agents in Blender, GIMP, Krita and Inkscape (MCP)](md/software/ai-agents.md): Let an AI assistant work in Blender, GIMP, Krita and Inkscape through MCP, offline with a local model or with Claude Code; plus Higgsfield and LTX cloud generation.
+- [Storyboards, print and PDF](md/software/storyboard-publishing.md): Plan your film with storyboards in Krita, Blender or Scribus, make an animatic, and lay out posters, scripts and portfolios as PDF.
+- [System tools](md/software/system-tools.md): Backups with Timeshift, disks with Disks and GParted, burning with K3b, system monitors, virtual machines, containers and remote access.
+
+## Tutorials
+
+- [Your first 3D render](md/tutorials/first-3d-render.md): In Blender, replace the default cube with a monkey head, give it shiny red paint, add a floor, light it and render a picture. About 30 minutes, no experience needed.
+- [A turntable animation](md/tutorials/turntable-animation.md): Make Suzanne spin once around in four seconds with two keyframes, then render the animation straight to an MP4 video. About 20 minutes.
+- [A character with MakeHuman](md/tutorials/character-makehuman.md): Create a human character with MPFB inside Blender, give it a skeleton, pose it and set a keyframe, or design it in MakeHuman II and bring it over. About 30 minutes.
+- [A bouncing ball in Synfig](md/tutorials/bouncing-ball-synfig.md): The classic first animation exercise. Make a ball fall, squash and bounce with waypoints and ease in and out, then export a GIF. About 30 minutes.
+- [Hand-drawn animation in Pencil2D](md/tutorials/hand-drawn-pencil2d.md): Draw a short flip-book animation frame by frame with onion skin, play it back and export it as GIF or MP4. About 30 minutes, perfect for beginners and children.
+- [Paint an animation in Krita](md/tutorials/krita-animation.md): Use Krita's animation workspace to paint a short loop, such as a flickering candle flame, with onion skins, then render it to a video. About 40 minutes.
+- [Stop motion with a webcam](md/tutorials/stop-motion-webcam.md): Set up a tiny studio, capture a clay or LEGO animation with Stopmotion's onion skin, and turn it into a video with sound.
+- [Edit your film in Kdenlive](md/tutorials/edit-video-kdenlive.md): Put rendered shots, a title and music together on a timeline and export an MP4 ready for YouTube. Uses the turntable video from the earlier tutorial. About 30 minutes.
+- [Command-line rendering and batch jobs](md/tutorials/command-line-rendering.md): Render Blender, Synfig and POV-Ray without opening them, keep renders running after you log out, render overnight, join frames into a video and convert hundreds of images at once.
+- [From idea to finished short film](md/tutorials/short-film-workflow.md): The stages of an animated film production and which Animux program to use at each one, with a realistic plan for a first 30-second film.
+
+## Help
+
+- [The self-test and sample scenes](md/help/self-test.md): Check in a few minutes that every renderer and the main programs work on your computer, read the results, and use the sample scenes to learn.
+- [Troubleshooting](md/help/troubleshooting.md): Solutions for black screens, slow virtual machines, programs that do not start, no sound, no Wi-Fi, full memory and lost files.
+- [Questions and answers](md/help/faq.md): Short answers to the questions new Animux users ask most often.
+- [Glossary](md/help/glossary.md): Plain-language explanations of the computer and animation words used in this guide.
+- [Getting help](md/help/getting-help.md): Where to ask questions about Animux and its programs, and what information to include so others can help you quickly.
+
+## For AI Agents
+
+- [The guide for AI agents and programs](md/agents/overview.md): Where an agent finds this guide on an Animux system (files, a local web server, llms.txt, JSON indexes, a command-line tool and an MCP server) and a recommended way to use it.
+- [Command reference](md/agents/command-reference.md): Headless and command-line use of every Animux program, with conventions for output paths, exit codes, logs, displays and time limits.
+- [System facts](md/agents/system-facts.md): The layout of an Animux system in one page. Release, base, users, important paths, Animux packages, services, ports, boot roles and how to tell a live session from an installed one.
+
+## News
+
+- [Animux Genesis64 r16.3](md/news/2026-10-30-r16-3-release.md): OpenToonz 1.8, the studio 2D animation program, and the Maya Workflow Kit for Blender.
+- [Animux Genesis64 r16.2](md/news/2026-10-29-r16-2-release.md): Claude Code in one step from the menu, and a boot menu without syntax errors.
+- [Introducing the Animux Guide](md/news/2026-10-27-animux-guide.md): A complete, illustrated guide for animators who have never used Linux, installed on every Animux system and readable by AI agents.
+- [Animux Genesis64 r16 is here](md/news/2026-10-26-r16-release.md): Blender 5.2 LTS, Gaffer, five new renderers, MakeHuman II, a signed Animux package repository and a self-test that checks it all.
+
+## About
+
+- [Versions](md/about/versions.md): The version of every program in Animux Genesis64 r16.3, and the package it comes from.
+- [Licences and credits](md/about/licenses.md): What free software licences mean for your work, the licence of this guide, and the people and projects behind Animux.
+- [Guide updates](md/about/guide-updates.md): What changed in each version of this guide, which version you have, and how to install a newer one without a new ISO.
+
+## Optional
+
+- [Everything in one file](llms-full.txt): all pages concatenated as Markdown
+- [Software catalogue](api/software.json): every program with version, command and headless use

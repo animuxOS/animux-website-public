@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your first 3D render — Animux Guide</title>
+<meta name="description" content="In Blender, replace the default cube with a monkey head, give it shiny red paint, add a floor, light it and render a picture. About 30 minutes, no experience needed.">
+<link rel="icon" href="../assets/animux.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="text/markdown" href="../md/tutorials/first-3d-render.md" title="This page as Markdown">
+<script>try{var t=localStorage.getItem('animux-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="menu-btn" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><img src="../assets/animux.png" alt="" width="28" height="28"><span>Animux <b>Guide</b></span></a>
+  <a class="site-home" href="../../index.html">← animux.org</a><div class="search"><input id="q" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search the guide"><div id="results" role="listbox"></div></div>
+  <button class="theme-btn" aria-label="Switch light or dark" onclick="animuxTheme()">◐</button>
+</header>
+<div class="wrap">
+<nav class="side" aria-label="Guide sections"><details><summary>Getting Started</summary><ul><li><a href="../start/what-is-animux.html">What is Animux?</a></li><li><a href="../start/at-a-glance.html">Animux at a glance</a></li><li><a href="../start/in-production.html">Used in film production</a></li><li><a href="../start/requirements.html">Computer requirements</a></li><li><a href="../start/get-the-iso.html">Get the ISO file</a></li><li><a href="../start/virtualbox.html">Try Animux in VirtualBox</a></li><li><a href="../start/other-vms.html">Other virtual machines</a></li><li><a href="../start/usb-stick.html">Make a bootable USB stick</a></li><li><a href="../start/boot-menu.html">The boot menu</a></li><li><a href="../start/live-session.html">The live session</a></li><li><a href="../start/install.html">Install Animux on a disk</a></li><li><a href="../start/first-steps.html">First steps after installing</a></li></ul></details><details><summary>Using the Desktop</summary><ul><li><a href="../desktop/tour.html">Desktop tour</a></li><li><a href="../desktop/menu.html">The Animux menu</a></li><li><a href="../desktop/files.html">Files, folders and drives</a></li><li><a href="../desktop/terminal.html">The terminal, gently</a></li><li><a href="../desktop/settings.html">Settings</a></li><li><a href="../desktop/add-software.html">Updates and adding software</a></li><li><a href="../desktop/shortcuts.html">Keyboard shortcuts</a></li></ul></details><details><summary>Software</summary><ul><li><a href="../software/index.html">All software</a></li><li><a href="../software/blender.html">Blender</a></li><li><a href="../software/makehuman.html">MakeHuman II and MPFB</a></li><li><a href="../software/other-3d.html">FreeCAD, Wings 3D, MeshLab and OpenSCAD</a></li><li><a href="../software/renderers.html">Renderers</a></li><li><a href="../software/renderer-comparison.html">Renderer comparison</a></li><li><a href="../software/flamenco.html">Flamenco render farm</a></li><li><a href="../software/gaffer.html">Gaffer</a></li><li><a href="../software/pipeline-formats.html">Pipeline formats and tools</a></li><li><a href="../software/studio-formats.html">Studio formats</a></li><li><a href="../software/synfig.html">Synfig Studio</a></li><li><a href="../software/opentoonz.html">OpenToonz</a></li><li><a href="../software/pencil2d.html">Pencil2D and TupiTube</a></li><li><a href="../software/krita.html">Krita</a></li><li><a href="../software/stopmotion.html">Stopmotion</a></li><li><a href="../software/gimp-inkscape.html">GIMP, Inkscape and other image tools</a></li><li><a href="../software/kdenlive.html">Kdenlive</a></li><li><a href="../software/video-tools.html">More video tools</a></li><li><a href="../software/audio.html">Sound and music</a></li><li><a href="../software/upscayl.html">Upscayl</a></li><li><a href="../software/ai-tools.html">AI tools</a></li><li><a href="../software/ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP)</a></li><li><a href="../software/storyboard-publishing.html">Storyboards, print and PDF</a></li><li><a href="../software/system-tools.html">System tools</a></li></ul></details><details open><summary>Tutorials</summary><ul><li><a href="first-3d-render.html" aria-current=page>Your first 3D render</a></li><li><a href="turntable-animation.html">A turntable animation</a></li><li><a href="character-makehuman.html">A character with MakeHuman</a></li><li><a href="bouncing-ball-synfig.html">A bouncing ball in Synfig</a></li><li><a href="hand-drawn-pencil2d.html">Hand-drawn animation in Pencil2D</a></li><li><a href="krita-animation.html">Paint an animation in Krita</a></li><li><a href="stop-motion-webcam.html">Stop motion with a webcam</a></li><li><a href="edit-video-kdenlive.html">Edit your film in Kdenlive</a></li><li><a href="command-line-rendering.html">Command-line rendering and batch jobs</a></li><li><a href="short-film-workflow.html">From idea to finished short film</a></li></ul></details><details><summary>Help</summary><ul><li><a href="../help/self-test.html">The self-test and sample scenes</a></li><li><a href="../help/troubleshooting.html">Troubleshooting</a></li><li><a href="../help/faq.html">Questions and answers</a></li><li><a href="../help/glossary.html">Glossary</a></li><li><a href="../help/getting-help.html">Getting help</a></li></ul></details><details><summary>For AI Agents</summary><ul><li><a href="../agents/overview.html">The guide for AI agents and programs</a></li><li><a href="../agents/command-reference.html">Command reference</a></li><li><a href="../agents/system-facts.html">System facts</a></li></ul></details><details><summary>News</summary><ul><li><a href="../news/2026-10-30-r16-3-release.html">Animux Genesis64 r16.3</a></li><li><a href="../news/2026-10-29-r16-2-release.html">Animux Genesis64 r16.2</a></li><li><a href="../news/2026-10-27-animux-guide.html">Introducing the Animux Guide</a></li><li><a href="../news/2026-10-26-r16-release.html">Animux Genesis64 r16 is here</a></li></ul></details><details><summary>About</summary><ul><li><a href="../about/versions.html">Versions</a></li><li><a href="../about/licenses.html">Licences and credits</a></li><li><a href="../about/guide-updates.html">Guide updates</a></li></ul></details></nav>
+<main id="main">
+<header class="pagehead"><p class="crumbs"><a href="../index.html">Home</a> › <a href="first-3d-render.html">Tutorials</a></p><h1>Your first 3D render</h1><p class="lede">In Blender, replace the default cube with a monkey head, give it shiny red paint, add a floor, light it and render a picture. About 30 minutes, no experience needed.</p><p class="meta"><span class="tag">beginner</span><span class="tag">Blender</span><span class="tag">3D</span><span class="tag">rendering</span><span class="tag">Cycles</span></p></header>
+<article class="content">
+<p>At the end you will have this picture, made by you:</p>
+<figure><a href="../images/first-render.webp"><img src="../images/first-render.webp" alt="The finished render: Suzanne, Blender's monkey mascot, in red paint on a grey floor." loading="lazy"></a><figcaption>The finished render: Suzanne, Blender's monkey mascot, in red paint on a grey floor.</figcaption></figure>
+<p>You will learn the basics every 3D program shares: <strong>objects, the viewport, materials, lights, the camera and rendering</strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title">The finished file</p>
+<p>If you get stuck, download <a href="../files/first-render.blend">first-render.blend</a> and open it in Blender (<strong>File → Open</strong>) to compare.</p>
+</div>
+<h2 id="1-start-blender">1. Start Blender<a class="headerlink" href="#1-start-blender" title="Permanent link">#</a></h2>
+<p><strong>Animux → 3D Animation → Modellers → Blender</strong>. Click outside the welcome screen to close it. You see the default scene: a <strong>cube</strong>, a <strong>camera</strong> (the pyramid shape) and a <strong>light</strong> (the dotted circle).</p>
+<figure><a href="../images/blender-01-start.webp"><img src="../images/blender-01-start.webp" alt="The default scene." loading="lazy"></a><figcaption>The default scene.</figcaption></figure>
+<p>Try moving the view (this does not change the scene):</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Do</th>
+<th>Mouse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Orbit around</td>
+<td>hold the <strong>middle mouse button</strong> (the wheel) and move</td>
+</tr>
+<tr>
+<td>Pan</td>
+<td><strong>Shift</strong> + middle mouse button</td>
+</tr>
+<tr>
+<td>Zoom</td>
+<td>turn the <strong>wheel</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>No middle button (laptop)? Use the small coloured axes at the top right of the viewport: drag them to orbit, and use the hand and magnifier icons below them.</p>
+<h2 id="2-replace-the-cube-with-a-monkey">2. Replace the cube with a monkey<a class="headerlink" href="#2-replace-the-cube-with-a-monkey" title="Permanent link">#</a></h2>
+<ol>
+<li><strong>Click the cube</strong> to select it (it gets an orange outline).</li>
+<li>Press <strong>X</strong> and choose <strong>Delete</strong> (the mouse must be over the 3D view).</li>
+<li>In the viewport's header click <strong>Add → Mesh → Monkey</strong>. Suzanne appears where the cube was.</li>
+<li>Make her smooth: <strong>right-click</strong> on her → <strong>Shade Smooth</strong>.</li>
+<li>Make her rounder: press <strong>Ctrl+2</strong>. This adds a <em>Subdivision Surface</em> modifier (you can see it in the <strong>Modifiers</strong> tab, the blue wrench).</li>
+</ol>
+<figure><a href="../images/blender-02-monkey.webp"><img src="../images/blender-02-monkey.webp" alt="Suzanne, smooth and subdivided." loading="lazy"></a><figcaption>Suzanne, smooth and subdivided.</figcaption></figure>
+<h2 id="3-add-a-floor">3. Add a floor<a class="headerlink" href="#3-add-a-floor" title="Permanent link">#</a></h2>
+<ol>
+<li><strong>Add → Mesh → Plane</strong>.</li>
+<li>Make it bigger: press <strong>S</strong>, type <code>15</code>, press <strong>Enter</strong>.</li>
+<li>Move it down under Suzanne: press <strong>G</strong>, then <strong>Z</strong>, type <code>-1</code>, press <strong>Enter</strong>.</li>
+</ol>
+<p>The keys <strong>G</strong> (grab), <strong>R</strong> (rotate) and <strong>S</strong> (scale), followed by <strong>X</strong>, <strong>Y</strong> or <strong>Z</strong> and a number, are the fastest way to place things.</p>
+<h2 id="4-paint-it-red">4. Paint it red<a class="headerlink" href="#4-paint-it-red" title="Permanent link">#</a></h2>
+<ol>
+<li>Click <strong>Suzanne</strong> again to select her.</li>
+<li>In the <strong>Properties</strong> editor (right side), click the <strong>Material</strong> tab, the red-and-grey sphere at the bottom of the tab column.</li>
+<li>Click <strong>New</strong>. A material called <em>Material</em> with a <strong>Principled BSDF</strong> is created.</li>
+<li>Click the white bar next to <strong>Base Color</strong> and choose a red.</li>
+<li>Set <strong>Roughness</strong> to <code>0.3</code> for a shiny paint (0 = mirror, 1 = matt).</li>
+<li>To see colours in the viewport, switch the shading to <strong>Material Preview</strong>: the third of the four sphere buttons at the top right of the viewport (or press <strong>Z</strong> → <em>Material Preview</em>).</li>
+</ol>
+<figure><a href="../images/blender-03-material.webp"><img src="../images/blender-03-material.webp" alt="The Material tab with a red base colour; the viewport in Material Preview." loading="lazy"></a><figcaption>The Material tab with a red base colour; the viewport in Material Preview.</figcaption></figure>
+<p>Give the floor a grey-blue material the same way (select the plane, <strong>New</strong>, pick a colour, Roughness <code>0.6</code>).</p>
+<h2 id="5-light-and-camera">5. Light and camera<a class="headerlink" href="#5-light-and-camera" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Light</strong>: click the light in the <strong>Outliner</strong> (top right list). In the <strong>Object Data</strong> tab (the green bulb) set <strong>Power</strong> to <code>2500 W</code>.</li>
+<li><strong>Camera</strong>: press <strong>Numpad 0</strong> to look through the camera (or <strong>View → Cameras → Active Camera</strong>). The scene is already framed. To change the view: <strong>View → Navigation → Walk/Fly</strong> or, easier, move the view where you like and press <strong>Ctrl+Alt+Numpad 0</strong> to move the camera there.</li>
+</ul>
+<h2 id="6-render-settings">6. Render settings<a class="headerlink" href="#6-render-settings" title="Permanent link">#</a></h2>
+<ol>
+<li>Click the <strong>Render</strong> tab in Properties (the camera-back icon, second from the top).</li>
+<li><strong>Render Engine</strong>: <strong>Cycles</strong>. <strong>Device</strong>: <strong>CPU</strong> (always works).</li>
+<li>Under <strong>Sampling → Render</strong>, set <strong>Max Samples</strong> to <code>32</code> and keep <strong>Denoise</strong> ticked. More samples = less noise but slower.</li>
+</ol>
+<figure><a href="../images/blender-04-settings.webp"><img src="../images/blender-04-settings.webp" alt="Render properties: Cycles, CPU, 32 samples." loading="lazy"></a><figcaption>Render properties: Cycles, CPU, 32 samples.</figcaption></figure>
+<ol start="4">
+<li>In the <strong>Output</strong> tab (the printer icon), check <strong>Resolution</strong>: <code>1280</code> × <code>720</code>, <code>100 %</code>.</li>
+</ol>
+<h2 id="7-render">7. Render!<a class="headerlink" href="#7-render" title="Permanent link">#</a></h2>
+<p>Press <strong>F12</strong> (or <strong>Render → Render Image</strong>). A new window opens and the picture builds up tile by tile. In a VM or on an older computer it may take a minute.</p>
+<figure><a href="../images/blender-05-render.webp"><img src="../images/blender-05-render.webp" alt="The render window with the finished picture." loading="lazy"></a><figcaption>The render window with the finished picture.</figcaption></figure>
+<h2 id="8-save-the-picture-and-the-scene">8. Save the picture and the scene<a class="headerlink" href="#8-save-the-picture-and-the-scene" title="Permanent link">#</a></h2>
+<ul>
+<li>In the <strong>render window</strong>: <strong>Image → Save As…</strong>, choose <code>Pictures</code>, type the name <code>first-render.png</code>, click <strong>Save As Image</strong>.</li>
+<li>In the <strong>main window</strong>: <strong>File → Save As…</strong> (Ctrl+Shift+S), make a folder <code>Projects</code>, name <code>first-render.blend</code>.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Live session</p>
+<p>In the live session, copy both files to a USB stick before you switch off. See <a href="../start/live-session.html">The live session</a>.</p>
+</div>
+<h2 id="what-next">What next?<a class="headerlink" href="#what-next" title="Permanent link">#</a></h2>
+<ul>
+<li>Change the colour, the light, or add a second object (<strong>Add → Mesh → UV Sphere</strong>), and render again.</li>
+<li>Make it move: <strong><a href="turntable-animation.html">A turntable animation</a></strong>.</li>
+<li>Learn more: Blender's manual (<em>Help → Manual</em>) and the free courses at <a href="https://studio.blender.org/training/">https://studio.blender.org/training/</a>.</li>
+</ul>
+</article>
+<nav class="prevnext"><span></span><a class="next" href="turntable-animation.html">A turntable animation →</a></nav>
+<footer class="foot"><a href="../md/tutorials/first-3d-render.md">View this page as Markdown</a> · <a href="../llms.txt">llms.txt</a> · <a href="../api/pages.json">JSON index</a> · Animux Guide 1.0.34 for Genesis64 r16.3, updated 2026-11-04 · <a href="../about/guide-updates.html">What changed</a></footer>
+</main>
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li class="l2"><a href="#1-start-blender">1. Start Blender</a></li><li class="l2"><a href="#2-replace-the-cube-with-a-monkey">2. Replace the cube with a monkey</a></li><li class="l2"><a href="#3-add-a-floor">3. Add a floor</a></li><li class="l2"><a href="#4-paint-it-red">4. Paint it red</a></li><li class="l2"><a href="#5-light-and-camera">5. Light and camera</a></li><li class="l2"><a href="#6-render-settings">6. Render settings</a></li><li class="l2"><a href="#7-render">7. Render!</a></li><li class="l2"><a href="#8-save-the-picture-and-the-scene">8. Save the picture and the scene</a></li><li class="l2"><a href="#what-next">What next?</a></li></ul></nav>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

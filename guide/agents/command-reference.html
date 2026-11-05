@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Command reference — Animux Guide</title>
+<meta name="description" content="Headless and command-line use of every Animux program, with conventions for output paths, exit codes, logs, displays and time limits.">
+<link rel="icon" href="../assets/animux.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="text/markdown" href="../md/agents/command-reference.md" title="This page as Markdown">
+<script>try{var t=localStorage.getItem('animux-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="menu-btn" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><img src="../assets/animux.png" alt="" width="28" height="28"><span>Animux <b>Guide</b></span></a>
+  <a class="site-home" href="../../index.html">← animux.org</a><div class="search"><input id="q" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search the guide"><div id="results" role="listbox"></div></div>
+  <button class="theme-btn" aria-label="Switch light or dark" onclick="animuxTheme()">◐</button>
+</header>
+<div class="wrap">
+<nav class="side" aria-label="Guide sections"><details><summary>Getting Started</summary><ul><li><a href="../start/what-is-animux.html">What is Animux?</a></li><li><a href="../start/at-a-glance.html">Animux at a glance</a></li><li><a href="../start/in-production.html">Used in film production</a></li><li><a href="../start/requirements.html">Computer requirements</a></li><li><a href="../start/get-the-iso.html">Get the ISO file</a></li><li><a href="../start/virtualbox.html">Try Animux in VirtualBox</a></li><li><a href="../start/other-vms.html">Other virtual machines</a></li><li><a href="../start/usb-stick.html">Make a bootable USB stick</a></li><li><a href="../start/boot-menu.html">The boot menu</a></li><li><a href="../start/live-session.html">The live session</a></li><li><a href="../start/install.html">Install Animux on a disk</a></li><li><a href="../start/first-steps.html">First steps after installing</a></li></ul></details><details><summary>Using the Desktop</summary><ul><li><a href="../desktop/tour.html">Desktop tour</a></li><li><a href="../desktop/menu.html">The Animux menu</a></li><li><a href="../desktop/files.html">Files, folders and drives</a></li><li><a href="../desktop/terminal.html">The terminal, gently</a></li><li><a href="../desktop/settings.html">Settings</a></li><li><a href="../desktop/add-software.html">Updates and adding software</a></li><li><a href="../desktop/shortcuts.html">Keyboard shortcuts</a></li></ul></details><details><summary>Software</summary><ul><li><a href="../software/index.html">All software</a></li><li><a href="../software/blender.html">Blender</a></li><li><a href="../software/makehuman.html">MakeHuman II and MPFB</a></li><li><a href="../software/other-3d.html">FreeCAD, Wings 3D, MeshLab and OpenSCAD</a></li><li><a href="../software/renderers.html">Renderers</a></li><li><a href="../software/renderer-comparison.html">Renderer comparison</a></li><li><a href="../software/flamenco.html">Flamenco render farm</a></li><li><a href="../software/gaffer.html">Gaffer</a></li><li><a href="../software/pipeline-formats.html">Pipeline formats and tools</a></li><li><a href="../software/studio-formats.html">Studio formats</a></li><li><a href="../software/synfig.html">Synfig Studio</a></li><li><a href="../software/opentoonz.html">OpenToonz</a></li><li><a href="../software/pencil2d.html">Pencil2D and TupiTube</a></li><li><a href="../software/krita.html">Krita</a></li><li><a href="../software/stopmotion.html">Stopmotion</a></li><li><a href="../software/gimp-inkscape.html">GIMP, Inkscape and other image tools</a></li><li><a href="../software/kdenlive.html">Kdenlive</a></li><li><a href="../software/video-tools.html">More video tools</a></li><li><a href="../software/audio.html">Sound and music</a></li><li><a href="../software/upscayl.html">Upscayl</a></li><li><a href="../software/ai-tools.html">AI tools</a></li><li><a href="../software/ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP)</a></li><li><a href="../software/storyboard-publishing.html">Storyboards, print and PDF</a></li><li><a href="../software/system-tools.html">System tools</a></li></ul></details><details><summary>Tutorials</summary><ul><li><a href="../tutorials/first-3d-render.html">Your first 3D render</a></li><li><a href="../tutorials/turntable-animation.html">A turntable animation</a></li><li><a href="../tutorials/character-makehuman.html">A character with MakeHuman</a></li><li><a href="../tutorials/bouncing-ball-synfig.html">A bouncing ball in Synfig</a></li><li><a href="../tutorials/hand-drawn-pencil2d.html">Hand-drawn animation in Pencil2D</a></li><li><a href="../tutorials/krita-animation.html">Paint an animation in Krita</a></li><li><a href="../tutorials/stop-motion-webcam.html">Stop motion with a webcam</a></li><li><a href="../tutorials/edit-video-kdenlive.html">Edit your film in Kdenlive</a></li><li><a href="../tutorials/command-line-rendering.html">Command-line rendering and batch jobs</a></li><li><a href="../tutorials/short-film-workflow.html">From idea to finished short film</a></li></ul></details><details><summary>Help</summary><ul><li><a href="../help/self-test.html">The self-test and sample scenes</a></li><li><a href="../help/troubleshooting.html">Troubleshooting</a></li><li><a href="../help/faq.html">Questions and answers</a></li><li><a href="../help/glossary.html">Glossary</a></li><li><a href="../help/getting-help.html">Getting help</a></li></ul></details><details open><summary>For AI Agents</summary><ul><li><a href="overview.html">The guide for AI agents and programs</a></li><li><a href="command-reference.html" aria-current=page>Command reference</a></li><li><a href="system-facts.html">System facts</a></li></ul></details><details><summary>News</summary><ul><li><a href="../news/2026-10-30-r16-3-release.html">Animux Genesis64 r16.3</a></li><li><a href="../news/2026-10-29-r16-2-release.html">Animux Genesis64 r16.2</a></li><li><a href="../news/2026-10-27-animux-guide.html">Introducing the Animux Guide</a></li><li><a href="../news/2026-10-26-r16-release.html">Animux Genesis64 r16 is here</a></li></ul></details><details><summary>About</summary><ul><li><a href="../about/versions.html">Versions</a></li><li><a href="../about/licenses.html">Licences and credits</a></li><li><a href="../about/guide-updates.html">Guide updates</a></li></ul></details></nav>
+<main id="main">
+<header class="pagehead"><p class="crumbs"><a href="../index.html">Home</a> › <a href="overview.html">For AI Agents</a></p><h1>Command reference</h1><p class="lede">Headless and command-line use of every Animux program, with conventions for output paths, exit codes, logs, displays and time limits.</p><p class="meta"><span class="tag">AI</span><span class="tag">agents</span><span class="tag">command line</span><span class="tag">headless</span><span class="tag">automation</span><span class="tag">reference</span></p></header>
+<article class="content">
+<h2 id="conventions">Conventions<a class="headerlink" href="#conventions" title="Permanent link">#</a></h2>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Rule on Animux</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shell</td>
+<td><code>bash</code>; the user's Home is <code>$HOME</code>; the guide's commands assume a normal user</td>
+</tr>
+<tr>
+<td>Graphical programs</td>
+<td>need the user's display: <code>DISPLAY=:0</code> (X11, Xfce). Check with <code>xdpyinfo -display :0 &gt;/dev/null</code></td>
+</tr>
+<tr>
+<td>Headless programs</td>
+<td>need no display; prefer them</td>
+</tr>
+<tr>
+<td>Exit codes</td>
+<td>0 = success for every command below. Still check the output file: some programs return 0 after writing nothing</td>
+</tr>
+<tr>
+<td>Time limits</td>
+<td>wrap long jobs: <code>timeout 3600 blender -b …</code></td>
+</tr>
+<tr>
+<td>Logs</td>
+<td>redirect: <code>cmd &gt; job.log 2&gt;&amp;1</code></td>
+</tr>
+<tr>
+<td>Paths with spaces</td>
+<td>quote them</td>
+</tr>
+<tr>
+<td>Parallel jobs</td>
+<td>Blender, Cycles, pbrt, LuxCore and Mitsuba each use all cores; run them one after another</td>
+</tr>
+<tr>
+<td>Python with VFX libraries</td>
+<td><code>animux-vfx-python</code> (OpenUSD, OIIO, OpenEXR, OCIO, MaterialX, Mitsuba, LuxCore, NumPy)</td>
+</tr>
+<tr>
+<td>Blender's own Python</td>
+<td><code>blender -b --python script.py</code> (module <code>bpy</code>)</td>
+</tr>
+<tr>
+<td>Gaffer's Python</td>
+<td><code>gaffer env python script.py</code> or <code>gaffer python script.py</code> (modules <code>Gaffer</code>, <code>GafferScene</code>, <code>IECore</code>)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="all-headless-commands">All headless commands<a class="headerlink" href="#all-headless-commands" title="Permanent link">#</a></h2>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Program</th>
+<th>Command-line use (no window)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../software/blender.html">Blender</a></td>
+<td><code>blender -b scene.blend -o //render_#### -F PNG -f 1</code></td>
+</tr>
+<tr>
+<td><a href="../software/blender.html">Blender</a></td>
+<td><code>blender -b scene.blend -a</code></td>
+</tr>
+<tr>
+<td><a href="../software/blender.html">Blender</a></td>
+<td><code>blender -b --python script.py</code></td>
+</tr>
+<tr>
+<td><a href="../software/other-3d.html">OpenSCAD</a></td>
+<td><code>openscad -o part.stl part.scad</code></td>
+</tr>
+<tr>
+<td><a href="../software/renderers.html">POV-Ray</a></td>
+<td><code>povray +Iscene.pov +Oscene.png +W1280 +H720 +A -D</code></td>
+</tr>
+<tr>
+<td><a href="../software/renderers.html">appleseed</a></td>
+<td><code>appleseed.cli scene.appleseed --output out.png</code></td>
+</tr>
+<tr>
+<td><a href="../software/renderers.html">LuxCoreRender</a></td>
+<td><code>animux-vfx-python /usr/share/animux/samples/luxcore/render.py out.png</code></td>
+</tr>
+<tr>
+<td><a href="../software/renderers.html">Mitsuba 3</a></td>
+<td><code>mitsuba scene.xml -o out.exr</code></td>
+</tr>
+<tr>
+<td><a href="../software/renderers.html">Mitsuba 3</a></td>
+<td><code>animux-vfx-python /usr/share/animux/samples/mitsuba/render.py out.exr</code></td>
+</tr>
+<tr>
+<td><a href="../software/renderers.html">pbrt-v4</a></td>
+<td><code>pbrt --outfile out.exr scene.pbrt</code></td>
+</tr>
+<tr>
+<td><a href="../software/renderers.html">pbrt-v4</a></td>
+<td><code>imgtool convert out.exr out.png</code></td>
+</tr>
+<tr>
+<td><a href="../software/gaffer.html">Gaffer</a></td>
+<td><code>gaffer execute -script scene.gfr -nodes Render</code></td>
+</tr>
+<tr>
+<td><a href="../software/gaffer.html">Gaffer</a></td>
+<td><code>gaffer python script.py</code></td>
+</tr>
+<tr>
+<td><a href="../software/pipeline-formats.html">OpenUSD tools (usdview, usdcat …)</a></td>
+<td><code>usdcat scene.usda -o scene.usdc</code></td>
+</tr>
+<tr>
+<td><a href="../software/pipeline-formats.html">OpenUSD tools (usdview, usdcat …)</a></td>
+<td><code>usdchecker scene.usda</code></td>
+</tr>
+<tr>
+<td><a href="../software/pipeline-formats.html">OpenUSD tools (usdview, usdcat …)</a></td>
+<td><code>usdtree scene.usda</code></td>
+</tr>
+<tr>
+<td><a href="../software/pipeline-formats.html">Alembic tools (abcls, abctree …)</a></td>
+<td><code>abcls -r file.abc</code></td>
+</tr>
+<tr>
+<td><a href="../software/pipeline-formats.html">Alembic tools (abcls, abctree …)</a></td>
+<td><code>abctree file.abc</code></td>
+</tr>
+<tr>
+<td><a href="../software/pipeline-formats.html">Alembic tools (abcls, abctree …)</a></td>
+<td><code>abcecho file.abc</code></td>
+</tr>
+<tr>
+<td><a href="../software/pipeline-formats.html">Open Shading Language (oslc, oslinfo, testshade)</a></td>
+<td><code>oslc myshader.osl</code></td>
+</tr>
+<tr>
+<td><a href="../software/pipeline-formats.html">Open Shading Language (oslc, oslinfo, testshade)</a></td>
+<td><code>oslinfo myshader.oso</code></td>
+</tr>
+<tr>
+<td><a href="../software/pipeline-formats.html">OpenEXR and OpenImageIO tools</a></td>
+<td><code>oiiotool in.exr --resize 50% -o out.png</code></td>
+</tr>
+<tr>
+<td><a href="../software/pipeline-formats.html">OpenEXR and OpenImageIO tools</a></td>
+<td><code>exrheader in.exr</code></td>
+</tr>
+<tr>
+<td><a href="../software/pipeline-formats.html">OpenEXR and OpenImageIO tools</a></td>
+<td><code>iinfo -v in.exr</code></td>
+</tr>
+<tr>
+<td><a href="../software/pipeline-formats.html">OpenColorIO tools</a></td>
+<td><code>ociocheck --iconfig config.ocio</code></td>
+</tr>
+<tr>
+<td><a href="../software/pipeline-formats.html">OpenVDB tools</a></td>
+<td><code>vdb_print -l file.vdb</code></td>
+</tr>
+<tr>
+<td><a href="../software/pipeline-formats.html">Animux VFX Python</a></td>
+<td><code>animux-vfx-python -c "import pxr, OpenImageIO, PyOpenColorIO, mitsuba, pyluxcore"</code></td>
+</tr>
+<tr>
+<td><a href="../software/flamenco.html">Flamenco</a></td>
+<td><code>flamenco-manager</code></td>
+</tr>
+<tr>
+<td><a href="../software/flamenco.html">Flamenco</a></td>
+<td><code>flamenco-worker -manager http://MANAGER:8080/</code></td>
+</tr>
+<tr>
+<td><a href="../software/opentoonz.html">OpenToonz</a></td>
+<td><code>LD_LIBRARY_PATH=/opt/animux/opentoonz/lib/opentoonz /opt/animux/opentoonz/bin/tcomposer scene.tnz -o out.png</code></td>
+</tr>
+<tr>
+<td><a href="../software/synfig.html">Synfig Studio</a></td>
+<td><code>synfig file.sif -t png -o frame.png</code></td>
+</tr>
+<tr>
+<td><a href="../software/synfig.html">Synfig Studio</a></td>
+<td><code>synfig file.sifz -t ffmpeg -o movie.mp4</code></td>
+</tr>
+<tr>
+<td><a href="../software/gimp-inkscape.html">GIMP</a></td>
+<td><code>gimp-console -i --batch-interpreter=python-fu-eval -b "exec(open('script.py').read())" --quit</code></td>
+</tr>
+<tr>
+<td><a href="../software/gimp-inkscape.html">GIMP</a></td>
+<td><code>gimp-console -i -b '(gimp-quit 0)'</code></td>
+</tr>
+<tr>
+<td><a href="../software/gimp-inkscape.html">Inkscape</a></td>
+<td><code>inkscape drawing.svg --export-type=png --export-width=1920</code></td>
+</tr>
+<tr>
+<td><a href="../tutorials/command-line-rendering.html">ImageMagick and G'MIC</a></td>
+<td><code>convert in.png -resize 50% out.jpg</code></td>
+</tr>
+<tr>
+<td><a href="../tutorials/command-line-rendering.html">ImageMagick and G'MIC</a></td>
+<td><code>mogrify -format jpg *.png</code></td>
+</tr>
+<tr>
+<td><a href="../tutorials/command-line-rendering.html">ImageMagick and G'MIC</a></td>
+<td><code>montage frame*.png -tile 4x -geometry +4+4 contact-sheet.png</code></td>
+</tr>
+<tr>
+<td><a href="../software/video-tools.html">Avidemux</a></td>
+<td><code>avidemux-cli --load in.mp4 --save out.mkv --output-format MKV</code></td>
+</tr>
+<tr>
+<td><a href="../software/video-tools.html">HandBrake</a></td>
+<td><code>HandBrakeCLI -i in.mov -o out.mp4 --preset "Fast 1080p30"</code></td>
+</tr>
+<tr>
+<td><a href="../software/video-tools.html">FFmpeg</a></td>
+<td><code>ffmpeg -framerate 24 -i render_%04d.png -c:v libx264 -pix_fmt yuv420p -crf 18 movie.mp4</code></td>
+</tr>
+<tr>
+<td><a href="../software/video-tools.html">FFmpeg</a></td>
+<td><code>ffmpeg -i movie.mp4 -i music.wav -c:v copy -c:a aac -shortest final.mp4</code></td>
+</tr>
+<tr>
+<td><a href="../software/audio.html">Sound analysis and conversion (Sonic Visualiser, Praat, SoundConverter, SoX)</a></td>
+<td><code>sox in.wav out.flac</code></td>
+</tr>
+<tr>
+<td><a href="../software/audio.html">Sound analysis and conversion (Sonic Visualiser, Praat, SoundConverter, SoX)</a></td>
+<td><code>sox in.wav -n stat</code></td>
+</tr>
+<tr>
+<td><a href="../software/ai-tools.html">Whisper</a></td>
+<td><code>animux-whisper dialogue.wav --model small --language en --output_format srt</code></td>
+</tr>
+<tr>
+<td><a href="../software/ai-tools.html">Whisper</a></td>
+<td><code>animux-whisper film.mp4 --task translate --output_format srt</code></td>
+</tr>
+<tr>
+<td><a href="../software/ai-tools.html">rembg</a></td>
+<td><code>animux-rembg i photo.jpg cutout.png</code></td>
+</tr>
+<tr>
+<td><a href="../software/ai-tools.html">rembg</a></td>
+<td><code>animux-rembg p frames/ frames-cutout/</code></td>
+</tr>
+<tr>
+<td><a href="../software/ai-tools.html">Ollama</a></td>
+<td><code>ollama serve</code></td>
+</tr>
+<tr>
+<td><a href="../software/ai-tools.html">Ollama</a></td>
+<td><code>ollama run llama3.2 "Write three names for a robot character"</code></td>
+</tr>
+<tr>
+<td><a href="../software/ai-tools.html">Ollama</a></td>
+<td><code>curl http://127.0.0.1:11434/api/generate -d '{"model":"llama3.2","prompt":"hello"}'</code></td>
+</tr>
+<tr>
+<td><a href="../software/ai-agents.html">MCP servers (Blender, GIMP, Krita, Inkscape)</a></td>
+<td><code>animux-mcp blender lab</code></td>
+</tr>
+<tr>
+<td><a href="../software/ai-agents.html">MCP servers (Blender, GIMP, Krita, Inkscape)</a></td>
+<td><code>animux-mcp gimp on</code></td>
+</tr>
+<tr>
+<td><a href="../software/ai-agents.html">MCP servers (Blender, GIMP, Krita, Inkscape)</a></td>
+<td><code>animux-mcp krita on</code></td>
+</tr>
+<tr>
+<td><a href="../software/ai-agents.html">MCP servers (Blender, GIMP, Krita, Inkscape)</a></td>
+<td><code>animux-mcp inkscape on</code></td>
+</tr>
+<tr>
+<td><a href="../software/ai-agents.html">MCP servers (Blender, GIMP, Krita, Inkscape)</a></td>
+<td><code>animux-mcp status</code></td>
+</tr>
+<tr>
+<td><a href="../software/ai-agents.html">MCP servers (Blender, GIMP, Krita, Inkscape)</a></td>
+<td><code>animux-mcp agent qwen3:8b</code></td>
+</tr>
+<tr>
+<td><a href="../software/ai-agents.html">MCP servers (Blender, GIMP, Krita, Inkscape)</a></td>
+<td><code>blender --background scene.blend --command blender_mcp</code></td>
+</tr>
+<tr>
+<td><a href="../software/ai-tools.html">LTX (Lightricks API)</a></td>
+<td><code>animux-ltx-api t2v "PROMPT" --duration 6</code></td>
+</tr>
+<tr>
+<td><a href="../software/ai-tools.html">LTX (Lightricks API)</a></td>
+<td><code>animux-ltx-api i2v frame.png "PROMPT"</code></td>
+</tr>
+<tr>
+<td><a href="../software/ai-tools.html">LTX (Lightricks API)</a></td>
+<td><code>animux-ltx-api mcp</code></td>
+</tr>
+<tr>
+<td><a href="../help/self-test.html">Animux Self-Test</a></td>
+<td><code>animux-selftest</code></td>
+</tr>
+<tr>
+<td><a href="../help/self-test.html">Animux Self-Test</a></td>
+<td><code>animux-selftest --list</code></td>
+</tr>
+<tr>
+<td><a href="../help/self-test.html">Animux Self-Test</a></td>
+<td><code>animux-selftest blender povray</code></td>
+</tr>
+<tr>
+<td><a href="overview.html">Animux Guide</a></td>
+<td><code>animux-docs search render farm</code></td>
+</tr>
+<tr>
+<td><a href="overview.html">Animux Guide</a></td>
+<td><code>animux-docs show tutorials/first-3d-render</code></td>
+</tr>
+<tr>
+<td><a href="overview.html">Animux Guide</a></td>
+<td><code>animux-docs software blender --json</code></td>
+</tr>
+<tr>
+<td><a href="overview.html">Animux Guide</a></td>
+<td><code>animux-docs mcp</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="blender-recipes">Blender recipes<a class="headerlink" href="#blender-recipes" title="Permanent link">#</a></h2>
+<pre><code># Render frame 1 of a file to PNG, 50% resolution, 16 samples
+blender -b in.blend --python-expr &quot;import bpy; s=bpy.context.scene; s.render.resolution_percentage=50; s.cycles.samples=16&quot; -o /tmp/out_#### -F PNG -f 1
+
+# Information about a .blend file (scenes, frame range, engine), as JSON
+blender -b in.blend --python-expr &quot;import bpy,json; s=bpy.context.scene; print('JSON'+json.dumps({'scene':s.name,'start':s.frame_start,'end':s.frame_end,'fps':s.render.fps,'engine':s.render.engine,'res':[s.render.resolution_x,s.render.resolution_y]}))&quot; | grep '^JSON' | cut -c5-
+
+# Convert / export
+blender -b in.blend --python-expr &quot;import bpy; bpy.ops.wm.usd_export(filepath='/tmp/out.usdc')&quot;
+blender -b --python-expr &quot;import bpy; bpy.ops.wm.read_factory_settings(use_empty=True); bpy.ops.wm.obj_import(filepath='in.obj'); bpy.ops.wm.save_as_mainfile(filepath='/tmp/out.blend')&quot;
+</code></pre>
+<p>Progress lines start with <code>Fra:</code>; a finished still prints <code>Saved: '&lt;path&gt;'</code>.</p>
+<h2 id="images-and-video">Images and video<a class="headerlink" href="#images-and-video" title="Permanent link">#</a></h2>
+<pre><code>oiiotool in.exr --colorconvert linear sRGB -o out.png      # EXR → PNG with a colour transform
+iinfo -v in.exr                                            # resolution, channels, metadata
+ffprobe -v error -show_entries format=duration -of csv=p=0 in.mp4   # length in seconds
+ffmpeg -y -framerate 24 -i f_%04d.png -c:v libx264 -pix_fmt yuv420p -crf 18 out.mp4
+convert in.png -resize 1920x1080 out.jpg
+</code></pre>
+<h2 id="checking-the-system">Checking the system<a class="headerlink" href="#checking-the-system" title="Permanent link">#</a></h2>
+<pre><code>animux-selftest --list               # available test names
+animux-selftest blender              # exit 0 = Blender works
+grep -o -w -E 'sse4_2|avx|avx2' /proc/cpuinfo | sort -u
+nproc; free -g; df -h &quot;$HOME&quot;
+test -d /run/live/medium &amp;&amp; echo live || echo installed
+dpkg-query -W 'animux-*'             # installed Animux packages and versions
+</code></pre>
+<h2 id="opening-programs-for-the-user">Opening programs for the user<a class="headerlink" href="#opening-programs-for-the-user" title="Permanent link">#</a></h2>
+<p>When the user wants to work in a program themselves, open it on their display and detach it:</p>
+<pre><code>DISPLAY=:0 setsid -f krita ~/Pictures/sketch.kra &gt;/dev/null 2&gt;&amp;1
+DISPLAY=:0 xdg-open ~/Videos/film.mp4            # default program for a file
+</code></pre>
+<p>The menu entries' exact commands are in <code>/usr/share/applications/*.desktop</code> (<code>Exec=</code> lines).</p>
+</article>
+<nav class="prevnext"><a class="prev" href="overview.html">← The guide for AI agents and programs</a><a class="next" href="system-facts.html">System facts →</a></nav>
+<footer class="foot"><a href="../md/agents/command-reference.md">View this page as Markdown</a> · <a href="../llms.txt">llms.txt</a> · <a href="../api/pages.json">JSON index</a> · Animux Guide 1.0.34 for Genesis64 r16.3, updated 2026-11-04 · <a href="../about/guide-updates.html">What changed</a></footer>
+</main>
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li class="l2"><a href="#conventions">Conventions</a></li><li class="l2"><a href="#all-headless-commands">All headless commands</a></li><li class="l2"><a href="#blender-recipes">Blender recipes</a></li><li class="l2"><a href="#images-and-video">Images and video</a></li><li class="l2"><a href="#checking-the-system">Checking the system</a></li><li class="l2"><a href="#opening-programs-for-the-user">Opening programs for the user</a></li></ul></nav>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

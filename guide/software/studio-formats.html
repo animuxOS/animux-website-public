@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio formats — Animux Guide</title>
+<meta name="description" content="OpenUSD, Alembic, OpenEXR, OpenColorIO and OpenVDB, one card each: which studio made it, what problem it solves, and what it looks like in Animux.">
+<link rel="icon" href="../assets/animux.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="text/markdown" href="../md/software/studio-formats.md" title="This page as Markdown">
+<script>try{var t=localStorage.getItem('animux-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="menu-btn" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><img src="../assets/animux.png" alt="" width="28" height="28"><span>Animux <b>Guide</b></span></a>
+  <a class="site-home" href="../../index.html">← animux.org</a><div class="search"><input id="q" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search the guide"><div id="results" role="listbox"></div></div>
+  <button class="theme-btn" aria-label="Switch light or dark" onclick="animuxTheme()">◐</button>
+</header>
+<div class="wrap wide">
+<nav class="side" aria-label="Guide sections"><details><summary>Getting Started</summary><ul><li><a href="../start/what-is-animux.html">What is Animux?</a></li><li><a href="../start/at-a-glance.html">Animux at a glance</a></li><li><a href="../start/in-production.html">Used in film production</a></li><li><a href="../start/requirements.html">Computer requirements</a></li><li><a href="../start/get-the-iso.html">Get the ISO file</a></li><li><a href="../start/virtualbox.html">Try Animux in VirtualBox</a></li><li><a href="../start/other-vms.html">Other virtual machines</a></li><li><a href="../start/usb-stick.html">Make a bootable USB stick</a></li><li><a href="../start/boot-menu.html">The boot menu</a></li><li><a href="../start/live-session.html">The live session</a></li><li><a href="../start/install.html">Install Animux on a disk</a></li><li><a href="../start/first-steps.html">First steps after installing</a></li></ul></details><details><summary>Using the Desktop</summary><ul><li><a href="../desktop/tour.html">Desktop tour</a></li><li><a href="../desktop/menu.html">The Animux menu</a></li><li><a href="../desktop/files.html">Files, folders and drives</a></li><li><a href="../desktop/terminal.html">The terminal, gently</a></li><li><a href="../desktop/settings.html">Settings</a></li><li><a href="../desktop/add-software.html">Updates and adding software</a></li><li><a href="../desktop/shortcuts.html">Keyboard shortcuts</a></li></ul></details><details open><summary>Software</summary><ul><li><a href="index.html">All software</a></li><li><a href="blender.html">Blender</a></li><li><a href="makehuman.html">MakeHuman II and MPFB</a></li><li><a href="other-3d.html">FreeCAD, Wings 3D, MeshLab and OpenSCAD</a></li><li><a href="renderers.html">Renderers</a></li><li><a href="renderer-comparison.html">Renderer comparison</a></li><li><a href="flamenco.html">Flamenco render farm</a></li><li><a href="gaffer.html">Gaffer</a></li><li><a href="pipeline-formats.html">Pipeline formats and tools</a></li><li><a href="studio-formats.html" aria-current=page>Studio formats</a></li><li><a href="synfig.html">Synfig Studio</a></li><li><a href="opentoonz.html">OpenToonz</a></li><li><a href="pencil2d.html">Pencil2D and TupiTube</a></li><li><a href="krita.html">Krita</a></li><li><a href="stopmotion.html">Stopmotion</a></li><li><a href="gimp-inkscape.html">GIMP, Inkscape and other image tools</a></li><li><a href="kdenlive.html">Kdenlive</a></li><li><a href="video-tools.html">More video tools</a></li><li><a href="audio.html">Sound and music</a></li><li><a href="upscayl.html">Upscayl</a></li><li><a href="ai-tools.html">AI tools</a></li><li><a href="ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP)</a></li><li><a href="storyboard-publishing.html">Storyboards, print and PDF</a></li><li><a href="system-tools.html">System tools</a></li></ul></details><details><summary>Tutorials</summary><ul><li><a href="../tutorials/first-3d-render.html">Your first 3D render</a></li><li><a href="../tutorials/turntable-animation.html">A turntable animation</a></li><li><a href="../tutorials/character-makehuman.html">A character with MakeHuman</a></li><li><a href="../tutorials/bouncing-ball-synfig.html">A bouncing ball in Synfig</a></li><li><a href="../tutorials/hand-drawn-pencil2d.html">Hand-drawn animation in Pencil2D</a></li><li><a href="../tutorials/krita-animation.html">Paint an animation in Krita</a></li><li><a href="../tutorials/stop-motion-webcam.html">Stop motion with a webcam</a></li><li><a href="../tutorials/edit-video-kdenlive.html">Edit your film in Kdenlive</a></li><li><a href="../tutorials/command-line-rendering.html">Command-line rendering and batch jobs</a></li><li><a href="../tutorials/short-film-workflow.html">From idea to finished short film</a></li></ul></details><details><summary>Help</summary><ul><li><a href="../help/self-test.html">The self-test and sample scenes</a></li><li><a href="../help/troubleshooting.html">Troubleshooting</a></li><li><a href="../help/faq.html">Questions and answers</a></li><li><a href="../help/glossary.html">Glossary</a></li><li><a href="../help/getting-help.html">Getting help</a></li></ul></details><details><summary>For AI Agents</summary><ul><li><a href="../agents/overview.html">The guide for AI agents and programs</a></li><li><a href="../agents/command-reference.html">Command reference</a></li><li><a href="../agents/system-facts.html">System facts</a></li></ul></details><details><summary>News</summary><ul><li><a href="../news/2026-10-30-r16-3-release.html">Animux Genesis64 r16.3</a></li><li><a href="../news/2026-10-29-r16-2-release.html">Animux Genesis64 r16.2</a></li><li><a href="../news/2026-10-27-animux-guide.html">Introducing the Animux Guide</a></li><li><a href="../news/2026-10-26-r16-release.html">Animux Genesis64 r16 is here</a></li></ul></details><details><summary>About</summary><ul><li><a href="../about/versions.html">Versions</a></li><li><a href="../about/licenses.html">Licences and credits</a></li><li><a href="../about/guide-updates.html">Guide updates</a></li></ul></details></nav>
+<main id="main">
+<header class="pagehead"><p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Software</a></p><h1>Studio formats</h1><p class="lede">OpenUSD, Alembic, OpenEXR, OpenColorIO and OpenVDB, one card each: which studio made it, what problem it solves, and what it looks like in Animux.</p><p class="meta"><span class="tag">pipeline</span><span class="tag">formats</span><span class="tag">USD</span><span class="tag">Pixar</span><span class="tag">Alembic</span><span class="tag">OpenEXR</span><span class="tag">OpenColorIO</span><span class="tag">ACES</span><span class="tag">OpenVDB</span><span class="tag">ASWF</span><span class="tag">studio</span></p></header>
+<article class="content">
+<p>A film passes through many programs: modelling, animation, effects, lighting, compositing. Each step must read what the step before wrote, without losing anything. The big studios solved this with their own file formats and then <strong>gave them away as open source</strong>. Today most of them are kept by the <strong>Academy Software Foundation</strong> (ASWF), part of the Linux Foundation. Animux installs them with their tools.</p>
+<div class="films">
+
+<article class="film">
+<p class="kicker">Pixar · open source since 2016</p>
+<h2 class="film-title">OpenUSD</h2>
+<p class="made">Universal Scene Description · <code>.usd .usda .usdc</code> · viewer: <code>usdview</code></p>
+<p><b>The problem:</b> on one shot, modelling, layout, animation and lighting all want to work at the same time.</p>
+<p><b>The answer:</b> a scene made of <b>layers</b>. Each department writes its own layer on top of the others, and a stronger layer wins. Nobody overwrites anybody's file.</p>
+<p>Pixar built USD for its own films and released it in 2016. It is now read by Blender, Houdini, Maya, Unreal and NVIDIA Omniverse.</p>
+<p class="source">Source: Pixar, "Open Source Announcement", openusd.org</p>
+</article>
+
+<article class="film">
+<p class="kicker">Sony Pictures Imageworks and ILM · 2010</p>
+<h2 class="film-title">Alembic</h2>
+<p class="made">Baked animation cache · <code>.abc</code> · tools: <code>abcls</code>, <code>abctree</code></p>
+<p><b>The problem:</b> a rig only works in the program it was built in.</p>
+<p><b>The answer:</b> the finished movement is <b>baked</b>: every vertex position on every frame is stored. The cache plays the same in Blender, Gaffer, Houdini or Maya, with no rig needed.</p>
+<p>Imageworks and Industrial Light &amp; Magic announced it together at SIGGRAPH 2010.</p>
+<p class="source">Source: Alembic project, alembic.io</p>
+</article>
+
+<article class="film">
+<p class="kicker">Industrial Light &amp; Magic · open source since 2003</p>
+<h2 class="film-title">OpenEXR</h2>
+<p class="made">High dynamic range images · <code>.exr</code> · viewer: <a class="chip" href="video-tools.html">DJV</a></p>
+<p><b>The problem:</b> a PNG cuts off light: the sun and a lamp both become plain white.</p>
+<p><b>The answer:</b> EXR keeps the <b>real brightness</b> of every pixel, so exposure can be changed later, and stores <b>passes</b> (light, shadow, reflections, depth) as separate layers in one file for compositing.</p>
+<p class="source">Source: OpenEXR project, openexr.com</p>
+</article>
+
+<article class="film">
+<p class="kicker">Sony Pictures Imageworks</p>
+<h2 class="film-title">OpenColorIO</h2>
+<p class="made">Colour management · <code>config.ocio</code> · ACES</p>
+<p><b>The problem:</b> the same frame looks different in the 3D program, the compositor and the editor.</p>
+<p><b>The answer:</b> one <b>colour configuration</b> shared by every program, so a red stays the same red from render to final grade. Blender, Krita, Gaffer and DaVinci Resolve all use it.</p>
+<p class="source">Source: OpenColorIO project, opencolorio.org</p>
+</article>
+
+<article class="film">
+<p class="kicker">DreamWorks Animation · 2012</p>
+<h2 class="film-title">OpenVDB</h2>
+<p class="made">Volumes · <code>.vdb</code> · smoke, fire, clouds</p>
+<p><b>The problem:</b> smoke and clouds are mostly empty air, and storing every point of a box wastes memory.</p>
+<p><b>The answer:</b> a sparse grid that stores only the cells where something is. Blender writes its smoke simulations as VDB, and renderers read them.</p>
+<p class="source">Source: OpenVDB project, openvdb.org</p>
+</article>
+
+</div>
+
+<p>Commands and examples for each format: <a href="pipeline-formats.html">Pipeline formats</a>.</p>
+</article>
+<nav class="prevnext"><a class="prev" href="pipeline-formats.html">← Pipeline formats and tools</a><a class="next" href="synfig.html">Synfig Studio →</a></nav>
+<footer class="foot"><a href="../md/software/studio-formats.md">View this page as Markdown</a> · <a href="../llms.txt">llms.txt</a> · <a href="../api/pages.json">JSON index</a> · Animux Guide 1.0.34 for Genesis64 r16.3, updated 2026-11-04 · <a href="../about/guide-updates.html">What changed</a></footer>
+</main>
+
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

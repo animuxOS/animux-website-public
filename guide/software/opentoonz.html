@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenToonz — Animux Guide</title>
+<meta name="description" content="The studio 2D animation program: hand-drawn and cut-out animation with the Xsheet, scan cleanup, ink and paint, and node-based effects. New in r16.3.">
+<link rel="icon" href="../assets/animux.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="text/markdown" href="../md/software/opentoonz.md" title="This page as Markdown">
+<script>try{var t=localStorage.getItem('animux-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="menu-btn" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><img src="../assets/animux.png" alt="" width="28" height="28"><span>Animux <b>Guide</b></span></a>
+  <a class="site-home" href="../../index.html">← animux.org</a><div class="search"><input id="q" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search the guide"><div id="results" role="listbox"></div></div>
+  <button class="theme-btn" aria-label="Switch light or dark" onclick="animuxTheme()">◐</button>
+</header>
+<div class="wrap">
+<nav class="side" aria-label="Guide sections"><details><summary>Getting Started</summary><ul><li><a href="../start/what-is-animux.html">What is Animux?</a></li><li><a href="../start/at-a-glance.html">Animux at a glance</a></li><li><a href="../start/in-production.html">Used in film production</a></li><li><a href="../start/requirements.html">Computer requirements</a></li><li><a href="../start/get-the-iso.html">Get the ISO file</a></li><li><a href="../start/virtualbox.html">Try Animux in VirtualBox</a></li><li><a href="../start/other-vms.html">Other virtual machines</a></li><li><a href="../start/usb-stick.html">Make a bootable USB stick</a></li><li><a href="../start/boot-menu.html">The boot menu</a></li><li><a href="../start/live-session.html">The live session</a></li><li><a href="../start/install.html">Install Animux on a disk</a></li><li><a href="../start/first-steps.html">First steps after installing</a></li></ul></details><details><summary>Using the Desktop</summary><ul><li><a href="../desktop/tour.html">Desktop tour</a></li><li><a href="../desktop/menu.html">The Animux menu</a></li><li><a href="../desktop/files.html">Files, folders and drives</a></li><li><a href="../desktop/terminal.html">The terminal, gently</a></li><li><a href="../desktop/settings.html">Settings</a></li><li><a href="../desktop/add-software.html">Updates and adding software</a></li><li><a href="../desktop/shortcuts.html">Keyboard shortcuts</a></li></ul></details><details open><summary>Software</summary><ul><li><a href="index.html">All software</a></li><li><a href="blender.html">Blender</a></li><li><a href="makehuman.html">MakeHuman II and MPFB</a></li><li><a href="other-3d.html">FreeCAD, Wings 3D, MeshLab and OpenSCAD</a></li><li><a href="renderers.html">Renderers</a></li><li><a href="renderer-comparison.html">Renderer comparison</a></li><li><a href="flamenco.html">Flamenco render farm</a></li><li><a href="gaffer.html">Gaffer</a></li><li><a href="pipeline-formats.html">Pipeline formats and tools</a></li><li><a href="studio-formats.html">Studio formats</a></li><li><a href="synfig.html">Synfig Studio</a></li><li><a href="opentoonz.html" aria-current=page>OpenToonz</a></li><li><a href="pencil2d.html">Pencil2D and TupiTube</a></li><li><a href="krita.html">Krita</a></li><li><a href="stopmotion.html">Stopmotion</a></li><li><a href="gimp-inkscape.html">GIMP, Inkscape and other image tools</a></li><li><a href="kdenlive.html">Kdenlive</a></li><li><a href="video-tools.html">More video tools</a></li><li><a href="audio.html">Sound and music</a></li><li><a href="upscayl.html">Upscayl</a></li><li><a href="ai-tools.html">AI tools</a></li><li><a href="ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP)</a></li><li><a href="storyboard-publishing.html">Storyboards, print and PDF</a></li><li><a href="system-tools.html">System tools</a></li></ul></details><details><summary>Tutorials</summary><ul><li><a href="../tutorials/first-3d-render.html">Your first 3D render</a></li><li><a href="../tutorials/turntable-animation.html">A turntable animation</a></li><li><a href="../tutorials/character-makehuman.html">A character with MakeHuman</a></li><li><a href="../tutorials/bouncing-ball-synfig.html">A bouncing ball in Synfig</a></li><li><a href="../tutorials/hand-drawn-pencil2d.html">Hand-drawn animation in Pencil2D</a></li><li><a href="../tutorials/krita-animation.html">Paint an animation in Krita</a></li><li><a href="../tutorials/stop-motion-webcam.html">Stop motion with a webcam</a></li><li><a href="../tutorials/edit-video-kdenlive.html">Edit your film in Kdenlive</a></li><li><a href="../tutorials/command-line-rendering.html">Command-line rendering and batch jobs</a></li><li><a href="../tutorials/short-film-workflow.html">From idea to finished short film</a></li></ul></details><details><summary>Help</summary><ul><li><a href="../help/self-test.html">The self-test and sample scenes</a></li><li><a href="../help/troubleshooting.html">Troubleshooting</a></li><li><a href="../help/faq.html">Questions and answers</a></li><li><a href="../help/glossary.html">Glossary</a></li><li><a href="../help/getting-help.html">Getting help</a></li></ul></details><details><summary>For AI Agents</summary><ul><li><a href="../agents/overview.html">The guide for AI agents and programs</a></li><li><a href="../agents/command-reference.html">Command reference</a></li><li><a href="../agents/system-facts.html">System facts</a></li></ul></details><details><summary>News</summary><ul><li><a href="../news/2026-10-30-r16-3-release.html">Animux Genesis64 r16.3</a></li><li><a href="../news/2026-10-29-r16-2-release.html">Animux Genesis64 r16.2</a></li><li><a href="../news/2026-10-27-animux-guide.html">Introducing the Animux Guide</a></li><li><a href="../news/2026-10-26-r16-release.html">Animux Genesis64 r16 is here</a></li></ul></details><details><summary>About</summary><ul><li><a href="../about/versions.html">Versions</a></li><li><a href="../about/licenses.html">Licences and credits</a></li><li><a href="../about/guide-updates.html">Guide updates</a></li></ul></details></nav>
+<main id="main">
+<header class="pagehead"><p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Software</a></p><h1>OpenToonz</h1><p class="lede">The studio 2D animation program: hand-drawn and cut-out animation with the Xsheet, scan cleanup, ink and paint, and node-based effects. New in r16.3.</p><p class="meta"><span class="tag">2D</span><span class="tag">animation</span><span class="tag">xsheet</span><span class="tag">toonz</span><span class="tag">ink and paint</span><span class="tag">cleanup</span><span class="tag">cut-out</span><span class="tag">professional</span></p></header>
+<article class="content">
+<div class="factbox">
+<div class="table"><table>
+<thead>
+<tr>
+<th>OpenToonz</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Menu</td>
+<td>2D Animation → OpenToonz</td>
+</tr>
+<tr>
+<td>Version</td>
+<td>1.8.0 (built by Animux, new in r16.3)</td>
+</tr>
+<tr>
+<td>Command</td>
+<td><code>opentoonz</code></td>
+</tr>
+<tr>
+<td>Good for</td>
+<td>Intermediate</td>
+</tr>
+<tr>
+<td>Files</td>
+<td>.tnz scenes with .tlv, .pli and raster levels; renders PNG/TIFF sequences and video</td>
+</tr>
+<tr>
+<td>Licence</td>
+<td>BSD-3-Clause</td>
+</tr>
+<tr>
+<td>Website</td>
+<td><a href="https://opentoonz.github.io/">opentoonz.github.io</a></td>
+</tr>
+<tr>
+<td>Self-test</td>
+<td><code>animux-selftest opentoonz</code></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p><strong>OpenToonz</strong> is the open-source version of <strong>Toonz</strong>, the 2D animation software used in studios, among them Studio Ghibli, whose edition it is based on. It covers the whole traditional 2D pipeline: draw or scan the drawings, clean up the lines, paint them, time them on the <strong>Xsheet</strong>, add effects and render.</p>
+<div class="admonition note">
+<p class="admonition-title">New in r16.3</p>
+<p>OpenToonz is on Animux from release <strong>r16.3</strong>. Debian has no OpenToonz package, so Animux builds version 1.8.0 from its source code (package <code>animux-opentoonz</code>, installed in <code>/opt/animux/opentoonz</code>).</p>
+</div>
+<h2 id="start-it">Start it<a class="headerlink" href="#start-it" title="Permanent link">#</a></h2>
+<p><strong>2D Animation → OpenToonz</strong>, or type <code>opentoonz</code>. The first start copies OpenToonz's brushes, templates and settings to <code>~/.config/OpenToonz</code>; that takes a few seconds.</p>
+<p>The <strong>Startup</strong> window opens on top:</p>
+<ol>
+<li>Keep the project <strong>sandbox</strong> (OpenToonz's practice project), or click <strong>New Project...</strong> for a real one.</li>
+<li>Click <strong>Create a New Scene</strong>, type a <strong>Scene Name</strong> and click <strong>Create Scene</strong>.</li>
+</ol>
+<p>Untick <strong>Show this at startup</strong> if you do not want this window every time.</p>
+<h2 id="the-main-parts">The main parts<a class="headerlink" href="#the-main-parts" title="Permanent link">#</a></h2>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Part</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rooms</strong> (tabs top right)</td>
+<td>ready-made window layouts: <em>Drawing</em>, <em>Timeline</em>, <em>Cleanup</em>, <em>InknPaint</em>, <em>Xsheet</em>, …</td>
+</tr>
+<tr>
+<td><strong>Viewer</strong></td>
+<td>the canvas; the red frame is the camera</td>
+</tr>
+<tr>
+<td><strong>Xsheet</strong> / <strong>Timeline</strong></td>
+<td>columns are layers, rows are frames: which drawing is shown on which frame</td>
+</tr>
+<tr>
+<td><strong>Level Strip</strong></td>
+<td>all drawings of the current level</td>
+</tr>
+<tr>
+<td><strong>FX Schematic</strong></td>
+<td>effects as connected nodes (<em>Windows → Schematic</em>)</td>
+</tr>
+</tbody>
+</table></div>
+<p>A <strong>level</strong> is a set of drawings (one character, one prop). OpenToonz has three kinds: <strong>Toonz Raster</strong> (<code>.tlv</code>, pencil-like lines with separate ink and paint), <strong>Toonz Vector</strong> (<code>.pli</code>, editable lines) and plain <strong>Raster</strong> (<code>.tif</code>, <code>.png</code>).</p>
+<h2 id="a-first-drawing">A first drawing<a class="headerlink" href="#a-first-drawing" title="Permanent link">#</a></h2>
+<ol>
+<li>In the <strong>Drawing</strong> room, click the cell of frame 1 in column <em>Col1</em>.</li>
+<li>Press <strong>B</strong> for the <strong>Brush</strong> and draw in the viewer. OpenToonz makes a new level for it.</li>
+<li>Click frame 2 and draw the next pose. <strong>Onion skin</strong> (<em>View → Onion Skin</em>) shows the frame before.</li>
+<li><strong>File → Save All</strong> (<strong>Ctrl+S</strong>). The scene goes to <code>scenes/</code>, the drawings to <code>drawings/</code> of the project.</li>
+<li><strong>Render → Output Settings</strong> to choose the format and folder, then <strong>Render → Render</strong> (<strong>Ctrl+Shift+R</strong>). Files go to the project's <code>outputs/</code> folder.</li>
+</ol>
+<p>A ready-made sample project is in <code>/usr/share/animux/samples/opentoonz/animux-lines</code>; <code>animux-selftest opentoonz</code> renders it.</p>
+<h2 id="render-without-the-window">Render without the window<a class="headerlink" href="#render-without-the-window" title="Permanent link">#</a></h2>
+<p>OpenToonz renders with <strong>tcomposer</strong>. After you have started OpenToonz once:</p>
+<pre><code>LD_LIBRARY_PATH=/opt/animux/opentoonz/lib/opentoonz \
+  /opt/animux/opentoonz/bin/tcomposer ~/.config/OpenToonz/stuff/sandbox/scenes/myscene.tnz -o /tmp/out.png
+</code></pre>
+<p>This writes <code>/tmp/out.0001.png</code>, <code>/tmp/out.0002.png</code>, … one file per frame. On a server without a screen, put <code>QT_QPA_PLATFORM=offscreen</code> in front.</p>
+<h2 id="when-to-use-something-else">When to use something else<a class="headerlink" href="#when-to-use-something-else" title="Permanent link">#</a></h2>
+<ul>
+<li>Simple frame-by-frame drawing, for beginners and schools: <a href="pencil2d.html">Pencil2D</a>.</li>
+<li>Animation by moving shapes and bones with automatic in-betweens: <a href="synfig.html">Synfig</a>.</li>
+<li>Painterly animation with brushes and textures: <a href="krita.html">Krita</a>.</li>
+</ul>
+<p>Help: the OpenToonz manual at <a href="https://opentoonz.readthedocs.io/">opentoonz.readthedocs.io</a>.</p>
+</article>
+<nav class="prevnext"><a class="prev" href="synfig.html">← Synfig Studio</a><a class="next" href="pencil2d.html">Pencil2D and TupiTube →</a></nav>
+<footer class="foot"><a href="../md/software/opentoonz.md">View this page as Markdown</a> · <a href="../llms.txt">llms.txt</a> · <a href="../api/pages.json">JSON index</a> · Animux Guide 1.0.34 for Genesis64 r16.3, updated 2026-11-04 · <a href="../about/guide-updates.html">What changed</a></footer>
+</main>
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li class="l2"><a href="#start-it">Start it</a></li><li class="l2"><a href="#the-main-parts">The main parts</a></li><li class="l2"><a href="#a-first-drawing">A first drawing</a></li><li class="l2"><a href="#render-without-the-window">Render without the window</a></li><li class="l2"><a href="#when-to-use-something-else">When to use something else</a></li></ul></nav>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edit your film in Kdenlive — Animux Guide</title>
+<meta name="description" content="Put rendered shots, a title and music together on a timeline and export an MP4 ready for YouTube. Uses the turntable video from the earlier tutorial. About 30 minutes.">
+<link rel="icon" href="../assets/animux.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="text/markdown" href="../md/tutorials/edit-video-kdenlive.md" title="This page as Markdown">
+<script>try{var t=localStorage.getItem('animux-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="menu-btn" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><img src="../assets/animux.png" alt="" width="28" height="28"><span>Animux <b>Guide</b></span></a>
+  <a class="site-home" href="../../index.html">← animux.org</a><div class="search"><input id="q" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search the guide"><div id="results" role="listbox"></div></div>
+  <button class="theme-btn" aria-label="Switch light or dark" onclick="animuxTheme()">◐</button>
+</header>
+<div class="wrap">
+<nav class="side" aria-label="Guide sections"><details><summary>Getting Started</summary><ul><li><a href="../start/what-is-animux.html">What is Animux?</a></li><li><a href="../start/at-a-glance.html">Animux at a glance</a></li><li><a href="../start/in-production.html">Used in film production</a></li><li><a href="../start/requirements.html">Computer requirements</a></li><li><a href="../start/get-the-iso.html">Get the ISO file</a></li><li><a href="../start/virtualbox.html">Try Animux in VirtualBox</a></li><li><a href="../start/other-vms.html">Other virtual machines</a></li><li><a href="../start/usb-stick.html">Make a bootable USB stick</a></li><li><a href="../start/boot-menu.html">The boot menu</a></li><li><a href="../start/live-session.html">The live session</a></li><li><a href="../start/install.html">Install Animux on a disk</a></li><li><a href="../start/first-steps.html">First steps after installing</a></li></ul></details><details><summary>Using the Desktop</summary><ul><li><a href="../desktop/tour.html">Desktop tour</a></li><li><a href="../desktop/menu.html">The Animux menu</a></li><li><a href="../desktop/files.html">Files, folders and drives</a></li><li><a href="../desktop/terminal.html">The terminal, gently</a></li><li><a href="../desktop/settings.html">Settings</a></li><li><a href="../desktop/add-software.html">Updates and adding software</a></li><li><a href="../desktop/shortcuts.html">Keyboard shortcuts</a></li></ul></details><details><summary>Software</summary><ul><li><a href="../software/index.html">All software</a></li><li><a href="../software/blender.html">Blender</a></li><li><a href="../software/makehuman.html">MakeHuman II and MPFB</a></li><li><a href="../software/other-3d.html">FreeCAD, Wings 3D, MeshLab and OpenSCAD</a></li><li><a href="../software/renderers.html">Renderers</a></li><li><a href="../software/renderer-comparison.html">Renderer comparison</a></li><li><a href="../software/flamenco.html">Flamenco render farm</a></li><li><a href="../software/gaffer.html">Gaffer</a></li><li><a href="../software/pipeline-formats.html">Pipeline formats and tools</a></li><li><a href="../software/studio-formats.html">Studio formats</a></li><li><a href="../software/synfig.html">Synfig Studio</a></li><li><a href="../software/opentoonz.html">OpenToonz</a></li><li><a href="../software/pencil2d.html">Pencil2D and TupiTube</a></li><li><a href="../software/krita.html">Krita</a></li><li><a href="../software/stopmotion.html">Stopmotion</a></li><li><a href="../software/gimp-inkscape.html">GIMP, Inkscape and other image tools</a></li><li><a href="../software/kdenlive.html">Kdenlive</a></li><li><a href="../software/video-tools.html">More video tools</a></li><li><a href="../software/audio.html">Sound and music</a></li><li><a href="../software/upscayl.html">Upscayl</a></li><li><a href="../software/ai-tools.html">AI tools</a></li><li><a href="../software/ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP)</a></li><li><a href="../software/storyboard-publishing.html">Storyboards, print and PDF</a></li><li><a href="../software/system-tools.html">System tools</a></li></ul></details><details open><summary>Tutorials</summary><ul><li><a href="first-3d-render.html">Your first 3D render</a></li><li><a href="turntable-animation.html">A turntable animation</a></li><li><a href="character-makehuman.html">A character with MakeHuman</a></li><li><a href="bouncing-ball-synfig.html">A bouncing ball in Synfig</a></li><li><a href="hand-drawn-pencil2d.html">Hand-drawn animation in Pencil2D</a></li><li><a href="krita-animation.html">Paint an animation in Krita</a></li><li><a href="stop-motion-webcam.html">Stop motion with a webcam</a></li><li><a href="edit-video-kdenlive.html" aria-current=page>Edit your film in Kdenlive</a></li><li><a href="command-line-rendering.html">Command-line rendering and batch jobs</a></li><li><a href="short-film-workflow.html">From idea to finished short film</a></li></ul></details><details><summary>Help</summary><ul><li><a href="../help/self-test.html">The self-test and sample scenes</a></li><li><a href="../help/troubleshooting.html">Troubleshooting</a></li><li><a href="../help/faq.html">Questions and answers</a></li><li><a href="../help/glossary.html">Glossary</a></li><li><a href="../help/getting-help.html">Getting help</a></li></ul></details><details><summary>For AI Agents</summary><ul><li><a href="../agents/overview.html">The guide for AI agents and programs</a></li><li><a href="../agents/command-reference.html">Command reference</a></li><li><a href="../agents/system-facts.html">System facts</a></li></ul></details><details><summary>News</summary><ul><li><a href="../news/2026-10-30-r16-3-release.html">Animux Genesis64 r16.3</a></li><li><a href="../news/2026-10-29-r16-2-release.html">Animux Genesis64 r16.2</a></li><li><a href="../news/2026-10-27-animux-guide.html">Introducing the Animux Guide</a></li><li><a href="../news/2026-10-26-r16-release.html">Animux Genesis64 r16 is here</a></li></ul></details><details><summary>About</summary><ul><li><a href="../about/versions.html">Versions</a></li><li><a href="../about/licenses.html">Licences and credits</a></li><li><a href="../about/guide-updates.html">Guide updates</a></li></ul></details></nav>
+<main id="main">
+<header class="pagehead"><p class="crumbs"><a href="../index.html">Home</a> › <a href="first-3d-render.html">Tutorials</a></p><h1>Edit your film in Kdenlive</h1><p class="lede">Put rendered shots, a title and music together on a timeline and export an MP4 ready for YouTube. Uses the turntable video from the earlier tutorial. About 30 minutes.</p><p class="meta"><span class="tag">beginner</span><span class="tag">Kdenlive</span><span class="tag">video</span><span class="tag">editing</span><span class="tag">export</span></p></header>
+<article class="content">
+<p>You need some clips: the <code>turntable0001-0096.mp4</code> from <a href="turntable-animation.html">A turntable animation</a> (or download <a href="../files/turntable.mp4">turntable.mp4</a>), and any music file (WAV, MP3 or OGG).</p>
+<figure><a href="../images/kdenlive.webp"><img src="../images/kdenlive.webp" alt="Kdenlive with the turntable video in the project bin." loading="lazy"></a><figcaption>Kdenlive with the turntable video in the project bin.</figcaption></figure>
+<h2 id="1-project-settings">1. Project settings<a class="headerlink" href="#1-project-settings" title="Permanent link">#</a></h2>
+<ol>
+<li>Start <strong>NLV Editors → Kdenlive</strong>.</li>
+<li><strong>Project → Project Settings</strong>: choose a profile matching your animation, here <strong>HD 720p 24 fps</strong> (1280 × 720, 24 frames per second). Click <strong>OK</strong>.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Always choose the profile first</p>
+<p>If the profile does not match your clips, Kdenlive offers to change it when you add the first clip. Say <strong>yes</strong> if it suggests the clip's own format.</p>
+</div>
+<h2 id="2-bring-in-the-clips">2. Bring in the clips<a class="headerlink" href="#2-bring-in-the-clips" title="Permanent link">#</a></h2>
+<ul>
+<li>Drag files from the file manager into the <strong>Project Bin</strong>, or right-click in the bin → <strong>Add Clip or Folder</strong>.</li>
+<li>For an <strong>image sequence</strong> (frames from Blender, Synfig or Krita), choose the first image and tick <strong>Import image sequence</strong>.</li>
+</ul>
+<h2 id="3-build-the-edit">3. Build the edit<a class="headerlink" href="#3-build-the-edit" title="Permanent link">#</a></h2>
+<ol>
+<li>Drag the turntable clip from the bin onto the <strong>V1</strong> track of the timeline.</li>
+<li>Drag it again so it plays twice in a row (two turns).</li>
+<li>Click on the timeline to move the playhead; press <strong>Space</strong> to play in the <strong>Project Monitor</strong>.</li>
+<li>To cut: put the playhead where you want the cut and press <strong>Shift+R</strong>. Delete a part by selecting it and pressing <strong>Delete</strong>.</li>
+</ol>
+<h2 id="4-a-title">4. A title<a class="headerlink" href="#4-a-title" title="Permanent link">#</a></h2>
+<ol>
+<li>Right-click the Project Bin → <strong>Add Title Clip</strong>.</li>
+<li>Type the title (for example <em>Suzanne Spins</em>), choose font and size, click <strong>OK</strong>.</li>
+<li>Drag the title clip onto <strong>V2</strong> above the start of the video. It is shown on top.</li>
+<li>Fade it: right-click the title on the timeline → <strong>Add Effect → Fade → Fade In</strong> and <strong>Fade Out</strong>.</li>
+</ol>
+<h2 id="5-music">5. Music<a class="headerlink" href="#5-music" title="Permanent link">#</a></h2>
+<ol>
+<li>Drag your music into the bin, then onto the <strong>A1</strong> audio track.</li>
+<li>Trim it to the length of the video by dragging its end.</li>
+<li>Fade out at the end: <strong>Add Effect → Fade → Fade Out</strong>.</li>
+<li>Too loud? Add the <strong>Volume (keyframable)</strong> effect and lower it.</li>
+</ol>
+<h2 id="6-export">6. Export<a class="headerlink" href="#6-export" title="Permanent link">#</a></h2>
+<ol>
+<li><strong>Project → Render</strong> (Ctrl+Enter).</li>
+<li>Choose the preset <strong>MP4-H264/AAC</strong>.</li>
+<li>Set the <strong>Output file</strong>, for example <code>~/Videos/suzanne-spins.mp4</code>.</li>
+<li>Click <strong>Render to File</strong>. The <em>Job Queue</em> tab shows progress.</li>
+</ol>
+<p>Watch the result in VLC. Upload it, send it, or show it.</p>
+<h2 id="save-the-project">Save the project<a class="headerlink" href="#save-the-project" title="Permanent link">#</a></h2>
+<p><strong>File → Save</strong> writes a <code>.kdenlive</code> file. It only refers to your clips; keep the clips where they are (in your project folder) or Kdenlive cannot find them later.</p>
+</article>
+<nav class="prevnext"><a class="prev" href="stop-motion-webcam.html">← Stop motion with a webcam</a><a class="next" href="command-line-rendering.html">Command-line rendering and batch jobs →</a></nav>
+<footer class="foot"><a href="../md/tutorials/edit-video-kdenlive.md">View this page as Markdown</a> · <a href="../llms.txt">llms.txt</a> · <a href="../api/pages.json">JSON index</a> · Animux Guide 1.0.34 for Genesis64 r16.3, updated 2026-11-04 · <a href="../about/guide-updates.html">What changed</a></footer>
+</main>
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li class="l2"><a href="#1-project-settings">1. Project settings</a></li><li class="l2"><a href="#2-bring-in-the-clips">2. Bring in the clips</a></li><li class="l2"><a href="#3-build-the-edit">3. Build the edit</a></li><li class="l2"><a href="#4-a-title">4. A title</a></li><li class="l2"><a href="#5-music">5. Music</a></li><li class="l2"><a href="#6-export">6. Export</a></li><li class="l2"><a href="#save-the-project">Save the project</a></li></ul></nav>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

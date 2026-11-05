@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>System facts — Animux Guide</title>
+<meta name="description" content="The layout of an Animux system in one page. Release, base, users, important paths, Animux packages, services, ports, boot roles and how to tell a live session from an installed one.">
+<link rel="icon" href="../assets/animux.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="text/markdown" href="../md/agents/system-facts.md" title="This page as Markdown">
+<script>try{var t=localStorage.getItem('animux-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="menu-btn" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><img src="../assets/animux.png" alt="" width="28" height="28"><span>Animux <b>Guide</b></span></a>
+  <a class="site-home" href="../../index.html">← animux.org</a><div class="search"><input id="q" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search the guide"><div id="results" role="listbox"></div></div>
+  <button class="theme-btn" aria-label="Switch light or dark" onclick="animuxTheme()">◐</button>
+</header>
+<div class="wrap">
+<nav class="side" aria-label="Guide sections"><details><summary>Getting Started</summary><ul><li><a href="../start/what-is-animux.html">What is Animux?</a></li><li><a href="../start/at-a-glance.html">Animux at a glance</a></li><li><a href="../start/in-production.html">Used in film production</a></li><li><a href="../start/requirements.html">Computer requirements</a></li><li><a href="../start/get-the-iso.html">Get the ISO file</a></li><li><a href="../start/virtualbox.html">Try Animux in VirtualBox</a></li><li><a href="../start/other-vms.html">Other virtual machines</a></li><li><a href="../start/usb-stick.html">Make a bootable USB stick</a></li><li><a href="../start/boot-menu.html">The boot menu</a></li><li><a href="../start/live-session.html">The live session</a></li><li><a href="../start/install.html">Install Animux on a disk</a></li><li><a href="../start/first-steps.html">First steps after installing</a></li></ul></details><details><summary>Using the Desktop</summary><ul><li><a href="../desktop/tour.html">Desktop tour</a></li><li><a href="../desktop/menu.html">The Animux menu</a></li><li><a href="../desktop/files.html">Files, folders and drives</a></li><li><a href="../desktop/terminal.html">The terminal, gently</a></li><li><a href="../desktop/settings.html">Settings</a></li><li><a href="../desktop/add-software.html">Updates and adding software</a></li><li><a href="../desktop/shortcuts.html">Keyboard shortcuts</a></li></ul></details><details><summary>Software</summary><ul><li><a href="../software/index.html">All software</a></li><li><a href="../software/blender.html">Blender</a></li><li><a href="../software/makehuman.html">MakeHuman II and MPFB</a></li><li><a href="../software/other-3d.html">FreeCAD, Wings 3D, MeshLab and OpenSCAD</a></li><li><a href="../software/renderers.html">Renderers</a></li><li><a href="../software/renderer-comparison.html">Renderer comparison</a></li><li><a href="../software/flamenco.html">Flamenco render farm</a></li><li><a href="../software/gaffer.html">Gaffer</a></li><li><a href="../software/pipeline-formats.html">Pipeline formats and tools</a></li><li><a href="../software/studio-formats.html">Studio formats</a></li><li><a href="../software/synfig.html">Synfig Studio</a></li><li><a href="../software/opentoonz.html">OpenToonz</a></li><li><a href="../software/pencil2d.html">Pencil2D and TupiTube</a></li><li><a href="../software/krita.html">Krita</a></li><li><a href="../software/stopmotion.html">Stopmotion</a></li><li><a href="../software/gimp-inkscape.html">GIMP, Inkscape and other image tools</a></li><li><a href="../software/kdenlive.html">Kdenlive</a></li><li><a href="../software/video-tools.html">More video tools</a></li><li><a href="../software/audio.html">Sound and music</a></li><li><a href="../software/upscayl.html">Upscayl</a></li><li><a href="../software/ai-tools.html">AI tools</a></li><li><a href="../software/ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP)</a></li><li><a href="../software/storyboard-publishing.html">Storyboards, print and PDF</a></li><li><a href="../software/system-tools.html">System tools</a></li></ul></details><details><summary>Tutorials</summary><ul><li><a href="../tutorials/first-3d-render.html">Your first 3D render</a></li><li><a href="../tutorials/turntable-animation.html">A turntable animation</a></li><li><a href="../tutorials/character-makehuman.html">A character with MakeHuman</a></li><li><a href="../tutorials/bouncing-ball-synfig.html">A bouncing ball in Synfig</a></li><li><a href="../tutorials/hand-drawn-pencil2d.html">Hand-drawn animation in Pencil2D</a></li><li><a href="../tutorials/krita-animation.html">Paint an animation in Krita</a></li><li><a href="../tutorials/stop-motion-webcam.html">Stop motion with a webcam</a></li><li><a href="../tutorials/edit-video-kdenlive.html">Edit your film in Kdenlive</a></li><li><a href="../tutorials/command-line-rendering.html">Command-line rendering and batch jobs</a></li><li><a href="../tutorials/short-film-workflow.html">From idea to finished short film</a></li></ul></details><details><summary>Help</summary><ul><li><a href="../help/self-test.html">The self-test and sample scenes</a></li><li><a href="../help/troubleshooting.html">Troubleshooting</a></li><li><a href="../help/faq.html">Questions and answers</a></li><li><a href="../help/glossary.html">Glossary</a></li><li><a href="../help/getting-help.html">Getting help</a></li></ul></details><details open><summary>For AI Agents</summary><ul><li><a href="overview.html">The guide for AI agents and programs</a></li><li><a href="command-reference.html">Command reference</a></li><li><a href="system-facts.html" aria-current=page>System facts</a></li></ul></details><details><summary>News</summary><ul><li><a href="../news/2026-10-30-r16-3-release.html">Animux Genesis64 r16.3</a></li><li><a href="../news/2026-10-29-r16-2-release.html">Animux Genesis64 r16.2</a></li><li><a href="../news/2026-10-27-animux-guide.html">Introducing the Animux Guide</a></li><li><a href="../news/2026-10-26-r16-release.html">Animux Genesis64 r16 is here</a></li></ul></details><details><summary>About</summary><ul><li><a href="../about/versions.html">Versions</a></li><li><a href="../about/licenses.html">Licences and credits</a></li><li><a href="../about/guide-updates.html">Guide updates</a></li></ul></details></nav>
+<main id="main">
+<header class="pagehead"><p class="crumbs"><a href="../index.html">Home</a> › <a href="overview.html">For AI Agents</a></p><h1>System facts</h1><p class="lede">The layout of an Animux system in one page. Release, base, users, important paths, Animux packages, services, ports, boot roles and how to tell a live session from an installed one.</p><p class="meta"><span class="tag">AI</span><span class="tag">agents</span><span class="tag">reference</span><span class="tag">paths</span><span class="tag">services</span><span class="tag">system</span></p></header>
+<article class="content">
+<h2 id="identity">Identity<a class="headerlink" href="#identity" title="Permanent link">#</a></h2>
+<div class="table"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Release</td>
+<td>Animux Genesis64 <strong>r16.3</strong>, ISO <code>animux-genesis64-deb_28.iso</code></td>
+</tr>
+<tr>
+<td>Base</td>
+<td>Debian 12 "bookworm", amd64, Linux 6.1, systemd</td>
+</tr>
+<tr>
+<td>Desktop</td>
+<td>Xfce 4.18 on X11, LightDM</td>
+</tr>
+<tr>
+<td><code>/etc/os-release</code></td>
+<td><code>ID=animux</code>, <code>ID_LIKE=debian</code>, <code>PRETTY_NAME="Animux Genesis64"</code></td>
+</tr>
+<tr>
+<td>Release in machine-readable form</td>
+<td><code>release</code> in <code>/usr/share/animux/docs/api/software.json</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="users">Users<a class="headerlink" href="#users" title="Permanent link">#</a></h2>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>User</th>
+<th>Password</th>
+<th>sudo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Live session</td>
+<td><code>user</code> (display name "Animator"), auto-login</td>
+<td><code>user</code></td>
+<td>without password</td>
+</tr>
+<tr>
+<td>Installed</td>
+<td>chosen in the installer</td>
+<td>chosen</td>
+<td>with password</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="important-paths">Important paths<a class="headerlink" href="#important-paths" title="Permanent link">#</a></h2>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Path</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/usr/share/animux/docs/</code></td>
+<td>this guide (HTML, Markdown, JSON, llms.txt)</td>
+</tr>
+<tr>
+<td><code>/usr/share/animux/samples/</code></td>
+<td>sample scenes for every renderer and format</td>
+</tr>
+<tr>
+<td><code>~/animux-selftest/&lt;date-time&gt;/</code></td>
+<td>self-test results, images, logs, <code>summary.txt</code></td>
+</tr>
+<tr>
+<td><code>/opt/animux/blender/</code></td>
+<td>Blender 5.2.3 (<code>/usr/bin/blender</code>), extensions in <code>5.2/extensions/system/</code> (MPFB)</td>
+</tr>
+<tr>
+<td><code>/opt/animux/gaffer/</code></td>
+<td>Gaffer 1.7.5 with Cortex, OSL, OpenUSD, Alembic; wrappers in <code>/usr/bin</code> (<code>usdview</code>, <code>oslc</code>, <code>abcls</code>…)</td>
+</tr>
+<tr>
+<td><code>/opt/animux/vfx-env/</code></td>
+<td>Python 3.11 venv: Mitsuba, LuxCore, usd-core, OIIO, OpenEXR, OCIO, MaterialX (<code>animux-vfx-python</code>)</td>
+</tr>
+<tr>
+<td><code>/opt/animux/makehuman2/</code></td>
+<td>MakeHuman II (<code>makehuman2</code>)</td>
+</tr>
+<tr>
+<td><code>/opt/animux/flamenco/</code></td>
+<td>Flamenco Manager and Worker</td>
+</tr>
+<tr>
+<td><code>/opt/animux/appleseed/</code>, <code>/opt/animux/pbrt/</code></td>
+<td>appleseed CLI, pbrt-v4</td>
+</tr>
+<tr>
+<td><code>/opt/animux/avidemux/</code>, <code>/opt/animux/cinelerra-gg/</code>, <code>/opt/animux/djv/</code></td>
+<td>video tools</td>
+</tr>
+<tr>
+<td><code>/opt/farmerjoe/</code></td>
+<td>Farmerjoe</td>
+</tr>
+<tr>
+<td><code>/usr/lib/animux/</code></td>
+<td>role selector, installer launcher, helper scripts</td>
+</tr>
+<tr>
+<td><code>/etc/apt/sources.list.d/animux.sources</code></td>
+<td>Animux repository (<code>Enabled: no</code> in r16)</td>
+</tr>
+<tr>
+<td><code>/usr/share/keyrings/animux-archive-keyring.gpg</code></td>
+<td>repository signing key (fingerprint <code>B47E D034 EDD3 3360 7502 EE4B F334 23FB B235 4B3B</code>)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="animux-packages">Animux packages<a class="headerlink" href="#animux-packages" title="Permanent link">#</a></h2>
+<p><code>dpkg-query -W 'animux-*' upscayl</code> lists them: <code>animux-archive-keyring</code>, <code>animux-branding</code>, <code>animux-menus</code>, <code>animux-roles</code>, <code>animux-docs</code>, <code>animux-samples</code>, <code>animux-farmerjoe</code>, <code>animux-flamenco</code>, <code>animux-blender</code>, <code>animux-blender-mpfb</code>, <code>animux-gaffer</code>, <code>animux-vfx-python</code>, <code>animux-makehuman2</code>, <code>animux-appleseed</code>, <code>animux-pbrt</code>, <code>animux-avidemux</code>, <code>animux-cinelerra-gg</code>, <code>animux-djv</code>, and <code>upscayl</code>.</p>
+<h2 id="services-and-ports">Services and ports<a class="headerlink" href="#services-and-ports" title="Permanent link">#</a></h2>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Port</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>animux-docs.service</code></td>
+<td>8765/tcp on 127.0.0.1</td>
+<td>this guide; read-only</td>
+</tr>
+<tr>
+<td><code>animux-role-config.service</code></td>
+<td>—</td>
+<td>reads <code>animux.role=</code> at boot, writes <code>/run/animux/role</code></td>
+</tr>
+<tr>
+<td><code>ssh.service</code></td>
+<td>22/tcp</td>
+<td>enabled</td>
+</tr>
+<tr>
+<td>Flamenco Manager (when started)</td>
+<td>8080/tcp</td>
+<td>web interface and API</td>
+</tr>
+<tr>
+<td><code>isc-dhcp-server</code>, <code>nfs-kernel-server</code></td>
+<td>—</td>
+<td>masked, except in the <em>Render Farm Master</em> role</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="boot-roles">Boot roles<a class="headerlink" href="#boot-roles" title="Permanent link">#</a></h2>
+<p>The kernel parameter <code>animux.role=</code> selects the role; the current one is in <code>/run/animux/role</code>.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Desktop</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>workstation</code> (default)</td>
+<td>yes</td>
+<td>normal use</td>
+</tr>
+<tr>
+<td><code>install</code></td>
+<td>yes, installer opens</td>
+<td>Calamares installation</td>
+</tr>
+<tr>
+<td><code>master</code></td>
+<td>no (display manager masked)</td>
+<td>render farm head; DHCP and NFS unmasked</td>
+</tr>
+<tr>
+<td><code>slave</code></td>
+<td>no</td>
+<td>render node</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="live-or-installed">Live or installed?<a class="headerlink" href="#live-or-installed" title="Permanent link">#</a></h2>
+<pre><code>test -d /run/live/medium &amp;&amp; echo live || echo installed
+</code></pre>
+<p>A live session keeps all changes in RAM (overlay) and loses them at shutdown.</p>
+<h2 id="hardware-notes">Hardware notes<a class="headerlink" href="#hardware-notes" title="Permanent link">#</a></h2>
+<ul>
+<li>Blender 5, appleseed: need SSE4.2. Mitsuba, LuxCore: need SSE4.2 and AVX.</li>
+<li>OpenCL: Debian's software drivers (Mesa, PoCL) are hidden from <code>animux-vfx-python</code> programs because they crash LuxCore. Set <code>ANIMUX_KEEP_ALL_OPENCL=1</code> to see all drivers.</li>
+<li>No NVIDIA proprietary driver on the ISO; GPU rendering in Cycles needs it (<code>nvidia-driver</code> from Debian non-free).</li>
+<li>No VirtualBox/VMware guest tools on the ISO.</li>
+</ul>
+</article>
+<nav class="prevnext"><a class="prev" href="command-reference.html">← Command reference</a><span></span></nav>
+<footer class="foot"><a href="../md/agents/system-facts.md">View this page as Markdown</a> · <a href="../llms.txt">llms.txt</a> · <a href="../api/pages.json">JSON index</a> · Animux Guide 1.0.34 for Genesis64 r16.3, updated 2026-11-04 · <a href="../about/guide-updates.html">What changed</a></footer>
+</main>
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li class="l2"><a href="#identity">Identity</a></li><li class="l2"><a href="#users">Users</a></li><li class="l2"><a href="#important-paths">Important paths</a></li><li class="l2"><a href="#animux-packages">Animux packages</a></li><li class="l2"><a href="#services-and-ports">Services and ports</a></li><li class="l2"><a href="#boot-roles">Boot roles</a></li><li class="l2"><a href="#live-or-installed">Live or installed?</a></li><li class="l2"><a href="#hardware-notes">Hardware notes</a></li></ul></nav>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

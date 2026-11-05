@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The guide for AI agents and programs — Animux Guide</title>
+<meta name="description" content="Where an agent finds this guide on an Animux system (files, a local web server, llms.txt, JSON indexes, a command-line tool and an MCP server) and a recommended way to use it.">
+<link rel="icon" href="../assets/animux.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="text/markdown" href="../md/agents/overview.md" title="This page as Markdown">
+<script>try{var t=localStorage.getItem('animux-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="menu-btn" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><img src="../assets/animux.png" alt="" width="28" height="28"><span>Animux <b>Guide</b></span></a>
+  <a class="site-home" href="../../index.html">← animux.org</a><div class="search"><input id="q" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search the guide"><div id="results" role="listbox"></div></div>
+  <button class="theme-btn" aria-label="Switch light or dark" onclick="animuxTheme()">◐</button>
+</header>
+<div class="wrap">
+<nav class="side" aria-label="Guide sections"><details><summary>Getting Started</summary><ul><li><a href="../start/what-is-animux.html">What is Animux?</a></li><li><a href="../start/at-a-glance.html">Animux at a glance</a></li><li><a href="../start/in-production.html">Used in film production</a></li><li><a href="../start/requirements.html">Computer requirements</a></li><li><a href="../start/get-the-iso.html">Get the ISO file</a></li><li><a href="../start/virtualbox.html">Try Animux in VirtualBox</a></li><li><a href="../start/other-vms.html">Other virtual machines</a></li><li><a href="../start/usb-stick.html">Make a bootable USB stick</a></li><li><a href="../start/boot-menu.html">The boot menu</a></li><li><a href="../start/live-session.html">The live session</a></li><li><a href="../start/install.html">Install Animux on a disk</a></li><li><a href="../start/first-steps.html">First steps after installing</a></li></ul></details><details><summary>Using the Desktop</summary><ul><li><a href="../desktop/tour.html">Desktop tour</a></li><li><a href="../desktop/menu.html">The Animux menu</a></li><li><a href="../desktop/files.html">Files, folders and drives</a></li><li><a href="../desktop/terminal.html">The terminal, gently</a></li><li><a href="../desktop/settings.html">Settings</a></li><li><a href="../desktop/add-software.html">Updates and adding software</a></li><li><a href="../desktop/shortcuts.html">Keyboard shortcuts</a></li></ul></details><details><summary>Software</summary><ul><li><a href="../software/index.html">All software</a></li><li><a href="../software/blender.html">Blender</a></li><li><a href="../software/makehuman.html">MakeHuman II and MPFB</a></li><li><a href="../software/other-3d.html">FreeCAD, Wings 3D, MeshLab and OpenSCAD</a></li><li><a href="../software/renderers.html">Renderers</a></li><li><a href="../software/renderer-comparison.html">Renderer comparison</a></li><li><a href="../software/flamenco.html">Flamenco render farm</a></li><li><a href="../software/gaffer.html">Gaffer</a></li><li><a href="../software/pipeline-formats.html">Pipeline formats and tools</a></li><li><a href="../software/studio-formats.html">Studio formats</a></li><li><a href="../software/synfig.html">Synfig Studio</a></li><li><a href="../software/opentoonz.html">OpenToonz</a></li><li><a href="../software/pencil2d.html">Pencil2D and TupiTube</a></li><li><a href="../software/krita.html">Krita</a></li><li><a href="../software/stopmotion.html">Stopmotion</a></li><li><a href="../software/gimp-inkscape.html">GIMP, Inkscape and other image tools</a></li><li><a href="../software/kdenlive.html">Kdenlive</a></li><li><a href="../software/video-tools.html">More video tools</a></li><li><a href="../software/audio.html">Sound and music</a></li><li><a href="../software/upscayl.html">Upscayl</a></li><li><a href="../software/ai-tools.html">AI tools</a></li><li><a href="../software/ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP)</a></li><li><a href="../software/storyboard-publishing.html">Storyboards, print and PDF</a></li><li><a href="../software/system-tools.html">System tools</a></li></ul></details><details><summary>Tutorials</summary><ul><li><a href="../tutorials/first-3d-render.html">Your first 3D render</a></li><li><a href="../tutorials/turntable-animation.html">A turntable animation</a></li><li><a href="../tutorials/character-makehuman.html">A character with MakeHuman</a></li><li><a href="../tutorials/bouncing-ball-synfig.html">A bouncing ball in Synfig</a></li><li><a href="../tutorials/hand-drawn-pencil2d.html">Hand-drawn animation in Pencil2D</a></li><li><a href="../tutorials/krita-animation.html">Paint an animation in Krita</a></li><li><a href="../tutorials/stop-motion-webcam.html">Stop motion with a webcam</a></li><li><a href="../tutorials/edit-video-kdenlive.html">Edit your film in Kdenlive</a></li><li><a href="../tutorials/command-line-rendering.html">Command-line rendering and batch jobs</a></li><li><a href="../tutorials/short-film-workflow.html">From idea to finished short film</a></li></ul></details><details><summary>Help</summary><ul><li><a href="../help/self-test.html">The self-test and sample scenes</a></li><li><a href="../help/troubleshooting.html">Troubleshooting</a></li><li><a href="../help/faq.html">Questions and answers</a></li><li><a href="../help/glossary.html">Glossary</a></li><li><a href="../help/getting-help.html">Getting help</a></li></ul></details><details open><summary>For AI Agents</summary><ul><li><a href="overview.html" aria-current=page>The guide for AI agents and programs</a></li><li><a href="command-reference.html">Command reference</a></li><li><a href="system-facts.html">System facts</a></li></ul></details><details><summary>News</summary><ul><li><a href="../news/2026-10-30-r16-3-release.html">Animux Genesis64 r16.3</a></li><li><a href="../news/2026-10-29-r16-2-release.html">Animux Genesis64 r16.2</a></li><li><a href="../news/2026-10-27-animux-guide.html">Introducing the Animux Guide</a></li><li><a href="../news/2026-10-26-r16-release.html">Animux Genesis64 r16 is here</a></li></ul></details><details><summary>About</summary><ul><li><a href="../about/versions.html">Versions</a></li><li><a href="../about/licenses.html">Licences and credits</a></li><li><a href="../about/guide-updates.html">Guide updates</a></li></ul></details></nav>
+<main id="main">
+<header class="pagehead"><p class="crumbs"><a href="../index.html">Home</a> › <a href="overview.html">For AI Agents</a></p><h1>The guide for AI agents and programs</h1><p class="lede">Where an agent finds this guide on an Animux system (files, a local web server, llms.txt, JSON indexes, a command-line tool and an MCP server) and a recommended way to use it.</p><p class="meta"><span class="tag">AI</span><span class="tag">agents</span><span class="tag">MCP</span><span class="tag">llms.txt</span><span class="tag">API</span><span class="tag">automation</span></p></header>
+<article class="content">
+<p>Every Animux system carries this guide in a form that both people and software can use. An AI agent that operates Animux (opening programs, rendering, converting files, answering a user's questions) should use it as its <strong>reference for what is installed and how to drive it</strong>. Nothing here needs the internet.</p>
+<h2 id="where-it-is">Where it is<a class="headerlink" href="#where-it-is" title="Permanent link">#</a></h2>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Form</th>
+<th>Location</th>
+<th>Best for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Folder</td>
+<td><code>/usr/share/animux/docs/</code></td>
+<td>direct file reading</td>
+</tr>
+<tr>
+<td>Local web server</td>
+<td><code>http://127.0.0.1:8765/</code> (service <code>animux-docs.service</code>, local only)</td>
+<td>HTTP clients, browsers</td>
+</tr>
+<tr>
+<td><strong>llms.txt</strong></td>
+<td><code>/usr/share/animux/docs/llms.txt</code> · <code>http://127.0.0.1:8765/llms.txt</code></td>
+<td>the entry point for language models (format of <a href="https://llmstxt.org/">https://llmstxt.org/</a>)</td>
+</tr>
+<tr>
+<td>All pages in one file</td>
+<td><code>llms-full.txt</code></td>
+<td>loading the whole guide into a context window (about 60 pages)</td>
+</tr>
+<tr>
+<td>Each page as Markdown</td>
+<td><code>md/&lt;section&gt;/&lt;page&gt;.md</code>, for example <code>md/tutorials/first-3d-render.md</code></td>
+<td>reading one page cleanly</td>
+</tr>
+<tr>
+<td>Page index</td>
+<td><code>api/pages.json</code></td>
+<td>id, title, summary, section, tags, paths of every page</td>
+</tr>
+<tr>
+<td><strong>Software catalogue</strong></td>
+<td><code>api/software.json</code></td>
+<td>every program: id, version, package, menu path, command, <strong>headless commands</strong>, file formats, self-test name</td>
+</tr>
+<tr>
+<td>Command-line tool</td>
+<td><code>animux-docs</code></td>
+<td>search and read from a shell</td>
+</tr>
+<tr>
+<td><strong>MCP server</strong></td>
+<td><code>animux-docs mcp</code> (stdio)</td>
+<td>agents that speak the Model Context Protocol</td>
+</tr>
+</tbody>
+</table></div>
+<figure><a href="../images/guide-agents-overview.webp"><img src="../images/guide-agents-overview.webp" alt="The same pages for people, in Firefox on Animux." loading="lazy"></a><figcaption>The same pages for people, in Firefox on Animux.</figcaption></figure>
+<p>The HTML pages link to their Markdown twin with <code>&lt;link rel="alternate" type="text/markdown"&gt;</code>.</p>
+<h2 id="the-animux-docs-command">The animux-docs command<a class="headerlink" href="#the-animux-docs-command" title="Permanent link">#</a></h2>
+<pre><code>animux-docs                          # open the guide in the browser
+animux-docs open tutorials/first-3d-render
+animux-docs search render farm       # ranked list: id, title, summary
+animux-docs show agents/system-facts # print a page as Markdown
+animux-docs software                 # list the catalogue
+animux-docs software blender --json  # one program as JSON
+animux-docs path                     # print the docs folder
+animux-docs serve --port 8765        # serve it yourself (127.0.0.1 only)
+animux-docs mcp                      # MCP server on stdin/stdout
+</code></pre>
+<p><code>search</code>, <code>show</code> and <code>software</code> accept <code>--json</code> for machine-readable output.</p>
+<h2 id="the-mcp-server">The MCP server<a class="headerlink" href="#the-mcp-server" title="Permanent link">#</a></h2>
+<p><code>animux-docs mcp</code> is a Model Context Protocol server (JSON-RPC 2.0 over stdio, protocol version 2025-06-18). It needs nothing but Python 3 and reads the files above. Tools:</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Arguments</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>search_docs</code></td>
+<td><code>query</code> (text), <code>limit</code> (optional, default 8)</td>
+<td>matching pages with id, title, summary and a snippet</td>
+</tr>
+<tr>
+<td><code>read_doc</code></td>
+<td><code>id</code> (for example <code>software/blender</code>)</td>
+<td>the page as Markdown</td>
+</tr>
+<tr>
+<td><code>list_docs</code></td>
+<td><code>section</code> (optional)</td>
+<td>page ids, titles and summaries</td>
+</tr>
+<tr>
+<td><code>list_software</code></td>
+<td><code>category</code> (optional)</td>
+<td>programs with id, name, version, command</td>
+</tr>
+<tr>
+<td><code>get_software</code></td>
+<td><code>id</code> (for example <code>blender</code>)</td>
+<td>the full catalogue entry, with headless commands</td>
+</tr>
+<tr>
+<td><code>system_info</code></td>
+<td>—</td>
+<td>Animux release, live or installed, processor features, display, docs location</td>
+</tr>
+</tbody>
+</table></div>
+<p>Pages are also offered as MCP <strong>resources</strong> (<code>animux-docs://&lt;id&gt;</code>, Markdown).</p>
+<p>Example configuration for an MCP client (Claude Desktop, Claude Code and others use this shape):</p>
+<pre><code class="language-json">{
+  &quot;mcpServers&quot;: {
+    &quot;animux-docs&quot;: { &quot;command&quot;: &quot;animux-docs&quot;, &quot;args&quot;: [&quot;mcp&quot;] }
+  }
+}
+</code></pre>
+<p>An agent on another computer can reach the guide through SSH (<code>ssh user@animux-pc animux-docs mcp</code>), because the web server only listens on the local machine.</p>
+<h2 id="recommended-way-for-an-agent-to-work">Recommended way for an agent to work<a class="headerlink" href="#recommended-way-for-an-agent-to-work" title="Permanent link">#</a></h2>
+<ol>
+<li><strong>Orient</strong>: read <code>llms.txt</code>, then <a href="system-facts.html">System facts</a> and <code>system_info</code> (live or installed? processor features? display?).</li>
+<li><strong>Find the tool</strong>: <code>search_docs</code> or <code>api/software.json</code>. Each entry has the exact <code>command</code> and <code>headless</code> commands.</li>
+<li><strong>Prefer headless commands</strong> (<code>blender -b …</code>, <code>povray … -D</code>, <code>ffmpeg</code>, <code>oiiotool</code>) over driving windows. They are faster, reproducible and their exit codes can be checked. See the <a href="command-reference.html">command reference</a>.</li>
+<li><strong>Check the result</strong>: test the exit code, check that the output file exists and is not empty, and read the log.</li>
+<li><strong>Health check</strong>: <code>animux-selftest &lt;name&gt;</code> (exit code 0 = fine) before blaming a program.</li>
+<li><strong>Tell the user</strong> where the result is and how long it took.</li>
+</ol>
+<h2 id="rules-for-agents">Rules for agents<a class="headerlink" href="#rules-for-agents" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Do not run programs as root.</strong> Use <code>sudo</code> only for package installation or system settings the user asked for.</li>
+<li><strong>Live sessions forget everything</strong> at shutdown. Before long work in a live session, tell the user; save results to a removable drive if they want to keep them. Detect a live session with <code>test -d /run/live/medium</code>.</li>
+<li><strong>Respect the processor</strong>: if <code>/proc/cpuinfo</code> lacks <code>sse4_2</code> (and <code>avx</code> for Mitsuba/LuxCore), Blender 5, appleseed, Mitsuba and LuxCore will not start; say so instead of retrying.</li>
+<li><strong>Long renders</strong>: start them in the background with a log (<code>nohup … &gt; log 2&gt;&amp;1 &amp;</code>), estimate the time with one test frame first, and do not let the computer sleep.</li>
+<li><strong>Do not overwrite</strong> the user's files; write to new names or a new folder (<code>~/animux-agent/&lt;task&gt;/</code> is a good habit).</li>
+<li><strong>Do not change</strong> packages named <code>animux-*</code>, <code>/etc/apt</code> sources, or boot settings unless the user explicitly asks.</li>
+<li><strong>Network</strong>: the docs server (port 8765) and Flamenco Manager (port 8080) only listen where documented; do not open ports to the outside.</li>
+</ul>
+</article>
+<nav class="prevnext"><span></span><a class="next" href="command-reference.html">Command reference →</a></nav>
+<footer class="foot"><a href="../md/agents/overview.md">View this page as Markdown</a> · <a href="../llms.txt">llms.txt</a> · <a href="../api/pages.json">JSON index</a> · Animux Guide 1.0.34 for Genesis64 r16.3, updated 2026-11-04 · <a href="../about/guide-updates.html">What changed</a></footer>
+</main>
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li class="l2"><a href="#where-it-is">Where it is</a></li><li class="l2"><a href="#the-animux-docs-command">The animux-docs command</a></li><li class="l2"><a href="#the-mcp-server">The MCP server</a></li><li class="l2"><a href="#recommended-way-for-an-agent-to-work">Recommended way for an agent to work</a></li><li class="l2"><a href="#rules-for-agents">Rules for agents</a></li></ul></nav>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

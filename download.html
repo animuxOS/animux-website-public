@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Download Animux Genesis r16.3</title>
+<meta name="description" content="Download the Animux Genesis r16.3 ISO (12 GB), check it with SHA-256, and start it in a virtual machine or from a USB stick.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="img/logo.png">
+</head>
+<body>
+
+<header class="hero short">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="index.html"><img src="img/logo.png" alt="">Animux</a>
+      <nav><a href="index.html#programs">Programs</a><a href="guide/index.html">Guide</a><a href="guide/news/2026-10-30-r16-3-release.html">News</a><a href="community.html">Community</a><a href="download.html" aria-current="page">Download</a></nav>
+    </div>
+    <h1>Download Animux Genesis r16.3</h1>
+    <p>One ISO file holds the whole system: about 12 GB, free to copy and share. Start it in a virtual machine or from a USB stick, and install it when you are ready.</p>
+  </div>
+</header>
+
+<main class="wrap page">
+
+<section>
+  <div class="panel">
+    <div class="tblwrap">
+    <table class="tbl">
+      <tr><th style="width:26%">File</th><td><code>animux-genesis64-deb_28.iso</code></td></tr>
+      <tr><th>Release</th><td>Genesis r16.3, 30 October 2026 (<a href="guide/news/2026-10-30-r16-3-release.html">what's new</a>)</td></tr>
+      <tr><th>Size</th><td>12,954,927,104 bytes (about 12 GB). Save it to an exFAT or NTFS disk: FAT32 cannot hold files over 4 GB.</td></tr>
+      <tr><th>SHA-256</th><td><span class="hash">02b96ebe6692441fe38bfdf5559f0c907570ed497c316eb7333c555ed8efefce</span></td></tr>
+      <tr><th>Built on</th><td>Debian 12 “bookworm”, Linux 6.1, Xfce 4.18, 64-bit PCs</td></tr>
+    </table>
+    </div>
+  </div>
+</section>
+
+<section id="get">
+  <h2>Choose a download</h2>
+  <p>Every copy is the same file with the same checksum. Pick the one that is fastest for you.</p>
+  <div class="grid2">
+    <div class="panel"><h3>Direct download <span class="soon">coming soon</span></h3><p>From download.animux.org, the fastest choice for most people.</p><a class="btn btn-solid is-off" href="#get" aria-disabled="true">⬇ Download the ISO</a></div>
+    <div class="panel"><h3>Torrent <span class="soon">coming soon</span></h3><p>Best for a 12 GB file: resumes after a broken connection, and checks every piece as it arrives.</p><a class="btn btn-solid is-off" href="#get" aria-disabled="true">⬇ Torrent file</a></div>
+    <div class="panel"><h3>SourceForge mirror <span class="soon">coming soon</span></h3><p>A copy on SourceForge's mirror network.</p></div>
+    <div class="panel"><h3>Internet Archive <span class="soon">coming soon</span></h3><p>A permanent copy, also with a torrent.</p></div>
+  </div>
+</section>
+
+<section id="check">
+  <h2>Check the download</h2>
+  <p>A damaged download causes strange errors later. Print the file's SHA-256 checksum and compare it with the one above; every character must match.</p>
+  <div class="grid3">
+    <div class="panel"><h3>Windows</h3><p>Open PowerShell (Start menu, type <code>powershell</code>):</p><pre class="cmd">Get-FileHash -Algorithm SHA256 "$HOME\Downloads\animux-genesis64-deb_28.iso"</pre></div>
+    <div class="panel"><h3>macOS</h3><p>Open Terminal:</p><pre class="cmd">shasum -a 256 ~/Downloads/animux-genesis64-deb_28.iso</pre></div>
+    <div class="panel"><h3>Linux</h3><p>Open a terminal:</p><pre class="cmd">sha256sum ~/Downloads/animux-genesis64-deb_28.iso</pre></div>
+  </div>
+</section>
+
+<section id="next">
+  <h2>Then start it</h2>
+  <div class="grid3">
+    <a class="panel" style="text-decoration:none;color:inherit" href="guide/start/virtualbox.html"><h3>In VirtualBox</h3><p>Try Animux in a window on Windows, macOS or Linux, without changing your computer.</p><b style="color:var(--accent)">Step by step →</b></a>
+    <a class="panel" style="text-decoration:none;color:inherit" href="guide/start/usb-stick.html"><h3>From a USB stick</h3><p>Write the ISO with Rufus, balenaEtcher or Ventoy and start a real computer from it.</p><b style="color:var(--accent)">Make the stick →</b></a>
+    <a class="panel" style="text-decoration:none;color:inherit" href="guide/start/install.html"><h3>Install to disk</h3><p>Keep your work and settings: install from the boot menu, alone or beside Windows.</p><b style="color:var(--accent)">Install guide →</b></a>
+  </div>
+  <p style="margin-top:22px">Check your computer first: <a href="guide/start/requirements.html">computer requirements</a> (64-bit processor with SSE4.2, 4 GB memory minimum, 16–32 GB recommended).</p>
+</section>
+
+<section id="key">
+  <h2>The Animux signing key</h2>
+  <p>Animux packages come from the signed Animux repository. Its key lets your computer check that updates really come from Animux.</p>
+  <div class="panel">
+    <div class="tblwrap"><table class="tbl">
+      <tr><th style="width:26%">Fingerprint</th><td><span class="hash">B47E D034 EDD3 3360 7502 EE4B F334 23FB B235 4B3B</span></td></tr>
+      <tr><th>Public key</th><td><a href="keys/animux-archive-keyring.asc">animux-archive-keyring.asc</a></td></tr>
+    </table></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Animux Genesis r16.3 · Animator freedom meets imagination</span>
+    <nav><a href="index.html">Home</a><a href="guide/index.html">Guide</a><a href="guide/news/2026-10-30-r16-3-release.html">News</a><a href="community.html">Community</a></nav>
+  </div>
+</footer>
+</body>
+</html>

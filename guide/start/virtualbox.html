@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Try Animux in VirtualBox — Animux Guide</title>
+<meta name="description" content="Create a virtual machine with its own 80 GB virtual disk, start Animux from the ISO file and, if you like, install it, all without touching your real computer.">
+<link rel="icon" href="../assets/animux.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="text/markdown" href="../md/start/virtualbox.md" title="This page as Markdown">
+<script>try{var t=localStorage.getItem('animux-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="menu-btn" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><img src="../assets/animux.png" alt="" width="28" height="28"><span>Animux <b>Guide</b></span></a>
+  <a class="site-home" href="../../index.html">← animux.org</a><div class="search"><input id="q" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search the guide"><div id="results" role="listbox"></div></div>
+  <button class="theme-btn" aria-label="Switch light or dark" onclick="animuxTheme()">◐</button>
+</header>
+<div class="wrap">
+<nav class="side" aria-label="Guide sections"><details open><summary>Getting Started</summary><ul><li><a href="what-is-animux.html">What is Animux?</a></li><li><a href="at-a-glance.html">Animux at a glance</a></li><li><a href="in-production.html">Used in film production</a></li><li><a href="requirements.html">Computer requirements</a></li><li><a href="get-the-iso.html">Get the ISO file</a></li><li><a href="virtualbox.html" aria-current=page>Try Animux in VirtualBox</a></li><li><a href="other-vms.html">Other virtual machines</a></li><li><a href="usb-stick.html">Make a bootable USB stick</a></li><li><a href="boot-menu.html">The boot menu</a></li><li><a href="live-session.html">The live session</a></li><li><a href="install.html">Install Animux on a disk</a></li><li><a href="first-steps.html">First steps after installing</a></li></ul></details><details><summary>Using the Desktop</summary><ul><li><a href="../desktop/tour.html">Desktop tour</a></li><li><a href="../desktop/menu.html">The Animux menu</a></li><li><a href="../desktop/files.html">Files, folders and drives</a></li><li><a href="../desktop/terminal.html">The terminal, gently</a></li><li><a href="../desktop/settings.html">Settings</a></li><li><a href="../desktop/add-software.html">Updates and adding software</a></li><li><a href="../desktop/shortcuts.html">Keyboard shortcuts</a></li></ul></details><details><summary>Software</summary><ul><li><a href="../software/index.html">All software</a></li><li><a href="../software/blender.html">Blender</a></li><li><a href="../software/makehuman.html">MakeHuman II and MPFB</a></li><li><a href="../software/other-3d.html">FreeCAD, Wings 3D, MeshLab and OpenSCAD</a></li><li><a href="../software/renderers.html">Renderers</a></li><li><a href="../software/renderer-comparison.html">Renderer comparison</a></li><li><a href="../software/flamenco.html">Flamenco render farm</a></li><li><a href="../software/gaffer.html">Gaffer</a></li><li><a href="../software/pipeline-formats.html">Pipeline formats and tools</a></li><li><a href="../software/studio-formats.html">Studio formats</a></li><li><a href="../software/synfig.html">Synfig Studio</a></li><li><a href="../software/opentoonz.html">OpenToonz</a></li><li><a href="../software/pencil2d.html">Pencil2D and TupiTube</a></li><li><a href="../software/krita.html">Krita</a></li><li><a href="../software/stopmotion.html">Stopmotion</a></li><li><a href="../software/gimp-inkscape.html">GIMP, Inkscape and other image tools</a></li><li><a href="../software/kdenlive.html">Kdenlive</a></li><li><a href="../software/video-tools.html">More video tools</a></li><li><a href="../software/audio.html">Sound and music</a></li><li><a href="../software/upscayl.html">Upscayl</a></li><li><a href="../software/ai-tools.html">AI tools</a></li><li><a href="../software/ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP)</a></li><li><a href="../software/storyboard-publishing.html">Storyboards, print and PDF</a></li><li><a href="../software/system-tools.html">System tools</a></li></ul></details><details><summary>Tutorials</summary><ul><li><a href="../tutorials/first-3d-render.html">Your first 3D render</a></li><li><a href="../tutorials/turntable-animation.html">A turntable animation</a></li><li><a href="../tutorials/character-makehuman.html">A character with MakeHuman</a></li><li><a href="../tutorials/bouncing-ball-synfig.html">A bouncing ball in Synfig</a></li><li><a href="../tutorials/hand-drawn-pencil2d.html">Hand-drawn animation in Pencil2D</a></li><li><a href="../tutorials/krita-animation.html">Paint an animation in Krita</a></li><li><a href="../tutorials/stop-motion-webcam.html">Stop motion with a webcam</a></li><li><a href="../tutorials/edit-video-kdenlive.html">Edit your film in Kdenlive</a></li><li><a href="../tutorials/command-line-rendering.html">Command-line rendering and batch jobs</a></li><li><a href="../tutorials/short-film-workflow.html">From idea to finished short film</a></li></ul></details><details><summary>Help</summary><ul><li><a href="../help/self-test.html">The self-test and sample scenes</a></li><li><a href="../help/troubleshooting.html">Troubleshooting</a></li><li><a href="../help/faq.html">Questions and answers</a></li><li><a href="../help/glossary.html">Glossary</a></li><li><a href="../help/getting-help.html">Getting help</a></li></ul></details><details><summary>For AI Agents</summary><ul><li><a href="../agents/overview.html">The guide for AI agents and programs</a></li><li><a href="../agents/command-reference.html">Command reference</a></li><li><a href="../agents/system-facts.html">System facts</a></li></ul></details><details><summary>News</summary><ul><li><a href="../news/2026-10-30-r16-3-release.html">Animux Genesis64 r16.3</a></li><li><a href="../news/2026-10-29-r16-2-release.html">Animux Genesis64 r16.2</a></li><li><a href="../news/2026-10-27-animux-guide.html">Introducing the Animux Guide</a></li><li><a href="../news/2026-10-26-r16-release.html">Animux Genesis64 r16 is here</a></li></ul></details><details><summary>About</summary><ul><li><a href="../about/versions.html">Versions</a></li><li><a href="../about/licenses.html">Licences and credits</a></li><li><a href="../about/guide-updates.html">Guide updates</a></li></ul></details></nav>
+<main id="main">
+<header class="pagehead"><p class="crumbs"><a href="../index.html">Home</a> › <a href="what-is-animux.html">Getting Started</a></p><h1>Try Animux in VirtualBox</h1><p class="lede">Create a virtual machine with its own 80 GB virtual disk, start Animux from the ISO file and, if you like, install it, all without touching your real computer.</p><p class="meta"><span class="tag">beginner</span><span class="tag">virtual machine</span><span class="tag">VirtualBox</span><span class="tag">Windows</span><span class="tag">macOS</span></p></header>
+<article class="content">
+<p>A <strong>virtual machine (VM)</strong> is a pretend computer that runs in a window on your real computer. Animux inside it cannot see or change your files. <strong>VirtualBox</strong> is a free VM program for Windows, macOS (Intel) and Linux.</p>
+<p>You need:</p>
+<ul>
+<li>the Animux ISO file (<code>animux-genesis64-deb_28.iso</code>, 12 GB). See <a href="get-the-iso.html">Get the ISO</a>.</li>
+<li><strong>VirtualBox 7</strong> from <a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a> ("Windows hosts", "macOS / Intel hosts" or your Linux system).</li>
+<li>about <strong>100 GB free disk space</strong> on the real computer (the ISO plus a virtual disk that grows up to 80 GB), and at least <strong>8 GB RAM</strong>.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Fast way: let a script do steps 2 to 4</p>
+<p>On Windows you can download <a href="../files/create-animux-vm.ps1">create-animux-vm.ps1</a>, right-click it and choose <strong>Run with PowerShell</strong>. It asks for the ISO file and creates the VM with exactly the settings below. Then continue at <a href="#5-start-animux">step 5</a>.</p>
+</div>
+<h2 id="1-install-virtualbox">1. Install VirtualBox<a class="headerlink" href="#1-install-virtualbox" title="Permanent link">#</a></h2>
+<p>Run the VirtualBox installer and accept the defaults. On Windows it may warn that the network will be briefly disconnected; that is normal. Start <strong>Oracle VirtualBox</strong> when it is done.</p>
+<h2 id="2-create-the-virtual-machine">2. Create the virtual machine<a class="headerlink" href="#2-create-the-virtual-machine" title="Permanent link">#</a></h2>
+<p>Click <strong>New</strong> (the blue star). Fill in:</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td><code>Animux</code></td>
+</tr>
+<tr>
+<td>Folder</td>
+<td>where the VM files go. Pick a disk with 100 GB free (for example <code>D:\VMs</code>).</td>
+</tr>
+<tr>
+<td>ISO Image</td>
+<td>select <code>animux-genesis64-deb_28.iso</code></td>
+</tr>
+<tr>
+<td>Type / Subtype / Version</td>
+<td><strong>Linux</strong> / <strong>Debian</strong> / <strong>Debian (64-bit)</strong></td>
+</tr>
+<tr>
+<td>Unattended installation</td>
+<td><strong>off</strong>. In VirtualBox 7.1 and later leave <strong>Proceed with Unattended Installation</strong> unticked; in 7.0 tick <strong>Skip Unattended Installation</strong>. Animux has its own installer, and VirtualBox's automatic installation does not work with it.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Click <strong>Next</strong>.</p>
+<h2 id="3-memory-processors-and-firmware">3. Memory, processors and firmware<a class="headerlink" href="#3-memory-processors-and-firmware" title="Permanent link">#</a></h2>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base Memory</td>
+<td><strong>8192 MB</strong> (8 GB); 4096 MB is the minimum</td>
+<td>Programs and the live session live in memory</td>
+</tr>
+<tr>
+<td>Processors</td>
+<td><strong>4</strong> (or half of your real cores)</td>
+<td>Rendering uses every core</td>
+</tr>
+<tr>
+<td>Enable EFI</td>
+<td><strong>leave off</strong></td>
+<td>Animux starts with both, but "off" (BIOS) is the setting tested most. Tick it only if you want to test UEFI.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Click <strong>Next</strong>.</p>
+<h2 id="4-the-virtual-hard-disk-storage">4. The virtual hard disk (storage)<a class="headerlink" href="#4-the-virtual-hard-disk-storage" title="Permanent link">#</a></h2>
+<p>Choose <strong>Create a Virtual Hard Disk Now</strong> and set the size to <strong>80 GB</strong>. Leave <strong>Pre-allocate Full Size</strong> unticked: the file then starts small and grows only as Animux uses it.</p>
+<div class="admonition note">
+<p class="admonition-title">Do I need the disk to try Animux?</p>
+<p>No. The live session runs without one. You need the disk if you want to <a href="install.html">install Animux</a> inside the VM so your work is kept.</p>
+</div>
+<p>Click <strong>Next</strong>, then <strong>Finish</strong>.</p>
+<h3 id="recommended-settings">Recommended settings<a class="headerlink" href="#recommended-settings" title="Permanent link">#</a></h3>
+<p>Select the new VM and click <strong>Settings</strong>:</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Page</th>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Display → Screen</strong></td>
+<td>Video Memory</td>
+<td><strong>128 MB</strong></td>
+</tr>
+<tr>
+<td></td>
+<td>Graphics Controller</td>
+<td><strong>VMSVGA</strong></td>
+</tr>
+<tr>
+<td></td>
+<td>Enable 3D Acceleration</td>
+<td><strong>off</strong></td>
+</tr>
+<tr>
+<td><strong>System → Motherboard</strong></td>
+<td>Boot Order</td>
+<td><strong>Optical</strong> first, then <strong>Hard Disk</strong></td>
+</tr>
+<tr>
+<td><strong>Network → Adapter 1</strong></td>
+<td>Attached to</td>
+<td><strong>NAT</strong> (the default; gives internet access)</td>
+</tr>
+<tr>
+<td><strong>Audio</strong></td>
+<td>Enable Audio</td>
+<td>on (default)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Click <strong>OK</strong>.</p>
+<h2 id="5-start-animux">5. Start Animux<a class="headerlink" href="#5-start-animux" title="Permanent link">#</a></h2>
+<p>Select the VM and click <strong>Start</strong>. After a few seconds you see the Animux boot menu:</p>
+<figure><a href="../images/boot-menu.webp"><img src="../images/boot-menu.webp" alt="The Animux boot menu. Press Enter on the first entry, &quot;Animator Workstation&quot;. If you do nothing, it starts by itself after a few seconds." loading="lazy"></a><figcaption>The Animux boot menu. Press Enter on the first entry, &quot;Animator Workstation&quot;. If you do nothing, it starts by itself after a few seconds.</figcaption></figure>
+<p>Press <strong>Enter</strong> on <strong>Animux Genesis64 – Animator Workstation</strong>. Some text scrolls past for a moment, then the desktop opens by itself (about a minute in a VM). You are logged in as the live user <strong>user</strong> (password <code>user</code>).</p>
+<figure><a href="../images/vbox-desktop.webp"><img src="../images/vbox-desktop.webp" alt="Animux running in VirtualBox (1024 × 768 screen)." loading="lazy"></a><figcaption>Animux running in VirtualBox (1024 × 768 screen).</figcaption></figure>
+<p>To learn what each boot menu entry does, see <a href="boot-menu.html">The boot menu</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Using the mouse and keyboard in the VM</p>
+<p>Click inside the window to use Animux. If the mouse gets "caught", press the <strong>Host key</strong> (right <strong>Ctrl</strong> on Windows and Linux, left <strong>⌘ Command</strong> on Mac) to release it.</p>
+</div>
+<h2 id="6-check-that-everything-works">6. Check that everything works<a class="headerlink" href="#6-check-that-everything-works" title="Permanent link">#</a></h2>
+<p>Open the menu at the top left: <strong>Animux → Animux Tools → Animux Self-Test</strong>. After a few minutes it lists every test:</p>
+<figure><a href="../images/vbox-selftest.webp"><img src="../images/vbox-selftest.webp" alt="The self-test in VirtualBox: 29 tests passed." loading="lazy"></a><figcaption>The self-test in VirtualBox: 29 tests passed.</figcaption></figure>
+<p>See <a href="../help/self-test.html">The self-test</a> for what the results mean.</p>
+<h2 id="7-install-animux-on-the-virtual-disk-optional">7. Install Animux on the virtual disk (optional)<a class="headerlink" href="#7-install-animux-on-the-virtual-disk-optional" title="Permanent link">#</a></h2>
+<p>In the live session, everything you do is lost when the VM is switched off. To keep your work, install Animux on the 80 GB virtual disk:</p>
+<ol>
+<li>Restart the VM. In the boot menu choose <strong>Install Animux Genesis64 to Disk</strong>.</li>
+<li>Follow the <a href="install.html">installation guide</a>. Choose <strong>Erase disk</strong>: inside the VM this erases only the empty virtual disk, never your real one.</li>
+<li>When the installer says it is finished, close the VM (<strong>File → Close → Power off the machine</strong>).</li>
+<li>In the VM's <strong>Settings → Storage</strong>, click the disc under <strong>Controller: IDE</strong> and choose <strong>Remove Disk from Virtual Drive</strong>, so that it starts from the virtual disk next time.</li>
+<li>Click <strong>Start</strong>. Animux now starts from its disk and asks for the user name and password you chose.</li>
+</ol>
+<h2 id="screen-size-copy-and-paste-shared-folders">Screen size, copy and paste, shared folders<a class="headerlink" href="#screen-size-copy-and-paste-shared-folders" title="Permanent link">#</a></h2>
+<p>Animux does not include VirtualBox's <strong>Guest Additions</strong>, so the screen does not resize automatically with the window, and copy and paste between your computer and the VM do not work yet.</p>
+<ul>
+<li><strong>Change the screen size</strong> inside Animux: <strong>Animux → Settings → Display</strong>, then choose a <strong>Resolution</strong> and click <strong>Apply</strong>.</li>
+<li><strong>Scale the window</strong>: VirtualBox menu <strong>View → Virtual Screen 1 → Scale to 200 %</strong> (or press Host+C for scaled mode).</li>
+<li><strong>Move files</strong> in and out: use a USB stick (VirtualBox menu <strong>Devices → USB</strong>, then choose the stick), a cloud drive in Firefox, or e-mail.</li>
+</ul>
+<p>On an <strong>installed</strong> Animux you can add the Guest Additions yourself. Everything they need (compilers and kernel headers) is included, and it takes about five minutes:</p>
+<ol>
+<li>VirtualBox menu <strong>Devices → Insert Guest Additions CD image…</strong> A disc icon <strong>VBox_GAs_7…</strong> appears on the Animux desktop.</li>
+<li><strong>Double-click that disc icon</strong> so Animux opens it. (It is not opened by itself; the next step fails with "No such file" until you do.)</li>
+<li>Open a <a href="../desktop/terminal.html">terminal</a> and type:
+   <code>sudo sh /media/$USER/VBox_GAs_*/VBoxLinuxAdditions.run</code>
+   Type your password. A second window opens and shows the progress (<em>Building the VirtualBox Guest Additions kernel modules…</em>). Wait until it says <strong>Press Return to close this window</strong>, then press <strong>Enter</strong> in it.</li>
+<li>Allow yourself to use shared folders:
+   <code>sudo usermod -aG vboxsf $USER</code></li>
+<li><strong>Restart</strong> Animux (menu <strong>Animux → Log Out → Restart</strong>).</li>
+</ol>
+<p>Afterwards:</p>
+<ul>
+<li>The Animux screen <strong>follows the size of the VirtualBox window</strong> (and full-screen mode, Host+F).</li>
+<li><strong>Devices → Shared Clipboard → Bidirectional</strong>: copy and paste between Windows (or macOS) and Animux.</li>
+<li><strong>Devices → Shared Folders</strong>: add a folder of your computer, tick <strong>Auto-mount</strong>. In Animux it appears as <code>/media/sf_&lt;name&gt;</code> (for example <code>/media/sf_Projects</code>) and in the file manager. Files can be read and written from both sides.</li>
+<li><strong>Devices → Drag and Drop</strong> works too.</li>
+</ul>
+<p>This was tested with VirtualBox 7.2.6 on an installed Animux r16 (screen resize, shared folder in both directions, clipboard in both directions).</p>
+<div class="admonition note">
+<p class="admonition-title">After a kernel update</p>
+<p>The Guest Additions rebuild themselves for a new Linux kernel when Animux starts. If the screen stops following the window after an update, run step 3 again.</p>
+</div>
+<h2 id="webcam-for-stop-motion">Webcam for stop motion<a class="headerlink" href="#webcam-for-stop-motion" title="Permanent link">#</a></h2>
+<p>With the free <strong>VirtualBox Extension Pack</strong> installed (same download page), the VirtualBox menu <strong>Devices → Webcams</strong> passes your webcam to Animux, where <a href="../software/stopmotion.html">Stopmotion</a> can use it.</p>
+<h2 id="if-something-goes-wrong">If something goes wrong<a class="headerlink" href="#if-something-goes-wrong" title="Permanent link">#</a></h2>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"VT-x is disabled in the BIOS" or "AMD-V is disabled"</td>
+<td>Switch on virtualisation (Intel VT-x / AMD-V / SVM) in your computer's BIOS/UEFI setup.</td>
+</tr>
+<tr>
+<td>Black window after the splash</td>
+<td>Restart and choose <strong>Workstation (KMS / no nomodeset)</strong>, or set the Graphics Controller to VMSVGA.</td>
+</tr>
+<tr>
+<td>Very slow</td>
+<td>Give the VM more memory and processors. Close other programs. 3D is always slower in a VM than on a real computer.</td>
+</tr>
+<tr>
+<td>Blender or Mitsuba say "illegal instruction"</td>
+<td>Your processor or VM hides SSE4.2/AVX. See <a href="requirements.html#does-my-processor-have-sse42-and-avx">Requirements</a>.</td>
+</tr>
+<tr>
+<td>No sound</td>
+<td><strong>Settings → Audio</strong>: Host Audio Driver <strong>Default</strong>, Controller <strong>Intel HD Audio</strong>. In Animux check <strong>Settings → PulseAudio Volume Control</strong>.</td>
+</tr>
+</tbody>
+</table></div>
+<p>More in <a href="../help/troubleshooting.html">Troubleshooting</a>.</p>
+<h2 id="other-virtual-machine-programs">Other virtual machine programs<a class="headerlink" href="#other-virtual-machine-programs" title="Permanent link">#</a></h2>
+<p>Animux also runs in <strong>QEMU/virt-manager</strong>, <strong>VMware Workstation Player</strong>, <strong>Parallels</strong> (Intel Macs) and <strong>Hyper-V</strong>. See <a href="other-vms.html">Other virtual machines</a>.</p>
+</article>
+<nav class="prevnext"><a class="prev" href="get-the-iso.html">← Get the ISO file</a><a class="next" href="other-vms.html">Other virtual machines →</a></nav>
+<footer class="foot"><a href="../md/start/virtualbox.md">View this page as Markdown</a> · <a href="../llms.txt">llms.txt</a> · <a href="../api/pages.json">JSON index</a> · Animux Guide 1.0.34 for Genesis64 r16.3, updated 2026-11-04 · <a href="../about/guide-updates.html">What changed</a></footer>
+</main>
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li class="l2"><a href="#1-install-virtualbox">1. Install VirtualBox</a></li><li class="l2"><a href="#2-create-the-virtual-machine">2. Create the virtual machine</a></li><li class="l2"><a href="#3-memory-processors-and-firmware">3. Memory, processors and firmware</a></li><li class="l2"><a href="#4-the-virtual-hard-disk-storage">4. The virtual hard disk (storage)</a></li><li class="l3"><a href="#recommended-settings">Recommended settings</a></li><li class="l2"><a href="#5-start-animux">5. Start Animux</a></li><li class="l2"><a href="#6-check-that-everything-works">6. Check that everything works</a></li><li class="l2"><a href="#7-install-animux-on-the-virtual-disk-optional">7. Install Animux on the virtual disk (optional)</a></li><li class="l2"><a href="#screen-size-copy-and-paste-shared-folders">Screen size, copy and paste, shared folders</a></li><li class="l2"><a href="#webcam-for-stop-motion">Webcam for stop motion</a></li><li class="l2"><a href="#if-something-goes-wrong">If something goes wrong</a></li><li class="l2"><a href="#other-virtual-machine-programs">Other virtual machine programs</a></li></ul></nav>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GIMP, Inkscape and other image tools — Animux Guide</title>
+<meta name="description" content="Photo editing with GIMP, vector drawing with Inkscape, sketching with MyPaint, pixel art with GrafX2 and mtPaint, and batch work with ImageMagick.">
+<link rel="icon" href="../assets/animux.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="text/markdown" href="../md/software/gimp-inkscape.md" title="This page as Markdown">
+<script>try{var t=localStorage.getItem('animux-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="menu-btn" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><img src="../assets/animux.png" alt="" width="28" height="28"><span>Animux <b>Guide</b></span></a>
+  <a class="site-home" href="../../index.html">← animux.org</a><div class="search"><input id="q" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search the guide"><div id="results" role="listbox"></div></div>
+  <button class="theme-btn" aria-label="Switch light or dark" onclick="animuxTheme()">◐</button>
+</header>
+<div class="wrap">
+<nav class="side" aria-label="Guide sections"><details><summary>Getting Started</summary><ul><li><a href="../start/what-is-animux.html">What is Animux?</a></li><li><a href="../start/at-a-glance.html">Animux at a glance</a></li><li><a href="../start/in-production.html">Used in film production</a></li><li><a href="../start/requirements.html">Computer requirements</a></li><li><a href="../start/get-the-iso.html">Get the ISO file</a></li><li><a href="../start/virtualbox.html">Try Animux in VirtualBox</a></li><li><a href="../start/other-vms.html">Other virtual machines</a></li><li><a href="../start/usb-stick.html">Make a bootable USB stick</a></li><li><a href="../start/boot-menu.html">The boot menu</a></li><li><a href="../start/live-session.html">The live session</a></li><li><a href="../start/install.html">Install Animux on a disk</a></li><li><a href="../start/first-steps.html">First steps after installing</a></li></ul></details><details><summary>Using the Desktop</summary><ul><li><a href="../desktop/tour.html">Desktop tour</a></li><li><a href="../desktop/menu.html">The Animux menu</a></li><li><a href="../desktop/files.html">Files, folders and drives</a></li><li><a href="../desktop/terminal.html">The terminal, gently</a></li><li><a href="../desktop/settings.html">Settings</a></li><li><a href="../desktop/add-software.html">Updates and adding software</a></li><li><a href="../desktop/shortcuts.html">Keyboard shortcuts</a></li></ul></details><details open><summary>Software</summary><ul><li><a href="index.html">All software</a></li><li><a href="blender.html">Blender</a></li><li><a href="makehuman.html">MakeHuman II and MPFB</a></li><li><a href="other-3d.html">FreeCAD, Wings 3D, MeshLab and OpenSCAD</a></li><li><a href="renderers.html">Renderers</a></li><li><a href="renderer-comparison.html">Renderer comparison</a></li><li><a href="flamenco.html">Flamenco render farm</a></li><li><a href="gaffer.html">Gaffer</a></li><li><a href="pipeline-formats.html">Pipeline formats and tools</a></li><li><a href="studio-formats.html">Studio formats</a></li><li><a href="synfig.html">Synfig Studio</a></li><li><a href="opentoonz.html">OpenToonz</a></li><li><a href="pencil2d.html">Pencil2D and TupiTube</a></li><li><a href="krita.html">Krita</a></li><li><a href="stopmotion.html">Stopmotion</a></li><li><a href="gimp-inkscape.html" aria-current=page>GIMP, Inkscape and other image tools</a></li><li><a href="kdenlive.html">Kdenlive</a></li><li><a href="video-tools.html">More video tools</a></li><li><a href="audio.html">Sound and music</a></li><li><a href="upscayl.html">Upscayl</a></li><li><a href="ai-tools.html">AI tools</a></li><li><a href="ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP)</a></li><li><a href="storyboard-publishing.html">Storyboards, print and PDF</a></li><li><a href="system-tools.html">System tools</a></li></ul></details><details><summary>Tutorials</summary><ul><li><a href="../tutorials/first-3d-render.html">Your first 3D render</a></li><li><a href="../tutorials/turntable-animation.html">A turntable animation</a></li><li><a href="../tutorials/character-makehuman.html">A character with MakeHuman</a></li><li><a href="../tutorials/bouncing-ball-synfig.html">A bouncing ball in Synfig</a></li><li><a href="../tutorials/hand-drawn-pencil2d.html">Hand-drawn animation in Pencil2D</a></li><li><a href="../tutorials/krita-animation.html">Paint an animation in Krita</a></li><li><a href="../tutorials/stop-motion-webcam.html">Stop motion with a webcam</a></li><li><a href="../tutorials/edit-video-kdenlive.html">Edit your film in Kdenlive</a></li><li><a href="../tutorials/command-line-rendering.html">Command-line rendering and batch jobs</a></li><li><a href="../tutorials/short-film-workflow.html">From idea to finished short film</a></li></ul></details><details><summary>Help</summary><ul><li><a href="../help/self-test.html">The self-test and sample scenes</a></li><li><a href="../help/troubleshooting.html">Troubleshooting</a></li><li><a href="../help/faq.html">Questions and answers</a></li><li><a href="../help/glossary.html">Glossary</a></li><li><a href="../help/getting-help.html">Getting help</a></li></ul></details><details><summary>For AI Agents</summary><ul><li><a href="../agents/overview.html">The guide for AI agents and programs</a></li><li><a href="../agents/command-reference.html">Command reference</a></li><li><a href="../agents/system-facts.html">System facts</a></li></ul></details><details><summary>News</summary><ul><li><a href="../news/2026-10-30-r16-3-release.html">Animux Genesis64 r16.3</a></li><li><a href="../news/2026-10-29-r16-2-release.html">Animux Genesis64 r16.2</a></li><li><a href="../news/2026-10-27-animux-guide.html">Introducing the Animux Guide</a></li><li><a href="../news/2026-10-26-r16-release.html">Animux Genesis64 r16 is here</a></li></ul></details><details><summary>About</summary><ul><li><a href="../about/versions.html">Versions</a></li><li><a href="../about/licenses.html">Licences and credits</a></li><li><a href="../about/guide-updates.html">Guide updates</a></li></ul></details></nav>
+<main id="main">
+<header class="pagehead"><p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Software</a></p><h1>GIMP, Inkscape and other image tools</h1><p class="lede">Photo editing with GIMP, vector drawing with Inkscape, sketching with MyPaint, pixel art with GrafX2 and mtPaint, and batch work with ImageMagick.</p><p class="meta"><span class="tag">2D</span><span class="tag">images</span><span class="tag">GIMP</span><span class="tag">Inkscape</span><span class="tag">MyPaint</span><span class="tag">pixel art</span><span class="tag">ImageMagick</span></p></header>
+<article class="content">
+<div class="table"><table>
+<thead>
+<tr>
+<th>Program</th>
+<th>Best for</th>
+<th>Start</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GIMP</strong> 3.2</td>
+<td>fixing and retouching renders and photos, textures, cut-outs, batch editing</td>
+<td><code>gimp</code></td>
+</tr>
+<tr>
+<td><strong>Inkscape</strong> 1.4</td>
+<td>logos, titles, clean character designs, backgrounds: shapes that stay sharp at any size (SVG)</td>
+<td><code>inkscape</code></td>
+</tr>
+<tr>
+<td><strong>MyPaint</strong> 2.0</td>
+<td>fast sketching and concept painting on an endless canvas</td>
+<td><code>mypaint</code></td>
+</tr>
+<tr>
+<td><strong>GrafX2</strong> 2.8</td>
+<td>pixel art and sprites with palettes</td>
+<td><code>grafx2</code></td>
+</tr>
+<tr>
+<td><strong>mtPaint</strong> 3.40</td>
+<td>very quick pixel edits</td>
+<td><code>mtpaint</code></td>
+</tr>
+<tr>
+<td><strong>ImageMagick</strong></td>
+<td>changing hundreds of images at once from the terminal</td>
+<td><code>convert</code>, <code>mogrify</code></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="gimp">GIMP<a class="headerlink" href="#gimp" title="Permanent link">#</a></h2>
+<figure><a href="../images/gimp.webp"><img src="../images/gimp.webp" alt="GIMP with the render from the first tutorial." loading="lazy"></a><figcaption>GIMP with the render from the first tutorial.</figcaption></figure>
+<p>Common jobs:</p>
+<ul>
+<li><strong>Adjust a render</strong>: <em>Colors → Curves</em> or <em>Levels</em>; <em>Colors → Hue-Saturation</em>.</li>
+<li><strong>Cut out a background</strong>: <em>Tools → Selection Tools → Foreground Select</em>, then <em>Layer → Transparency → Add Alpha Channel</em> and delete.</li>
+<li><strong>Make a texture tile seamlessly</strong>: <em>Filters → Map → Tile Seamless</em>.</li>
+<li><strong>Resize</strong>: <em>Image → Scale Image</em>. <strong>Export</strong>: <em>File → Export As</em> (GIMP's own format is <code>.xcf</code>; <em>Export</em> writes PNG/JPEG).</li>
+<li><strong>Non-destructive filters</strong> (new in GIMP 3): filters stay editable on the layer; click the <strong>fx</strong> icon in the Layers panel to change or remove them.</li>
+<li><strong>G'MIC</strong> (hundreds of extra effects: painterly looks, denoise, cartoon) is not available for GIMP 3.2 on Animux yet. The previous GIMP 2.10 with G'MIC is still installed: type <code>gimp.debian</code> in a terminal and use <em>Filters → G'MIC-Qt</em> there.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">GIMP 3.2, Krita 5.3 and Inkscape 1.4</p>
+<p>Animux r16.1 (<code>_25</code>) includes them; Debian's Krita 5.1 and Inkscape 1.2 are no longer on the ISO, and GIMP 2.10 stays as <code>gimp.debian</code> for G'MIC. Animux r16 (<code>_21</code>) shipped only GIMP 2.10, Krita 5.1 and Inkscape 1.2 from Debian 12; there, the packages <code>animux-gimp</code>, <code>animux-krita</code> and <code>animux-inkscape</code> add the official current versions (the menu entries and the commands <code>gimp</code>, <code>krita</code> and <code>inkscape</code> then start the new versions). Install them like a <a href="../about/guide-updates.html#how-to-get-a-newer-guide">guide update</a> (package files or, once online, <code>sudo apt install animux-gimp animux-krita animux-inkscape</code>).</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">AI assistants in GIMP, Krita and Inkscape</p>
+<p>An AI assistant can work in the new GIMP, Krita and Inkscape through MCP: <code>animux-mcp gimp on</code>, <code>animux-mcp krita on</code>, <code>animux-mcp inkscape on</code>. See <a href="ai-agents.html#1b-switch-on-gimp-krita-or-inkscape">AI agents</a>.</p>
+</div>
+<h2 id="inkscape">Inkscape<a class="headerlink" href="#inkscape" title="Permanent link">#</a></h2>
+<figure><a href="../images/inkscape.webp"><img src="../images/inkscape.webp" alt="Inkscape." loading="lazy"></a><figcaption>Inkscape.</figcaption></figure>
+<ul>
+<li>Draw with the <strong>rectangle, ellipse, star</strong> and <strong>Bézier pen</strong> tools; colour with <em>Object → Fill and Stroke</em> (Ctrl+Shift+F).</li>
+<li>Text for titles: <strong>T</strong> tool; convert to shapes with <em>Path → Object to Path</em> before sharing the file.</li>
+<li><strong>Export</strong> PNG at any size: <em>File → Export</em> (Ctrl+Shift+E). Inkscape files (SVG) also open in Blender (<em>File → Import → SVG</em>) and Synfig.</li>
+</ul>
+<p>From the terminal: <code>inkscape title.svg --export-type=png --export-width=1920</code>.</p>
+<p>GIMP also works without a window, for scripts and AI agents, with Python (GIMP 3 API):</p>
+<pre><code>gimp-console -i --batch-interpreter=python-fu-eval -b &quot;exec(open('my_script.py').read())&quot; --quit
+</code></pre>
+<h2 id="mypaint">MyPaint<a class="headerlink" href="#mypaint" title="Permanent link">#</a></h2>
+<figure><a href="../images/mypaint.webp"><img src="../images/mypaint.webp" alt="MyPaint." loading="lazy"></a><figcaption>MyPaint.</figcaption></figure>
+<p>Press <strong>Tab</strong> to hide the panels and paint full screen. The canvas grows as you paint. Save as <code>.ora</code> (OpenRaster, opens in Krita and GIMP).</p>
+<h2 id="imagemagick-many-images-at-once">ImageMagick: many images at once<a class="headerlink" href="#imagemagick-many-images-at-once" title="Permanent link">#</a></h2>
+<pre><code>mogrify -resize 50% *.png                         # make every PNG half size (overwrites!)
+mogrify -format jpg *.png                         # convert all PNG to JPEG
+convert in.png -gravity south -pointsize 48 -annotate +0+20 &quot;Shot 10&quot; out.png
+montage frame_*.png -tile 6x -geometry 320x180+4+4 contact-sheet.png
+</code></pre>
+<p>Work on a <strong>copy</strong> of your files: <code>mogrify</code> changes them in place.</p>
+</article>
+<nav class="prevnext"><a class="prev" href="stopmotion.html">← Stopmotion</a><a class="next" href="kdenlive.html">Kdenlive →</a></nav>
+<footer class="foot"><a href="../md/software/gimp-inkscape.md">View this page as Markdown</a> · <a href="../llms.txt">llms.txt</a> · <a href="../api/pages.json">JSON index</a> · Animux Guide 1.0.34 for Genesis64 r16.3, updated 2026-11-04 · <a href="../about/guide-updates.html">What changed</a></footer>
+</main>
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li class="l2"><a href="#gimp">GIMP</a></li><li class="l2"><a href="#inkscape">Inkscape</a></li><li class="l2"><a href="#mypaint">MyPaint</a></li><li class="l2"><a href="#imagemagick-many-images-at-once">ImageMagick: many images at once</a></li></ul></nav>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

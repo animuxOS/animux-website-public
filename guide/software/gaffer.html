@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gaffer — Animux Guide</title>
+<meta name="description" content="The node-based lighting and look-development tool used by film studios, included with Cortex, OSL, OpenUSD and Alembic, and rendering with Cycles.">
+<link rel="icon" href="../assets/animux.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="text/markdown" href="../md/software/gaffer.md" title="This page as Markdown">
+<script>try{var t=localStorage.getItem('animux-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="menu-btn" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><img src="../assets/animux.png" alt="" width="28" height="28"><span>Animux <b>Guide</b></span></a>
+  <a class="site-home" href="../../index.html">← animux.org</a><div class="search"><input id="q" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search the guide"><div id="results" role="listbox"></div></div>
+  <button class="theme-btn" aria-label="Switch light or dark" onclick="animuxTheme()">◐</button>
+</header>
+<div class="wrap">
+<nav class="side" aria-label="Guide sections"><details><summary>Getting Started</summary><ul><li><a href="../start/what-is-animux.html">What is Animux?</a></li><li><a href="../start/at-a-glance.html">Animux at a glance</a></li><li><a href="../start/in-production.html">Used in film production</a></li><li><a href="../start/requirements.html">Computer requirements</a></li><li><a href="../start/get-the-iso.html">Get the ISO file</a></li><li><a href="../start/virtualbox.html">Try Animux in VirtualBox</a></li><li><a href="../start/other-vms.html">Other virtual machines</a></li><li><a href="../start/usb-stick.html">Make a bootable USB stick</a></li><li><a href="../start/boot-menu.html">The boot menu</a></li><li><a href="../start/live-session.html">The live session</a></li><li><a href="../start/install.html">Install Animux on a disk</a></li><li><a href="../start/first-steps.html">First steps after installing</a></li></ul></details><details><summary>Using the Desktop</summary><ul><li><a href="../desktop/tour.html">Desktop tour</a></li><li><a href="../desktop/menu.html">The Animux menu</a></li><li><a href="../desktop/files.html">Files, folders and drives</a></li><li><a href="../desktop/terminal.html">The terminal, gently</a></li><li><a href="../desktop/settings.html">Settings</a></li><li><a href="../desktop/add-software.html">Updates and adding software</a></li><li><a href="../desktop/shortcuts.html">Keyboard shortcuts</a></li></ul></details><details open><summary>Software</summary><ul><li><a href="index.html">All software</a></li><li><a href="blender.html">Blender</a></li><li><a href="makehuman.html">MakeHuman II and MPFB</a></li><li><a href="other-3d.html">FreeCAD, Wings 3D, MeshLab and OpenSCAD</a></li><li><a href="renderers.html">Renderers</a></li><li><a href="renderer-comparison.html">Renderer comparison</a></li><li><a href="flamenco.html">Flamenco render farm</a></li><li><a href="gaffer.html" aria-current=page>Gaffer</a></li><li><a href="pipeline-formats.html">Pipeline formats and tools</a></li><li><a href="studio-formats.html">Studio formats</a></li><li><a href="synfig.html">Synfig Studio</a></li><li><a href="opentoonz.html">OpenToonz</a></li><li><a href="pencil2d.html">Pencil2D and TupiTube</a></li><li><a href="krita.html">Krita</a></li><li><a href="stopmotion.html">Stopmotion</a></li><li><a href="gimp-inkscape.html">GIMP, Inkscape and other image tools</a></li><li><a href="kdenlive.html">Kdenlive</a></li><li><a href="video-tools.html">More video tools</a></li><li><a href="audio.html">Sound and music</a></li><li><a href="upscayl.html">Upscayl</a></li><li><a href="ai-tools.html">AI tools</a></li><li><a href="ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP)</a></li><li><a href="storyboard-publishing.html">Storyboards, print and PDF</a></li><li><a href="system-tools.html">System tools</a></li></ul></details><details><summary>Tutorials</summary><ul><li><a href="../tutorials/first-3d-render.html">Your first 3D render</a></li><li><a href="../tutorials/turntable-animation.html">A turntable animation</a></li><li><a href="../tutorials/character-makehuman.html">A character with MakeHuman</a></li><li><a href="../tutorials/bouncing-ball-synfig.html">A bouncing ball in Synfig</a></li><li><a href="../tutorials/hand-drawn-pencil2d.html">Hand-drawn animation in Pencil2D</a></li><li><a href="../tutorials/krita-animation.html">Paint an animation in Krita</a></li><li><a href="../tutorials/stop-motion-webcam.html">Stop motion with a webcam</a></li><li><a href="../tutorials/edit-video-kdenlive.html">Edit your film in Kdenlive</a></li><li><a href="../tutorials/command-line-rendering.html">Command-line rendering and batch jobs</a></li><li><a href="../tutorials/short-film-workflow.html">From idea to finished short film</a></li></ul></details><details><summary>Help</summary><ul><li><a href="../help/self-test.html">The self-test and sample scenes</a></li><li><a href="../help/troubleshooting.html">Troubleshooting</a></li><li><a href="../help/faq.html">Questions and answers</a></li><li><a href="../help/glossary.html">Glossary</a></li><li><a href="../help/getting-help.html">Getting help</a></li></ul></details><details><summary>For AI Agents</summary><ul><li><a href="../agents/overview.html">The guide for AI agents and programs</a></li><li><a href="../agents/command-reference.html">Command reference</a></li><li><a href="../agents/system-facts.html">System facts</a></li></ul></details><details><summary>News</summary><ul><li><a href="../news/2026-10-30-r16-3-release.html">Animux Genesis64 r16.3</a></li><li><a href="../news/2026-10-29-r16-2-release.html">Animux Genesis64 r16.2</a></li><li><a href="../news/2026-10-27-animux-guide.html">Introducing the Animux Guide</a></li><li><a href="../news/2026-10-26-r16-release.html">Animux Genesis64 r16 is here</a></li></ul></details><details><summary>About</summary><ul><li><a href="../about/versions.html">Versions</a></li><li><a href="../about/licenses.html">Licences and credits</a></li><li><a href="../about/guide-updates.html">Guide updates</a></li></ul></details></nav>
+<main id="main">
+<header class="pagehead"><p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Software</a></p><h1>Gaffer</h1><p class="lede">The node-based lighting and look-development tool used by film studios, included with Cortex, OSL, OpenUSD and Alembic, and rendering with Cycles.</p><p class="meta"><span class="tag">pipeline</span><span class="tag">lighting</span><span class="tag">look development</span><span class="tag">nodes</span><span class="tag">USD</span><span class="tag">studio</span></p></header>
+<article class="content">
+<div class="factbox">
+<div class="table"><table>
+<thead>
+<tr>
+<th>Gaffer</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Menu</td>
+<td>3D Animation → Pipeline Tools → Gaffer</td>
+</tr>
+<tr>
+<td>Version</td>
+<td>1.7.5.0</td>
+</tr>
+<tr>
+<td>Command</td>
+<td><code>gaffer</code></td>
+</tr>
+<tr>
+<td>Good for</td>
+<td>Advanced</td>
+</tr>
+<tr>
+<td>Files</td>
+<td>.gfr; reads USD, Alembic, SceneCache</td>
+</tr>
+<tr>
+<td>Licence</td>
+<td>BSD-3-Clause</td>
+</tr>
+<tr>
+<td>Website</td>
+<td><a href="https://www.gafferhq.org/">gafferhq.org</a></td>
+</tr>
+<tr>
+<td>Self-test</td>
+<td><code>animux-selftest gaffer</code></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p><strong>Gaffer</strong> is a free tool from Image Engine, a visual-effects studio, for the work <em>after</em> modelling and animation: <strong>assembling scenes, lighting, look development (materials) and sending renders</strong>. Everything is a <strong>node graph</strong>: boxes connected by lines, each doing one step. Change an early node and everything after it updates. This makes it possible to light hundreds of shots the same way.</p>
+<div class="admonition note">
+<p class="admonition-title">Is Gaffer for me?</p>
+<p>For a personal or school film, <strong>Blender alone is enough</strong>. Gaffer is worth learning if you want to work in a VFX or animation studio pipeline, or your project has many shots that share lighting.</p>
+</div>
+<figure><a href="../images/gaffer.webp"><img src="../images/gaffer.webp" alt="Gaffer: the viewer at the top, the node graph at the bottom left, node settings on the right." loading="lazy"></a><figcaption>Gaffer: the viewer at the top, the node graph at the bottom left, node settings on the right.</figcaption></figure>
+<h2 id="start">Start<a class="headerlink" href="#start" title="Permanent link">#</a></h2>
+<p><strong>3D Animation → Pipeline Tools → Gaffer</strong>, or <code>gaffer</code>. Gaffer's window has:</p>
+<ul>
+<li><strong>Viewer</strong>: the 3D scene (or rendered image) produced by the selected node;</li>
+<li><strong>Graph Editor</strong>: the nodes; press <strong>Tab</strong> in it to add a node by name;</li>
+<li><strong>Node Editor</strong>: settings of the selected node;</li>
+<li><strong>Hierarchy / Scene Inspector</strong>: the objects in the scene at that point of the graph.</li>
+</ul>
+<h2 id="a-first-graph">A first graph<a class="headerlink" href="#a-first-graph" title="Permanent link">#</a></h2>
+<p>Add nodes with <strong>Tab</strong> in the Graph Editor and connect an output (bottom of a node) to an input (top) by dragging. The sample scene uses this chain:</p>
+<ol>
+<li><strong>Sphere</strong>, <strong>Plane</strong>, <strong>Camera</strong> and two <strong>CyclesLight</strong> nodes (one <code>background_light</code> for the sky, one <code>distant_light</code> for the sun) → all into one <strong>Group</strong>.</li>
+<li><strong>CyclesShader</strong> (<code>principled_bsdf</code>, pick a base colour) + <strong>PathFilter</strong> (path <code>/group/sphere</code>) → <strong>ShaderAssignment</strong>: gives the sphere its material.</li>
+<li><strong>StandardOptions</strong>: switch on <em>Render Camera</em> (<code>/group/camera</code>) and <em>Resolution</em>.</li>
+<li><strong>CyclesOptions</strong>: samples and other Cycles settings.</li>
+<li><strong>Outputs</strong>: where the image is written (add an <em>Interactive</em> output for previews, a <em>Batch</em> output for files).</li>
+<li><strong>InteractiveRender</strong> (live preview in the Viewer) or <strong>Render</strong> (writes the files), renderer <strong>Cycles</strong>.</li>
+</ol>
+<p>The sample <code>/usr/share/animux/samples/gaffer/render.py</code> builds such a graph by script and renders it:</p>
+<pre><code>gaffer env python /usr/share/animux/samples/gaffer/render.py ~/gaffer.exr
+</code></pre>
+<h2 id="bringing-in-scenes">Bringing in scenes<a class="headerlink" href="#bringing-in-scenes" title="Permanent link">#</a></h2>
+<p><code>SceneReader</code> nodes load <strong>USD</strong> (<code>.usd</code>, <code>.usda</code>, <code>.usdc</code>) and <strong>Alembic</strong> (<code>.abc</code>) files exported from Blender (<strong>File → Export → Universal Scene Description</strong> or <strong>Alembic</strong>). Lighting stays in Gaffer; when the animation changes, re-export and Gaffer picks it up.</p>
+<h2 id="what-comes-with-it">What comes with it<a class="headerlink" href="#what-comes-with-it" title="Permanent link">#</a></h2>
+<p>Gaffer on Animux includes the libraries studios use, with command-line tools you can run directly:</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Library</th>
+<th>Tools</th>
+<th>See</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cortex</strong></td>
+<td>Python libraries for VFX pipelines (<code>import IECore</code> inside <code>gaffer python</code>)</td>
+<td><a href="https://github.com/ImageEngine/cortex">https://github.com/ImageEngine/cortex</a></td>
+</tr>
+<tr>
+<td><strong>OpenUSD</strong></td>
+<td><code>usdview</code>, <code>usdcat</code>, <code>usdchecker</code>, <code>usdtree</code>, <code>usddiff</code>, <code>usdrecord</code>, <code>usdzip</code>, <code>usdresolve</code>, <code>usdedit</code>, <code>usdstitch</code></td>
+<td><a href="pipeline-formats.html#openusd">Pipeline formats</a></td>
+</tr>
+<tr>
+<td><strong>OSL</strong></td>
+<td><code>oslc</code>, <code>oslinfo</code>, <code>testshade</code></td>
+<td><a href="pipeline-formats.html#osl-open-shading-language">Pipeline formats</a></td>
+</tr>
+<tr>
+<td><strong>Alembic</strong></td>
+<td><code>abcls</code>, <code>abctree</code>, <code>abcecho</code>, <code>abcechobounds</code>, <code>abcconvert</code>, <code>abcstitcher</code></td>
+<td><a href="pipeline-formats.html#alembic">Pipeline formats</a></td>
+</tr>
+<tr>
+<td><strong>Cycles</strong></td>
+<td>renders from Gaffer</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>OpenColorIO</strong></td>
+<td>colour management</td>
+<td><a href="pipeline-formats.html#opencolorio">Pipeline formats</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="command-line-and-scripting">Command line and scripting<a class="headerlink" href="#command-line-and-scripting" title="Permanent link">#</a></h2>
+<pre><code>gaffer execute -script lighting.gfr -nodes CyclesRender -frames 1-100
+gaffer python myscript.py
+</code></pre>
+<p>Learn more: <a href="https://www.gafferhq.org/documentation/">https://www.gafferhq.org/documentation/</a> and Gaffer's <strong>Help</strong> menu (examples and tutorials are built in).</p>
+</article>
+<nav class="prevnext"><a class="prev" href="flamenco.html">← Flamenco render farm</a><a class="next" href="pipeline-formats.html">Pipeline formats and tools →</a></nav>
+<footer class="foot"><a href="../md/software/gaffer.md">View this page as Markdown</a> · <a href="../llms.txt">llms.txt</a> · <a href="../api/pages.json">JSON index</a> · Animux Guide 1.0.34 for Genesis64 r16.3, updated 2026-11-04 · <a href="../about/guide-updates.html">What changed</a></footer>
+</main>
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li class="l2"><a href="#start">Start</a></li><li class="l2"><a href="#a-first-graph">A first graph</a></li><li class="l2"><a href="#bringing-in-scenes">Bringing in scenes</a></li><li class="l2"><a href="#what-comes-with-it">What comes with it</a></li><li class="l2"><a href="#command-line-and-scripting">Command line and scripting</a></li></ul></nav>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

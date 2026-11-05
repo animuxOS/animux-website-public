@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI tools — Animux Guide</title>
+<meta name="description" content="Speech to text and subtitles (Whisper), background removal (rembg), local chat models (Ollama) and Stable Diffusion (ComfyUI), all running on your own computer.">
+<link rel="icon" href="../assets/animux.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="text/markdown" href="../md/software/ai-tools.md" title="This page as Markdown">
+<script>try{var t=localStorage.getItem('animux-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="menu-btn" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><img src="../assets/animux.png" alt="" width="28" height="28"><span>Animux <b>Guide</b></span></a>
+  <a class="site-home" href="../../index.html">← animux.org</a><div class="search"><input id="q" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search the guide"><div id="results" role="listbox"></div></div>
+  <button class="theme-btn" aria-label="Switch light or dark" onclick="animuxTheme()">◐</button>
+</header>
+<div class="wrap">
+<nav class="side" aria-label="Guide sections"><details><summary>Getting Started</summary><ul><li><a href="../start/what-is-animux.html">What is Animux?</a></li><li><a href="../start/at-a-glance.html">Animux at a glance</a></li><li><a href="../start/in-production.html">Used in film production</a></li><li><a href="../start/requirements.html">Computer requirements</a></li><li><a href="../start/get-the-iso.html">Get the ISO file</a></li><li><a href="../start/virtualbox.html">Try Animux in VirtualBox</a></li><li><a href="../start/other-vms.html">Other virtual machines</a></li><li><a href="../start/usb-stick.html">Make a bootable USB stick</a></li><li><a href="../start/boot-menu.html">The boot menu</a></li><li><a href="../start/live-session.html">The live session</a></li><li><a href="../start/install.html">Install Animux on a disk</a></li><li><a href="../start/first-steps.html">First steps after installing</a></li></ul></details><details><summary>Using the Desktop</summary><ul><li><a href="../desktop/tour.html">Desktop tour</a></li><li><a href="../desktop/menu.html">The Animux menu</a></li><li><a href="../desktop/files.html">Files, folders and drives</a></li><li><a href="../desktop/terminal.html">The terminal, gently</a></li><li><a href="../desktop/settings.html">Settings</a></li><li><a href="../desktop/add-software.html">Updates and adding software</a></li><li><a href="../desktop/shortcuts.html">Keyboard shortcuts</a></li></ul></details><details open><summary>Software</summary><ul><li><a href="index.html">All software</a></li><li><a href="blender.html">Blender</a></li><li><a href="makehuman.html">MakeHuman II and MPFB</a></li><li><a href="other-3d.html">FreeCAD, Wings 3D, MeshLab and OpenSCAD</a></li><li><a href="renderers.html">Renderers</a></li><li><a href="renderer-comparison.html">Renderer comparison</a></li><li><a href="flamenco.html">Flamenco render farm</a></li><li><a href="gaffer.html">Gaffer</a></li><li><a href="pipeline-formats.html">Pipeline formats and tools</a></li><li><a href="studio-formats.html">Studio formats</a></li><li><a href="synfig.html">Synfig Studio</a></li><li><a href="opentoonz.html">OpenToonz</a></li><li><a href="pencil2d.html">Pencil2D and TupiTube</a></li><li><a href="krita.html">Krita</a></li><li><a href="stopmotion.html">Stopmotion</a></li><li><a href="gimp-inkscape.html">GIMP, Inkscape and other image tools</a></li><li><a href="kdenlive.html">Kdenlive</a></li><li><a href="video-tools.html">More video tools</a></li><li><a href="audio.html">Sound and music</a></li><li><a href="upscayl.html">Upscayl</a></li><li><a href="ai-tools.html" aria-current=page>AI tools</a></li><li><a href="ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP)</a></li><li><a href="storyboard-publishing.html">Storyboards, print and PDF</a></li><li><a href="system-tools.html">System tools</a></li></ul></details><details><summary>Tutorials</summary><ul><li><a href="../tutorials/first-3d-render.html">Your first 3D render</a></li><li><a href="../tutorials/turntable-animation.html">A turntable animation</a></li><li><a href="../tutorials/character-makehuman.html">A character with MakeHuman</a></li><li><a href="../tutorials/bouncing-ball-synfig.html">A bouncing ball in Synfig</a></li><li><a href="../tutorials/hand-drawn-pencil2d.html">Hand-drawn animation in Pencil2D</a></li><li><a href="../tutorials/krita-animation.html">Paint an animation in Krita</a></li><li><a href="../tutorials/stop-motion-webcam.html">Stop motion with a webcam</a></li><li><a href="../tutorials/edit-video-kdenlive.html">Edit your film in Kdenlive</a></li><li><a href="../tutorials/command-line-rendering.html">Command-line rendering and batch jobs</a></li><li><a href="../tutorials/short-film-workflow.html">From idea to finished short film</a></li></ul></details><details><summary>Help</summary><ul><li><a href="../help/self-test.html">The self-test and sample scenes</a></li><li><a href="../help/troubleshooting.html">Troubleshooting</a></li><li><a href="../help/faq.html">Questions and answers</a></li><li><a href="../help/glossary.html">Glossary</a></li><li><a href="../help/getting-help.html">Getting help</a></li></ul></details><details><summary>For AI Agents</summary><ul><li><a href="../agents/overview.html">The guide for AI agents and programs</a></li><li><a href="../agents/command-reference.html">Command reference</a></li><li><a href="../agents/system-facts.html">System facts</a></li></ul></details><details><summary>News</summary><ul><li><a href="../news/2026-10-30-r16-3-release.html">Animux Genesis64 r16.3</a></li><li><a href="../news/2026-10-29-r16-2-release.html">Animux Genesis64 r16.2</a></li><li><a href="../news/2026-10-27-animux-guide.html">Introducing the Animux Guide</a></li><li><a href="../news/2026-10-26-r16-release.html">Animux Genesis64 r16 is here</a></li></ul></details><details><summary>About</summary><ul><li><a href="../about/versions.html">Versions</a></li><li><a href="../about/licenses.html">Licences and credits</a></li><li><a href="../about/guide-updates.html">Guide updates</a></li></ul></details></nav>
+<main id="main">
+<header class="pagehead"><p class="crumbs"><a href="../index.html">Home</a> › <a href="index.html">Software</a></p><h1>AI tools</h1><p class="lede">Speech to text and subtitles (Whisper), background removal (rembg), local chat models (Ollama) and Stable Diffusion (ComfyUI), all running on your own computer.</p><p class="meta"><span class="tag">AI</span><span class="tag">Whisper</span><span class="tag">subtitles</span><span class="tag">rembg</span><span class="tag">Ollama</span><span class="tag">ComfyUI</span><span class="tag">Stable Diffusion</span></p></header>
+<article class="content">
+<p>Animux comes with AI tools that run <strong>on your own computer</strong>. Nothing you process is uploaded. Some tools are ready to use; the large ones are downloaded only when you want them.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>What it does</th>
+<th>Ready?</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Whisper</strong></td>
+<td>turns speech into text and subtitles</td>
+<td>yes</td>
+<td><code>animux-whisper</code></td>
+</tr>
+<tr>
+<td><strong>rembg</strong></td>
+<td>cuts people and objects out of pictures (removes the background)</td>
+<td>yes</td>
+<td><code>animux-rembg</code></td>
+</tr>
+<tr>
+<td><strong><a href="upscayl.html">Upscayl</a></strong></td>
+<td>makes pictures bigger and sharper</td>
+<td>yes, in the menu</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Ollama</strong></td>
+<td>chat models (like ChatGPT, but offline)</td>
+<td>download 1.5 GB</td>
+<td><code>sudo animux-install-local-ai --ollama</code></td>
+</tr>
+<tr>
+<td><strong>ComfyUI</strong></td>
+<td>Stable Diffusion: make pictures from text</td>
+<td>download 0.5–3 GB, plus a model</td>
+<td><code>sudo animux-install-local-ai --comfyui</code></td>
+</tr>
+<tr>
+<td><strong>LTX</strong> in the cloud (Lightricks API)</td>
+<td>video <strong>with sound</strong> from text or a picture</td>
+<td>LTX account + API key; paid per second of video</td>
+<td><code>animux-ltx-api</code></td>
+</tr>
+<tr>
+<td><strong>LTX-2</strong> on your computer</td>
+<td>the same, run locally in ComfyUI</td>
+<td>NVIDIA card with 24–32 GB; about 40 GB of models</td>
+<td><code>sudo animux-install-local-ai --ltx-local --cuda</code></td>
+</tr>
+</tbody>
+</table></div>
+<div class="admonition note">
+<p class="admonition-title">Internet and space for the first use</p>
+<p>Every tool downloads its <strong>AI model</strong> the first time you use it (from 70 MB to several GB). After that it works offline. In a <a href="../start/live-session.html">live session</a> downloads are kept in memory and lost when you switch off; <a href="../start/install.html">install Animux</a> to keep them.</p>
+</div>
+<p>These tools work from the <a href="../desktop/terminal.html">terminal</a>. Open a terminal in the folder with your files (in the file manager: right-click → <em>Open Terminal Here</em>).</p>
+<h2 id="whisper-speech-to-text-and-subtitles">Whisper: speech to text and subtitles<a class="headerlink" href="#whisper-speech-to-text-and-subtitles" title="Permanent link">#</a></h2>
+<p>Whisper listens to an audio or video file and writes down what is said. Use it for dialogue transcripts, lip-sync timing sheets and subtitles.</p>
+<pre><code>animux-whisper dialogue.wav --model small --language en
+</code></pre>
+<p>It writes <code>dialogue.txt</code>, <code>dialogue.srt</code> and other formats into the folder the terminal is in. Video files work too (<code>scene01.mp4</code>). Useful options:</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--model tiny</code> / <code>base</code> / <code>small</code> / <code>medium</code> / <code>large</code></td>
+<td>bigger = more accurate and slower. <code>small</code> is a good start. First download: tiny 72 MB, small 460 MB, large 2.9 GB.</td>
+</tr>
+<tr>
+<td><code>--language en</code></td>
+<td>the spoken language (<code>de</code>, <code>fr</code>, <code>es</code>, <code>ja</code> …). Without it Whisper guesses.</td>
+</tr>
+<tr>
+<td><code>--output_format srt</code></td>
+<td>only the subtitle file. <code>txt</code> = plain text, <code>all</code> = every format.</td>
+</tr>
+<tr>
+<td><code>--task translate</code></td>
+<td>translate the speech into English.</td>
+</tr>
+<tr>
+<td><code>--output_dir subtitles</code></td>
+<td>where to put the files.</td>
+</tr>
+</tbody>
+</table></div>
+<p>On the Animux test machine (4 processor cores, no graphics card) the <code>tiny</code> model wrote down a 9-second clip in 10 seconds, including the model download. Names it has never heard may be misspelt ("Animux" became "Anomox"), so check the text.</p>
+<p><strong>Subtitles in a film:</strong> load the <code>.srt</code> file in <a href="kdenlive.html">Kdenlive</a> (<em>Project → Subtitles → Import Subtitle File</em>), or burn it in with FFmpeg:</p>
+<pre><code>ffmpeg -i film.mp4 -vf subtitles=film.srt film-subtitled.mp4
+</code></pre>
+<h2 id="rembg-remove-backgrounds">rembg: remove backgrounds<a class="headerlink" href="#rembg-remove-backgrounds" title="Permanent link">#</a></h2>
+<p>rembg cuts out the main subject of a picture and makes the background transparent (a PNG with transparency). Use it for reference photos, collage animation, character turnarounds and compositing.</p>
+<pre><code>animux-rembg i photo.jpg photo-cutout.png
+</code></pre>
+<p>For a whole folder, for example an image sequence:</p>
+<pre><code>animux-rembg p frames/ frames-cutout/
+</code></pre>
+<p>The first time, rembg downloads its model (<strong>about 1 GB</strong>). On the test machine the first picture took two and a half minutes including the download; later pictures take seconds.</p>
+<div class="admonition tip">
+<p class="admonition-title">Check the edges</p>
+<p>AI cut-outs can be soft or miss thin parts like hair and fingers. Clean the edge in <a href="gimp-inkscape.html">Krita or GIMP</a> when it matters. In an image sequence the edge may flicker a little from frame to frame.</p>
+</div>
+<h2 id="ollama-chat-models-on-your-computer">Ollama: chat models on your computer<a class="headerlink" href="#ollama-chat-models-on-your-computer" title="Permanent link">#</a></h2>
+<p>Ollama runs language models offline: ask for story ideas, dialogue variations, names, or help with commands. Install it once (1.5 GB download):</p>
+<pre><code>sudo animux-install-local-ai --ollama
+</code></pre>
+<p>Then start the Ollama service in one terminal and leave that window open:</p>
+<pre><code>ollama serve
+</code></pre>
+<p>In a <strong>second</strong> terminal, download a model and chat with it (type <code>/bye</code> to stop):</p>
+<pre><code>ollama run llama3.2
+</code></pre>
+<p>Models are listed at <a href="https://ollama.com/library">https://ollama.com/library</a>. Small models (1–3 billion parameters, 1–2 GB) answer at reading speed on a normal processor; larger ones need a lot of memory or a graphics card. On the test machine a tiny model (<code>smollm2:135m</code>) downloaded and answered within a minute.</p>
+<h2 id="comfyui-stable-diffusion">ComfyUI: Stable Diffusion<a class="headerlink" href="#comfyui-stable-diffusion" title="Permanent link">#</a></h2>
+<p>ComfyUI makes pictures from a text description with Stable Diffusion models. You connect boxes (<em>nodes</em>) in your web browser. Install it once:</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Your graphics card</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NVIDIA</td>
+<td><code>sudo animux-install-local-ai --comfyui --cuda</code></td>
+</tr>
+<tr>
+<td>AMD (recent)</td>
+<td><code>sudo animux-install-local-ai --comfyui --rocm</code></td>
+</tr>
+<tr>
+<td>none, or Intel</td>
+<td><code>sudo animux-install-local-ai --comfyui</code> (runs on the processor: a picture takes many minutes)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Start it from <strong>2D Graphics → Ancillary Tools → ComfyUI (Stable Diffusion)</strong> or with <code>animux-comfyui</code>. A terminal window opens (keep it open) and Firefox shows ComfyUI at <code>http://127.0.0.1:8188/</code>.</p>
+<p>ComfyUI does <strong>not</strong> include a model. Download a Stable Diffusion model (a <code>.safetensors</code> file, 2–7 GB) from a model site, check its licence, and put it in your own folder:</p>
+<pre><code>~/ComfyUI/models/checkpoints/
+</code></pre>
+<p>Your pictures are saved in <code>~/ComfyUI/output/</code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Licences of AI models</p>
+<p>Each model has its own licence, and some forbid commercial use. Read it before you use the pictures in paid work.</p>
+</div>
+<h2 id="ltx-in-the-cloud-video-and-sound-from-text-and-images">LTX in the cloud: video and sound from text and images<a class="headerlink" href="#ltx-in-the-cloud-video-and-sound-from-text-and-images" title="Permanent link">#</a></h2>
+<p><strong>LTX</strong> by Lightricks makes video clips <strong>with matching sound</strong> (up to 20 seconds, up to 4K) from a text description, or animates a picture, for example a still from your animation. Animux uses the <strong>LTX API</strong>: the video is made on Lightricks' servers, so no special graphics card is needed, but you need an account and it is <strong>paid per second of video</strong> (see <a href="https://docs.ltx.io/pricing">https://docs.ltx.io/pricing</a>).</p>
+<ol>
+<li>Create an account and an <strong>API key</strong> at <a href="https://console.ltx.io">https://console.ltx.io</a>, then store the key on Animux (only you can read it):
+   <code>animux-ltx-api key</code></li>
+<li><strong>Text to video:</strong>
+   <code>animux-ltx-api t2v "A paper boat drifts down a rainy street gutter, close-up, evening light"</code></li>
+<li><strong>Animate a picture</strong> (it becomes the first frame; describe the motion):
+   <code>animux-ltx-api i2v ~/Pictures/frame-001.png "The character turns her head and smiles"</code>
+   Add <code>--last ~/Pictures/frame-120.png</code> to also give the last frame: LTX fills in the movement between the two.</li>
+</ol>
+<p>The finished MP4 is saved in <code>~/Videos/LTX/</code> (or where <code>-o file.mp4</code> says). Useful options:</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--model ltx-2-5-fast</code></td>
+<td>default; <code>ltx-2-5-pro</code> gives better quality for a higher price; <code>ltx-2-3-fast</code>/<code>ltx-2-3-pro</code> are the older models</td>
+</tr>
+<tr>
+<td><code>--duration 6</code></td>
+<td>length in seconds; <code>auto</code> (default, LTX-2.5 only) lets the model choose</td>
+</tr>
+<tr>
+<td><code>--resolution 1920x1080</code></td>
+<td>also e.g. <code>1280x720</code>, <code>1080x1920</code> (portrait), <code>1080x1080</code> (square, LTX-2.5)</td>
+</tr>
+<tr>
+<td><code>--camera dolly_in</code></td>
+<td>camera move: <code>dolly_in</code>, <code>dolly_out</code>, <code>dolly_left</code>, <code>dolly_right</code>, <code>jib_up</code>, <code>jib_down</code>, <code>static</code>, <code>focus_shift</code></td>
+</tr>
+<tr>
+<td><code>--no-audio</code></td>
+<td>silent video</td>
+</tr>
+</tbody>
+</table></div>
+<p>AI agents can use LTX too: <code>animux-ltx-api mcp</code> is an MCP server with the tools <em>text_to_video</em> and <em>image_to_video</em> (see <a href="ai-agents.html#4-ltx-video-for-agents">AI agents</a>).</p>
+<p>On the Animux test machines the command reached the LTX API (it answered with the expected "invalid key" error); making a real video needs your own key and credits.</p>
+<h2 id="ltx-2-on-your-own-computer">LTX-2 on your own computer<a class="headerlink" href="#ltx-2-on-your-own-computer" title="Permanent link">#</a></h2>
+<p>With a strong NVIDIA graphics card, LTX-2 can also run <strong>locally</strong> in ComfyUI: no account, no cost per video, nothing leaves your computer.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Graphics card</td>
+<td><strong>NVIDIA with 24 GB</strong> (32 GB recommended); on the processor it is far too slow</td>
+</tr>
+<tr>
+<td>Download</td>
+<td>LTX-2.5 (int8): about <strong>40 GB</strong>; LTX-2.3: about 71 GB</td>
+</tr>
+<tr>
+<td>Licence</td>
+<td>LTX-2 Community License: free, also for paid work, for companies below USD 10 million yearly revenue</td>
+</tr>
+</tbody>
+</table></div>
+<ol>
+<li>Install ComfyUI with Lightricks' LTX nodes:
+   <code>sudo animux-install-local-ai --ltx-local --cuda</code></li>
+<li>LTX-2.5 is <em>gated</em>: create a free account on huggingface.co, open <a href="https://huggingface.co/Lightricks/LTX-2.5">https://huggingface.co/Lightricks/LTX-2.5</a>, accept the licence, then sign in with an access token:
+   <code>/opt/animux/comfyui-env/bin/hf auth login</code></li>
+<li>See what will be downloaded, then download (into <code>~/ComfyUI/models</code>):
+   <code>animux-ltx-models
+   animux-ltx-models 2.5 --yes</code></li>
+<li>Start ComfyUI (<code>animux-comfyui</code>) and open an LTX example workflow from <code>~/ComfyUI/custom_nodes/ComfyUI-LTXVideo/example_workflows/</code>.</li>
+</ol>
+<p>Versions are pinned by Animux (nodes 1.1.0, fixed model revisions). On the Animux test machine (no graphics card) the installation was tested: ComfyUI loaded all 55 LTX nodes. Making videos locally was not tested, because it needs an NVIDIA card.</p>
+<h2 id="for-programmers">For programmers<a class="headerlink" href="#for-programmers" title="Permanent link">#</a></h2>
+<p>The tools live in a Python environment at <code>/opt/animux/ai-env</code> (Python 3.11, PyTorch 2.14 for the processor, Whisper, rembg, Hugging Face Hub). Use it for your own scripts:</p>
+<pre><code>/opt/animux/ai-env/bin/python my_script.py
+/opt/animux/ai-env/bin/hf download &lt;model-name&gt;
+</code></pre>
+<p>The commands come from the package <code>animux-ai-tools</code>.</p>
+</article>
+<nav class="prevnext"><a class="prev" href="upscayl.html">← Upscayl</a><a class="next" href="ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP) →</a></nav>
+<footer class="foot"><a href="../md/software/ai-tools.md">View this page as Markdown</a> · <a href="../llms.txt">llms.txt</a> · <a href="../api/pages.json">JSON index</a> · Animux Guide 1.0.34 for Genesis64 r16.3, updated 2026-11-04 · <a href="../about/guide-updates.html">What changed</a></footer>
+</main>
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li class="l2"><a href="#whisper-speech-to-text-and-subtitles">Whisper: speech to text and subtitles</a></li><li class="l2"><a href="#rembg-remove-backgrounds">rembg: remove backgrounds</a></li><li class="l2"><a href="#ollama-chat-models-on-your-computer">Ollama: chat models on your computer</a></li><li class="l2"><a href="#comfyui-stable-diffusion">ComfyUI: Stable Diffusion</a></li><li class="l2"><a href="#ltx-in-the-cloud-video-and-sound-from-text-and-images">LTX in the cloud: video and sound from text and images</a></li><li class="l2"><a href="#ltx-2-on-your-own-computer">LTX-2 on your own computer</a></li><li class="l2"><a href="#for-programmers">For programmers</a></li></ul></nav>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

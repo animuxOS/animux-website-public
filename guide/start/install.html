@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Install Animux on a disk — Animux Guide</title>
+<meta name="description" content="Step-by-step through the installer, with screenshots, for a whole disk, a virtual disk or next to Windows.">
+<link rel="icon" href="../assets/animux.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="text/markdown" href="../md/start/install.md" title="This page as Markdown">
+<script>try{var t=localStorage.getItem('animux-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="menu-btn" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><img src="../assets/animux.png" alt="" width="28" height="28"><span>Animux <b>Guide</b></span></a>
+  <a class="site-home" href="../../index.html">← animux.org</a><div class="search"><input id="q" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search the guide"><div id="results" role="listbox"></div></div>
+  <button class="theme-btn" aria-label="Switch light or dark" onclick="animuxTheme()">◐</button>
+</header>
+<div class="wrap">
+<nav class="side" aria-label="Guide sections"><details open><summary>Getting Started</summary><ul><li><a href="what-is-animux.html">What is Animux?</a></li><li><a href="at-a-glance.html">Animux at a glance</a></li><li><a href="in-production.html">Used in film production</a></li><li><a href="requirements.html">Computer requirements</a></li><li><a href="get-the-iso.html">Get the ISO file</a></li><li><a href="virtualbox.html">Try Animux in VirtualBox</a></li><li><a href="other-vms.html">Other virtual machines</a></li><li><a href="usb-stick.html">Make a bootable USB stick</a></li><li><a href="boot-menu.html">The boot menu</a></li><li><a href="live-session.html">The live session</a></li><li><a href="install.html" aria-current=page>Install Animux on a disk</a></li><li><a href="first-steps.html">First steps after installing</a></li></ul></details><details><summary>Using the Desktop</summary><ul><li><a href="../desktop/tour.html">Desktop tour</a></li><li><a href="../desktop/menu.html">The Animux menu</a></li><li><a href="../desktop/files.html">Files, folders and drives</a></li><li><a href="../desktop/terminal.html">The terminal, gently</a></li><li><a href="../desktop/settings.html">Settings</a></li><li><a href="../desktop/add-software.html">Updates and adding software</a></li><li><a href="../desktop/shortcuts.html">Keyboard shortcuts</a></li></ul></details><details><summary>Software</summary><ul><li><a href="../software/index.html">All software</a></li><li><a href="../software/blender.html">Blender</a></li><li><a href="../software/makehuman.html">MakeHuman II and MPFB</a></li><li><a href="../software/other-3d.html">FreeCAD, Wings 3D, MeshLab and OpenSCAD</a></li><li><a href="../software/renderers.html">Renderers</a></li><li><a href="../software/renderer-comparison.html">Renderer comparison</a></li><li><a href="../software/flamenco.html">Flamenco render farm</a></li><li><a href="../software/gaffer.html">Gaffer</a></li><li><a href="../software/pipeline-formats.html">Pipeline formats and tools</a></li><li><a href="../software/studio-formats.html">Studio formats</a></li><li><a href="../software/synfig.html">Synfig Studio</a></li><li><a href="../software/opentoonz.html">OpenToonz</a></li><li><a href="../software/pencil2d.html">Pencil2D and TupiTube</a></li><li><a href="../software/krita.html">Krita</a></li><li><a href="../software/stopmotion.html">Stopmotion</a></li><li><a href="../software/gimp-inkscape.html">GIMP, Inkscape and other image tools</a></li><li><a href="../software/kdenlive.html">Kdenlive</a></li><li><a href="../software/video-tools.html">More video tools</a></li><li><a href="../software/audio.html">Sound and music</a></li><li><a href="../software/upscayl.html">Upscayl</a></li><li><a href="../software/ai-tools.html">AI tools</a></li><li><a href="../software/ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP)</a></li><li><a href="../software/storyboard-publishing.html">Storyboards, print and PDF</a></li><li><a href="../software/system-tools.html">System tools</a></li></ul></details><details><summary>Tutorials</summary><ul><li><a href="../tutorials/first-3d-render.html">Your first 3D render</a></li><li><a href="../tutorials/turntable-animation.html">A turntable animation</a></li><li><a href="../tutorials/character-makehuman.html">A character with MakeHuman</a></li><li><a href="../tutorials/bouncing-ball-synfig.html">A bouncing ball in Synfig</a></li><li><a href="../tutorials/hand-drawn-pencil2d.html">Hand-drawn animation in Pencil2D</a></li><li><a href="../tutorials/krita-animation.html">Paint an animation in Krita</a></li><li><a href="../tutorials/stop-motion-webcam.html">Stop motion with a webcam</a></li><li><a href="../tutorials/edit-video-kdenlive.html">Edit your film in Kdenlive</a></li><li><a href="../tutorials/command-line-rendering.html">Command-line rendering and batch jobs</a></li><li><a href="../tutorials/short-film-workflow.html">From idea to finished short film</a></li></ul></details><details><summary>Help</summary><ul><li><a href="../help/self-test.html">The self-test and sample scenes</a></li><li><a href="../help/troubleshooting.html">Troubleshooting</a></li><li><a href="../help/faq.html">Questions and answers</a></li><li><a href="../help/glossary.html">Glossary</a></li><li><a href="../help/getting-help.html">Getting help</a></li></ul></details><details><summary>For AI Agents</summary><ul><li><a href="../agents/overview.html">The guide for AI agents and programs</a></li><li><a href="../agents/command-reference.html">Command reference</a></li><li><a href="../agents/system-facts.html">System facts</a></li></ul></details><details><summary>News</summary><ul><li><a href="../news/2026-10-30-r16-3-release.html">Animux Genesis64 r16.3</a></li><li><a href="../news/2026-10-29-r16-2-release.html">Animux Genesis64 r16.2</a></li><li><a href="../news/2026-10-27-animux-guide.html">Introducing the Animux Guide</a></li><li><a href="../news/2026-10-26-r16-release.html">Animux Genesis64 r16 is here</a></li></ul></details><details><summary>About</summary><ul><li><a href="../about/versions.html">Versions</a></li><li><a href="../about/licenses.html">Licences and credits</a></li><li><a href="../about/guide-updates.html">Guide updates</a></li></ul></details></nav>
+<main id="main">
+<header class="pagehead"><p class="crumbs"><a href="../index.html">Home</a> › <a href="what-is-animux.html">Getting Started</a></p><h1>Install Animux on a disk</h1><p class="lede">Step-by-step through the installer, with screenshots, for a whole disk, a virtual disk or next to Windows.</p><p class="meta"><span class="tag">beginner</span><span class="tag">install</span><span class="tag">Calamares</span><span class="tag">dual boot</span></p></header>
+<article class="content">
+<p>Installing copies Animux onto a disk, so it starts without the USB stick and <strong>keeps your files and settings</strong>. It takes 15–40 minutes.</p>
+<div class="admonition danger">
+<p class="admonition-title">Back up first</p>
+<p>Installing can erase a disk. Copy everything important from the computer to another drive first. In a <a href="virtualbox.html">virtual machine</a> this does not matter: the installer only sees the empty virtual disk.</p>
+</div>
+<h2 id="before-you-start">Before you start<a class="headerlink" href="#before-you-start" title="Permanent link">#</a></h2>
+<ul>
+<li>A disk (or free space) of <strong>at least 40 GB</strong>; 100 GB or more is better.</li>
+<li>The computer plugged in to power.</li>
+<li>For <strong>dual boot with Windows</strong>: shrink Windows first, in Windows: <strong>Disk Management → right-click C: → Shrink Volume</strong>, and free at least 60 GB. Also turn off Windows <em>Fast Startup</em> and, if it is on, <em>BitLocker</em> for the time of the installation.</li>
+</ul>
+<h2 id="1-start-the-installer">1. Start the installer<a class="headerlink" href="#1-start-the-installer" title="Permanent link">#</a></h2>
+<p>Start from the USB stick or ISO and choose <strong>Install Animux Genesis64 to Disk</strong> in the <a href="boot-menu.html">boot menu</a>. The desktop starts and the installer opens by itself.</p>
+<p>(The installer can also be started from a normal live session: open a terminal and type <code>sudo -E calamares</code>.)</p>
+<h2 id="2-welcome-location-keyboard">2. Welcome, location, keyboard<a class="headerlink" href="#2-welcome-location-keyboard" title="Permanent link">#</a></h2>
+<figure><a href="../images/install-welcome.webp"><img src="../images/install-welcome.webp" alt="The installer's first page. The steps are listed on the left." loading="lazy"></a><figcaption>The installer's first page. The steps are listed on the left.</figcaption></figure>
+<ul>
+<li><strong>Welcome</strong>: choose your language, click <strong>Next</strong>.</li>
+<li><strong>Location</strong>: click your region on the map, or choose region and city. This sets the clock and the date format.</li>
+<li><strong>Keyboard</strong>: choose your keyboard layout. Type in the test box to check that the keys are right (especially <code>@</code>, <code>"</code> and <code>/</code>).</li>
+</ul>
+<h2 id="3-partitions-where-animux-goes">3. Partitions: where Animux goes<a class="headerlink" href="#3-partitions-where-animux-goes" title="Permanent link">#</a></h2>
+<figure><a href="../images/install-partitions.webp"><img src="../images/install-partitions.webp" alt="Choosing the disk. In a virtual machine &quot;Erase disk&quot; only erases the virtual disk." loading="lazy"></a><figcaption>Choosing the disk. In a virtual machine &quot;Erase disk&quot; only erases the virtual disk.</figcaption></figure>
+<p>At the top, <strong>Select storage device</strong> shows the disk. Make sure it is the right one: check its size.</p>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Use it when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Erase disk</strong></td>
+<td>The whole disk is for Animux (new disk, virtual machine). Everything on the disk is deleted.</td>
+</tr>
+<tr>
+<td><strong>Install alongside</strong></td>
+<td>Windows or another system is on the disk and you want to choose at every start. Drag the divider to give Animux its share. Only shown when there is room.</td>
+</tr>
+<tr>
+<td><strong>Replace a partition</strong></td>
+<td>You prepared an empty partition for Animux.</td>
+</tr>
+<tr>
+<td><strong>Manual partitioning</strong></td>
+<td>You know exactly which partitions you want.</td>
+</tr>
+</tbody>
+</table></div>
+<p>For <strong>Erase disk</strong> you can also choose <strong>Swap</strong> (extra memory on disk; <em>Swap (with Hibernate)</em> lets you hibernate) and tick <strong>Encrypt system</strong> to protect a laptop with a password at every start.</p>
+<h2 id="4-users">4. Users<a class="headerlink" href="#4-users" title="Permanent link">#</a></h2>
+<figure><a href="../images/install-users.webp"><img src="../images/install-users.webp" alt="Your account: name, login name, computer name and password." loading="lazy"></a><figcaption>Your account: name, login name, computer name and password.</figcaption></figure>
+<div class="table"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Example</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What is your name?</td>
+<td><code>Ada Lovelace</code></td>
+<td>shown on the login screen</td>
+</tr>
+<tr>
+<td>Login name</td>
+<td><code>ada</code></td>
+<td>lower case, no spaces</td>
+</tr>
+<tr>
+<td>Computer name</td>
+<td><code>ada-studio</code></td>
+<td>how the computer is called on the network; use different names on render farm computers</td>
+</tr>
+<tr>
+<td>Password (twice)</td>
+<td></td>
+<td>You need it to log in and to install software. Write it down.</td>
+</tr>
+<tr>
+<td>Log in automatically</td>
+<td></td>
+<td>Tick it only on a computer nobody else uses.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="5-summary-and-installation">5. Summary and installation<a class="headerlink" href="#5-summary-and-installation" title="Permanent link">#</a></h2>
+<figure><a href="../images/install-summary.webp"><img src="../images/install-summary.webp" alt="The summary. Nothing has been changed yet; &quot;Install&quot; starts the real work." loading="lazy"></a><figcaption>The summary. Nothing has been changed yet; &quot;Install&quot; starts the real work.</figcaption></figure>
+<p>Read the summary. <strong>Nothing has been changed yet.</strong> Click <strong>Install</strong>, then <strong>Install now</strong>.</p>
+<figure><a href="../images/install-progress.webp"><img src="../images/install-progress.webp" alt="Installing. A slideshow runs while the files are copied; this is the longest part." loading="lazy"></a><figcaption>Installing. A slideshow runs while the files are copied; this is the longest part.</figcaption></figure>
+<figure><a href="../images/install-done.webp"><img src="../images/install-done.webp" alt="Finished. Tick Restart now and click Done." loading="lazy"></a><figcaption>Finished. Tick Restart now and click Done.</figcaption></figure>
+<p>When it says <strong>All done</strong>, tick <strong>Restart now</strong> and click <strong>Done</strong>. Remove the USB stick when the screen goes black (in VirtualBox: remove the ISO under <strong>Settings → Storage</strong>).</p>
+<h2 id="6-first-start-from-the-disk">6. First start from the disk<a class="headerlink" href="#6-first-start-from-the-disk" title="Permanent link">#</a></h2>
+<p>Animux shows its splash screen, then the login screen. Type your password and press <strong>Enter</strong>.</p>
+<figure><a href="../images/login.webp"><img src="../images/login.webp" alt="The login screen of an installed Animux." loading="lazy"></a><figcaption>The login screen of an installed Animux.</figcaption></figure>
+<p>Continue with <a href="first-steps.html">First steps after installing</a>.</p>
+<h2 id="dual-boot-choosing-windows-or-animux">Dual boot: choosing Windows or Animux<a class="headerlink" href="#dual-boot-choosing-windows-or-animux" title="Permanent link">#</a></h2>
+<p>With <strong>Install alongside</strong>, every start shows a menu where you choose <strong>Animux</strong> or <strong>Windows Boot Manager</strong>. If Windows starts straight away without a menu, open your computer's boot menu (F12 etc., see <a href="usb-stick.html#start-the-computer-from-the-stick">USB stick</a>) or set <strong>debian</strong> first in the firmware's boot order.</p>
+</article>
+<nav class="prevnext"><a class="prev" href="live-session.html">← The live session</a><a class="next" href="first-steps.html">First steps after installing →</a></nav>
+<footer class="foot"><a href="../md/start/install.md">View this page as Markdown</a> · <a href="../llms.txt">llms.txt</a> · <a href="../api/pages.json">JSON index</a> · Animux Guide 1.0.34 for Genesis64 r16.3, updated 2026-11-04 · <a href="../about/guide-updates.html">What changed</a></footer>
+</main>
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li class="l2"><a href="#before-you-start">Before you start</a></li><li class="l2"><a href="#1-start-the-installer">1. Start the installer</a></li><li class="l2"><a href="#2-welcome-location-keyboard">2. Welcome, location, keyboard</a></li><li class="l2"><a href="#3-partitions-where-animux-goes">3. Partitions: where Animux goes</a></li><li class="l2"><a href="#4-users">4. Users</a></li><li class="l2"><a href="#5-summary-and-installation">5. Summary and installation</a></li><li class="l2"><a href="#6-first-start-from-the-disk">6. First start from the disk</a></li><li class="l2"><a href="#dual-boot-choosing-windows-or-animux">Dual boot: choosing Windows or Animux</a></li></ul></nav>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

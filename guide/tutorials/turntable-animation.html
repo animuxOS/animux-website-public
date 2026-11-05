@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A turntable animation — Animux Guide</title>
+<meta name="description" content="Make Suzanne spin once around in four seconds with two keyframes, then render the animation straight to an MP4 video. About 20 minutes.">
+<link rel="icon" href="../assets/animux.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="alternate" type="text/markdown" href="../md/tutorials/turntable-animation.md" title="This page as Markdown">
+<script>try{var t=localStorage.getItem('animux-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <button class="menu-btn" aria-label="Open navigation" onclick="document.body.classList.toggle('nav-open')">☰</button>
+  <a class="brand" href="../index.html"><img src="../assets/animux.png" alt="" width="28" height="28"><span>Animux <b>Guide</b></span></a>
+  <a class="site-home" href="../../index.html">← animux.org</a><div class="search"><input id="q" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search the guide"><div id="results" role="listbox"></div></div>
+  <button class="theme-btn" aria-label="Switch light or dark" onclick="animuxTheme()">◐</button>
+</header>
+<div class="wrap">
+<nav class="side" aria-label="Guide sections"><details><summary>Getting Started</summary><ul><li><a href="../start/what-is-animux.html">What is Animux?</a></li><li><a href="../start/at-a-glance.html">Animux at a glance</a></li><li><a href="../start/in-production.html">Used in film production</a></li><li><a href="../start/requirements.html">Computer requirements</a></li><li><a href="../start/get-the-iso.html">Get the ISO file</a></li><li><a href="../start/virtualbox.html">Try Animux in VirtualBox</a></li><li><a href="../start/other-vms.html">Other virtual machines</a></li><li><a href="../start/usb-stick.html">Make a bootable USB stick</a></li><li><a href="../start/boot-menu.html">The boot menu</a></li><li><a href="../start/live-session.html">The live session</a></li><li><a href="../start/install.html">Install Animux on a disk</a></li><li><a href="../start/first-steps.html">First steps after installing</a></li></ul></details><details><summary>Using the Desktop</summary><ul><li><a href="../desktop/tour.html">Desktop tour</a></li><li><a href="../desktop/menu.html">The Animux menu</a></li><li><a href="../desktop/files.html">Files, folders and drives</a></li><li><a href="../desktop/terminal.html">The terminal, gently</a></li><li><a href="../desktop/settings.html">Settings</a></li><li><a href="../desktop/add-software.html">Updates and adding software</a></li><li><a href="../desktop/shortcuts.html">Keyboard shortcuts</a></li></ul></details><details><summary>Software</summary><ul><li><a href="../software/index.html">All software</a></li><li><a href="../software/blender.html">Blender</a></li><li><a href="../software/makehuman.html">MakeHuman II and MPFB</a></li><li><a href="../software/other-3d.html">FreeCAD, Wings 3D, MeshLab and OpenSCAD</a></li><li><a href="../software/renderers.html">Renderers</a></li><li><a href="../software/renderer-comparison.html">Renderer comparison</a></li><li><a href="../software/flamenco.html">Flamenco render farm</a></li><li><a href="../software/gaffer.html">Gaffer</a></li><li><a href="../software/pipeline-formats.html">Pipeline formats and tools</a></li><li><a href="../software/studio-formats.html">Studio formats</a></li><li><a href="../software/synfig.html">Synfig Studio</a></li><li><a href="../software/opentoonz.html">OpenToonz</a></li><li><a href="../software/pencil2d.html">Pencil2D and TupiTube</a></li><li><a href="../software/krita.html">Krita</a></li><li><a href="../software/stopmotion.html">Stopmotion</a></li><li><a href="../software/gimp-inkscape.html">GIMP, Inkscape and other image tools</a></li><li><a href="../software/kdenlive.html">Kdenlive</a></li><li><a href="../software/video-tools.html">More video tools</a></li><li><a href="../software/audio.html">Sound and music</a></li><li><a href="../software/upscayl.html">Upscayl</a></li><li><a href="../software/ai-tools.html">AI tools</a></li><li><a href="../software/ai-agents.html">AI agents in Blender, GIMP, Krita and Inkscape (MCP)</a></li><li><a href="../software/storyboard-publishing.html">Storyboards, print and PDF</a></li><li><a href="../software/system-tools.html">System tools</a></li></ul></details><details open><summary>Tutorials</summary><ul><li><a href="first-3d-render.html">Your first 3D render</a></li><li><a href="turntable-animation.html" aria-current=page>A turntable animation</a></li><li><a href="character-makehuman.html">A character with MakeHuman</a></li><li><a href="bouncing-ball-synfig.html">A bouncing ball in Synfig</a></li><li><a href="hand-drawn-pencil2d.html">Hand-drawn animation in Pencil2D</a></li><li><a href="krita-animation.html">Paint an animation in Krita</a></li><li><a href="stop-motion-webcam.html">Stop motion with a webcam</a></li><li><a href="edit-video-kdenlive.html">Edit your film in Kdenlive</a></li><li><a href="command-line-rendering.html">Command-line rendering and batch jobs</a></li><li><a href="short-film-workflow.html">From idea to finished short film</a></li></ul></details><details><summary>Help</summary><ul><li><a href="../help/self-test.html">The self-test and sample scenes</a></li><li><a href="../help/troubleshooting.html">Troubleshooting</a></li><li><a href="../help/faq.html">Questions and answers</a></li><li><a href="../help/glossary.html">Glossary</a></li><li><a href="../help/getting-help.html">Getting help</a></li></ul></details><details><summary>For AI Agents</summary><ul><li><a href="../agents/overview.html">The guide for AI agents and programs</a></li><li><a href="../agents/command-reference.html">Command reference</a></li><li><a href="../agents/system-facts.html">System facts</a></li></ul></details><details><summary>News</summary><ul><li><a href="../news/2026-10-30-r16-3-release.html">Animux Genesis64 r16.3</a></li><li><a href="../news/2026-10-29-r16-2-release.html">Animux Genesis64 r16.2</a></li><li><a href="../news/2026-10-27-animux-guide.html">Introducing the Animux Guide</a></li><li><a href="../news/2026-10-26-r16-release.html">Animux Genesis64 r16 is here</a></li></ul></details><details><summary>About</summary><ul><li><a href="../about/versions.html">Versions</a></li><li><a href="../about/licenses.html">Licences and credits</a></li><li><a href="../about/guide-updates.html">Guide updates</a></li></ul></details></nav>
+<main id="main">
+<header class="pagehead"><p class="crumbs"><a href="../index.html">Home</a> › <a href="first-3d-render.html">Tutorials</a></p><h1>A turntable animation</h1><p class="lede">Make Suzanne spin once around in four seconds with two keyframes, then render the animation straight to an MP4 video. About 20 minutes.</p><p class="meta"><span class="tag">beginner</span><span class="tag">Blender</span><span class="tag">animation</span><span class="tag">keyframes</span><span class="tag">video</span></p></header>
+<article class="content">
+<p>A <strong>turntable</strong> shows a model from every side: it turns once around. Studios use turntables to present models. You need the scene from <a href="first-3d-render.html">Your first 3D render</a> (or download <a href="../files/first-render.blend">first-render.blend</a>).</p>
+<p>This is the result (4 seconds, 24 frames per second):</p>
+<video controls loop muted playsinline width="640" poster="../images/first-render.webp" src="../files/turntable.mp4"></video>
+
+<p>The finished file: <a href="../files/turntable.blend">turntable.blend</a>.</p>
+<h2 id="keyframes-in-one-sentence">Keyframes, in one sentence<a class="headerlink" href="#keyframes-in-one-sentence" title="Permanent link">#</a></h2>
+<p>You tell Blender where an object is at a few moments (<strong>keyframes</strong>), and Blender calculates every frame in between.</p>
+<h2 id="1-set-the-length">1. Set the length<a class="headerlink" href="#1-set-the-length" title="Permanent link">#</a></h2>
+<p>At the bottom, in the <strong>Timeline</strong>, set <strong>Start</strong> to <code>1</code> and <strong>End</strong> to <code>96</code>. At 24 frames per second that is 4 seconds.</p>
+<h2 id="2-first-keyframe-frame-1">2. First keyframe: frame 1<a class="headerlink" href="#2-first-keyframe-frame-1" title="Permanent link">#</a></h2>
+<ol>
+<li>Make sure the current frame (the blue number in the timeline) is <strong>1</strong>.</li>
+<li>Select <strong>Suzanne</strong>. In the <strong>Object</strong> tab of Properties (orange square), look at <strong>Rotation Z</strong>.</li>
+<li>Hover the mouse over the <strong>Rotation Z</strong> field and press <strong>I</strong>. The field turns <strong>yellow</strong>: it has a keyframe on this frame. A diamond appears in the timeline.</li>
+</ol>
+<h2 id="3-second-keyframe-one-turn-later">3. Second keyframe: one turn later<a class="headerlink" href="#3-second-keyframe-one-turn-later" title="Permanent link">#</a></h2>
+<ol>
+<li>Type <code>97</code> in the current-frame box of the timeline (one frame after the end, so the loop has no repeated frame).</li>
+<li>In <strong>Rotation Z</strong>, add 360 to the number that is there (for example <code>40</code> becomes <code>400</code>) and press <strong>Enter</strong>.</li>
+<li>Hover over the field and press <strong>I</strong> again.</li>
+</ol>
+<figure><a href="../images/blender-06-keyframes.webp"><img src="../images/blender-06-keyframes.webp" alt="The timeline with keyframes; Rotation Z is yellow because it is animated." loading="lazy"></a><figcaption>The timeline with keyframes; Rotation Z is yellow because it is animated.</figcaption></figure>
+<p>Press <strong>Space</strong> to play. Suzanne turns, but she starts slowly, speeds up and slows down again ("ease in, ease out"). For a turntable the speed must be even:</p>
+<ol start="4">
+<li>Move the mouse over the <strong>timeline</strong>, press <strong>A</strong> (select all keyframes), then <strong>T</strong> and choose <strong>Linear</strong>.</li>
+</ol>
+<p>Play again with <strong>Space</strong>: an even, endless spin. Press <strong>Space</strong> to stop.</p>
+<h2 id="4-render-to-a-video-file">4. Render to a video file<a class="headerlink" href="#4-render-to-a-video-file" title="Permanent link">#</a></h2>
+<ol>
+<li>Open the <strong>Output</strong> tab (the printer icon).</li>
+<li>Under <strong>Output</strong>, set the path to <code>//turntable</code> (<code>//</code> means "in the same folder as the .blend file").</li>
+<li>Set the <strong>File Format</strong> to <strong>FFmpeg Video</strong> (in Blender 5 first choose the media type <strong>Video</strong>).</li>
+<li>Under <strong>Encoding</strong>: <strong>Container</strong> <code>MPEG-4</code>, <strong>Video Codec</strong> <code>H.264</code>, <strong>Output Quality</strong> <code>Medium quality</code>.</li>
+</ol>
+<figure><a href="../images/blender-07-output.webp"><img src="../images/blender-07-output.webp" alt="The Output tab: resolution, frame range 1–96 and the output path &quot;//turntable&quot;. File Format and Encoding are further down; scroll the panel." loading="lazy"></a><figcaption>The Output tab: resolution, frame range 1–96 and the output path &quot;//turntable&quot;. File Format and Encoding are further down; scroll the panel.</figcaption></figure>
+<ol start="5">
+<li>Lower the <strong>Max Samples</strong> in the Render tab to <code>16</code> to make it faster. 96 frames take a while.</li>
+<li><strong>Render → Render Animation</strong> (Ctrl+F12). Blender renders frame after frame. When it is finished, the file <code>turntable0001-0096.mp4</code> is next to your <code>.blend</code> file.</li>
+<li>Watch it: double-click it in the file manager (it opens in VLC), or <strong>Render → View Animation</strong> in Blender.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Image sequences are safer</p>
+<p>For real projects, render to <strong>PNG</strong> images instead of a video (File Format <strong>PNG</strong>, path <code>//frames/turntable_</code>). If Blender stops at frame 60, you keep frames 1–59 and continue from 60. Join the images into a video with FFmpeg or Kdenlive afterwards (<a href="../software/video-tools.html#ffmpeg-the-five-most-useful-commands">how</a>).</p>
+</div>
+<h2 id="render-without-opening-blender">Render without opening Blender<a class="headerlink" href="#render-without-opening-blender" title="Permanent link">#</a></h2>
+<p>Close Blender and render from a terminal; it is faster and you can keep working:</p>
+<pre><code>blender -b ~/Projects/turntable.blend -a
+</code></pre>
+<p>See <a href="command-line-rendering.html">Command-line rendering</a>.</p>
+<h2 id="next">Next<a class="headerlink" href="#next" title="Permanent link">#</a></h2>
+<ul>
+<li>Animate other properties the same way: location (a jumping ball), scale, colour (hover over any field and press <strong>I</strong>).</li>
+<li><a href="character-makehuman.html">A character with MakeHuman</a>.</li>
+</ul>
+</article>
+<nav class="prevnext"><a class="prev" href="first-3d-render.html">← Your first 3D render</a><a class="next" href="character-makehuman.html">A character with MakeHuman →</a></nav>
+<footer class="foot"><a href="../md/tutorials/turntable-animation.md">View this page as Markdown</a> · <a href="../llms.txt">llms.txt</a> · <a href="../api/pages.json">JSON index</a> · Animux Guide 1.0.34 for Genesis64 r16.3, updated 2026-11-04 · <a href="../about/guide-updates.html">What changed</a></footer>
+</main>
+<nav class="toc" aria-label="On this page"><p>On this page</p><ul><li class="l2"><a href="#keyframes-in-one-sentence">Keyframes, in one sentence</a></li><li class="l2"><a href="#1-set-the-length">1. Set the length</a></li><li class="l2"><a href="#2-first-keyframe-frame-1">2. First keyframe: frame 1</a></li><li class="l2"><a href="#3-second-keyframe-one-turn-later">3. Second keyframe: one turn later</a></li><li class="l2"><a href="#4-render-to-a-video-file">4. Render to a video file</a></li><li class="l2"><a href="#render-without-opening-blender">Render without opening Blender</a></li><li class="l2"><a href="#next">Next</a></li></ul></nav>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>
